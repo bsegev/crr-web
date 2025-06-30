@@ -1,0 +1,193 @@
+"use client"
+import React, { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import Link from "next/link"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+
+const centers = [
+  {
+    id: 1,
+    name: "Costa Rica",
+    location: "Peninsula Papagayo",
+    description: "Immerse yourself in tropical healing where pristine beaches meet transformative care.",
+    image: "/nature-heal.jpg",
+    href: "/our-centers"
+  },
+  {
+    id: 2,
+    name: "Monterey",
+    location: "California Coast",
+    description: "Find renewal along dramatic coastlines with world-class clinical excellence.",
+    image: "/nature-mountain.jpg",
+    href: "/our-centers"
+  },
+  {
+    id: 3,
+    name: "Switzerland",
+    location: "Swiss Alps",
+    description: "Experience alpine serenity combined with cutting-edge therapeutic approaches.",
+    image: "/nature-stones.jpg",
+    href: "/our-centers"
+  },
+  {
+    id: 4,
+    name: "Thailand",
+    location: "Koh Samui",
+    description: "Discover ancient wisdom and modern healing in a tropical paradise setting.",
+    image: "/nature-group.jpg",
+    href: "/our-centers"
+  }
+]
+
+const CenterCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+
+  useEffect(() => {
+    if (!isAutoPlaying) return
+    
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % centers.length)
+    }, 5000)
+    
+    return () => clearInterval(interval)
+  }, [isAutoPlaying])
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index)
+    setIsAutoPlaying(false)
+  }
+
+  const goToPrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + centers.length) % centers.length)
+    setIsAutoPlaying(false)
+  }
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % centers.length)
+    setIsAutoPlaying(false)
+  }
+
+  return (
+    <section className="relative h-[70vh] min-h-[600px] w-full overflow-hidden bg-black">
+      {/* Background Images */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          <img
+            src={centers[currentIndex].image}
+            alt={centers[currentIndex].name}
+            className="w-full h-full object-cover"
+            style={{ filter: "brightness(0.4) contrast(1.1)" }}
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Content */}
+      <div className="absolute inset-0 flex items-center z-10">
+        <div className="w-full max-w-7xl mx-auto px-8 md:px-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            
+            {/* Left: Current Center Info */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 30 }}
+                transition={{ duration: 0.8 }}
+                className="space-y-8"
+              >
+                <div className="space-y-4">
+                  <h2 className="text-5xl md:text-7xl font-light text-white leading-[1.1] tracking-[-0.02em]">
+                    {centers[currentIndex].name}
+                  </h2>
+                  <div className="w-16 h-px bg-[#B7C9B7]/30"></div>
+                  <p className="text-xl md:text-2xl font-light text-[#B7C9B7]">
+                    {centers[currentIndex].location}
+                  </p>
+                </div>
+                
+                <p className="text-lg md:text-xl font-light text-white/90 max-w-lg leading-relaxed">
+                  {centers[currentIndex].description}
+                </p>
+                
+                <Link href={centers[currentIndex].href} className="mt-8 block">
+                  <button className="group relative text-white text-sm tracking-widest uppercase font-medium">
+                    <span className="relative z-10 px-10 py-4 block">Explore Center</span>
+                    <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
+                    <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+                  </button>
+                </Link>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Right: Center Navigation */}
+            <div className="space-y-6">
+              {centers.map((center, index) => (
+                <motion.button
+                  key={center.id}
+                  onClick={() => goToSlide(index)}
+                  className={`w-full text-left p-6 border-l-2 transition-all duration-300 ${
+                    index === currentIndex 
+                      ? 'border-[#B7C9B7] bg-[#B7C9B7]/10 backdrop-blur-sm' 
+                      : 'border-white/20 hover:border-[#B7C9B7]/40 hover:bg-[#B7C9B7]/5'
+                  }`}
+                  whileHover={{ x: 8 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <h3 className={`text-xl md:text-2xl font-light mb-2 transition-colors ${
+                    index === currentIndex ? 'text-white' : 'text-white/70'
+                  }`}>
+                    {center.name}
+                  </h3>
+                  <p className={`text-sm md:text-base font-light transition-colors ${
+                    index === currentIndex ? 'text-white/80' : 'text-white/50'
+                  }`}>
+                    {center.location}
+                  </p>
+                </motion.button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border border-[#B7C9B7]/30 hover:border-[#B7C9B7]/60 hover:bg-[#B7C9B7]/10 transition-all duration-300 flex items-center justify-center group"
+      >
+        <ChevronLeft className="w-6 h-6 text-[#B7C9B7]/70 group-hover:text-[#B7C9B7] transition-colors" />
+      </button>
+      
+      <button
+        onClick={goToNext}
+        className="absolute right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 border border-[#B7C9B7]/30 hover:border-[#B7C9B7]/60 hover:bg-[#B7C9B7]/10 transition-all duration-300 flex items-center justify-center group"
+      >
+        <ChevronRight className="w-6 h-6 text-[#B7C9B7]/70 group-hover:text-[#B7C9B7] transition-colors" />
+      </button>
+
+      {/* Progress Indicators */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+        {centers.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-12 h-1 transition-all duration-300 ${
+              index === currentIndex ? 'bg-[#B7C9B7]' : 'bg-[#B7C9B7]/30 hover:bg-[#B7C9B7]/50'
+            }`}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default CenterCarousel 

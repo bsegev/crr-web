@@ -1,0 +1,116 @@
+"use client"
+import React from "react"
+import { motion } from "framer-motion"
+import { Heart, Globe, Users } from "lucide-react"
+
+const MissionVision = () => {
+  const cards = [
+    {
+      icon: Heart,
+      title: "Our Mission",
+      description: "To create global pathways to human flourishing through ethical, transparent, and transformative care."
+    },
+    {
+      icon: Globe,
+      title: "Our Vision",
+      description: "A world where everyone has access to compassionate, evidence-based care that honors their unique journey."
+    },
+    {
+      icon: Users,
+      title: "Why We Exist",
+      description: "Founded by families who experienced the broken system firsthand, we're here to be the partner we wished we had."
+    }
+  ]
+
+  return (
+    <section className="relative bg-[#F9FAF9] py-24 md:py-32 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute right-0 top-0 w-[800px] h-[800px] bg-[#06402B]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute left-0 bottom-0 w-[600px] h-[600px] bg-[#06402B]/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
+        {/* Top Content */}
+        <motion.div 
+          className="mb-20 md:mb-24 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {/* Editorial eyebrow */}
+          <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-8">
+            Our Purpose
+          </p>
+          <div className="w-16 h-px bg-[#06402B]/20 mx-auto mb-12"></div>
+
+          <h2 className="text-4xl md:text-6xl font-light text-black leading-[1.1] tracking-[-0.02em] mb-8">
+            Guided by a
+            <br />
+            <span className="italic font-serif text-[#06402B]">higher purpose</span>
+          </h2>
+          
+          <p className="text-xl md:text-2xl font-light text-black/70 max-w-3xl mx-auto leading-relaxed">
+            Every decision we make is anchored in our commitment to transformative care.
+          </p>
+        </motion.div>
+
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {cards.map((card, index) => (
+            <motion.div
+              key={card.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
+              className="relative group"
+            >
+              <div className="bg-white rounded-lg p-10 relative overflow-hidden border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-500">
+                {/* Icon Container */}
+                <div className="relative z-10">
+                  <motion.div 
+                    className="relative mb-8 inline-block"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {/* Decorative ring */}
+                    <div className="absolute inset-0 border-2 border-[#06402B]/20 rounded-full transform rotate-45 group-hover:rotate-90 transition-transform duration-700" />
+                    {/* Icon */}
+                    <div className="relative z-10 w-14 h-14 flex items-center justify-center">
+                      <card.icon className="w-7 h-7 text-[#06402B] transform group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  </motion.div>
+                  
+                  <h3 className="text-2xl font-light text-[#06402B] mb-4 group-hover:translate-x-1 transition-transform duration-300">
+                    {card.title}
+                  </h3>
+                  
+                  <p className="text-lg font-light text-black/70 leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#06402B]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                
+                {/* Animated corner accents */}
+                <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute top-0 right-0 w-px h-8 bg-[#06402B]/20 group-hover:h-16 transition-all duration-700" />
+                  <div className="absolute top-0 right-0 h-px w-8 bg-[#06402B]/20 group-hover:w-16 transition-all duration-700" />
+                </div>
+                <div className="absolute bottom-0 left-0 w-16 h-16 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute bottom-0 left-0 w-px h-8 bg-[#06402B]/20 group-hover:h-16 transition-all duration-700" />
+                  <div className="absolute bottom-0 left-0 h-px w-8 bg-[#06402B]/20 group-hover:w-16 transition-all duration-700" />
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default MissionVision 

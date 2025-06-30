@@ -1,0 +1,100 @@
+About Page Original Structure
+============================
+
+1. Hero Section (Now replaced with AboutHero)
+   - Team photos grid with featured animation
+   - "The faces of compassion" headline
+   - Team-focused messaging
+
+2. Our Story Section (Now replaced with OurFoundation)
+   - "Why IWC Was Founded" headline
+   - Three card layout:
+     a. Mission Card
+        - Heart icon
+        - "Our Mission"
+        - Global pathways to human flourishing message
+
+     b. Vision Card
+        - Globe icon
+        - "Our Vision"
+        - Access to compassionate care message
+
+     c. Why We Exist Card
+        - Users icon
+        - Founded by families message
+
+3. Founding Story Section (To be recreated)
+   - "The Catalyst for Change" headline
+   - Two-column layout
+   - Story about industry transformation
+   - Mountain landscape image
+   - Personal narrative about system change
+
+4. Core Principles Section (To be recreated)
+   - Four principle cards:
+     a. Ethical, Transparent Care
+     b. Family-Centered Approach
+     c. Global Standards, Local Expertise
+     d. Nature-Immersive Healing
+   - Each with icon, details, and bullet points
+
+5. Outcomes Section (To be recreated)
+   - Metrics display:
+     - 98% Treatment Completion Rate
+     - 92% 1-Year Sobriety Rate
+     - 4.9/5 Family Satisfaction
+     - 89% Return to Work/School
+   - Evidence-based results imagery
+
+6. Leadership Section (To be recreated)
+   - "Leadership That Understands" headline
+   - Two-column layout
+   - Three key points:
+     a. Clinical Excellence
+     b. Personal Experience
+     c. Global Perspective
+   - Professional image
+
+7. What Makes Us Different (To be recreated)
+   - Four differentiator cards:
+     a. Honest, Consultative Guidance
+     b. Transparent Pricing
+     c. Realistic Expectations
+     d. Cultural Competency
+
+8. CTA Section (To be recreated)
+   - "Experience the IWC Difference"
+   - Two buttons:
+     - "Start Your Journey Today"
+     - "Speak with Our Team"
+   - Gradient background
+
+Design Elements
+==============
+- Color Scheme:
+  - Primary: #06402B (Deep Forest Green)
+  - Secondary: #B7C9B7 (Sage Green)
+  - Text: #58605E
+  - Accents: Various opacities of primary colors
+
+- Typography:
+  - Serif font for key headlines
+  - Light weight for most text
+  - Tracking adjustments for different text types
+
+- Animation Patterns:
+  - Fade up entries
+  - Hover effects on cards
+  - Scale transitions
+  - Stagger children animations
+
+Next Steps
+=========
+1. Create LeadershipSection component
+2. Create OutcomesSection component
+3. Create DifferentiatorsSection component
+4. Create FoundingStory component
+5. Create FinalCTA component
+6. Update about/page.tsx to include all components
+7. Ensure consistent animations and transitions
+8. Maintain color scheme and typography patterns 
