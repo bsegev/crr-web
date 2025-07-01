@@ -76,40 +76,40 @@ const resources = [
 
 export default function GetHelpResources() {
   return (
-    <section className="relative bg-[#F9FAF9] py-24 md:py-32 overflow-hidden">
+    <section className="relative bg-[#F9FAF9] py-16 sm:py-24 md:py-32 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute right-0 top-0 w-[800px] h-[800px] bg-[#06402B]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="absolute left-0 bottom-0 w-[600px] h-[600px] bg-[#06402B]/5 rounded-full translate-y-1/2 -translate-x-1/2" />
       </div>
 
-      <div className="max-w-[90rem] mx-auto px-8 md:px-12">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-8 md:px-12">
         {/* Top Content */}
         <motion.div 
-          className="mb-20 md:mb-24 text-center"
+          className="mb-12 sm:mb-16 md:mb-24 text-center"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           transition={{ duration: 0.4 }}
         >
-          <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-8">
+          <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-6 sm:mb-8">
             Recovery Resources
           </p>
-          <div className="w-16 h-px bg-[#06402B]/20 mx-auto mb-12"></div>
+          <div className="w-16 h-px bg-[#06402B]/20 mx-auto mb-8 sm:mb-12"></div>
 
-          <h2 className="text-4xl md:text-6xl font-light text-black leading-[1.1] tracking-[-0.02em] mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light text-black leading-[1.1] tracking-[-0.02em] mb-6 sm:mb-8">
             Support for your
             <br />
             <span className="italic font-serif text-[#06402B]">recovery journey</span>
           </h2>
           
-          <p className="text-xl md:text-2xl font-light text-black/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-light text-black/70 max-w-3xl mx-auto leading-relaxed">
             Access a comprehensive network of support services and resources for your recovery.
           </p>
         </motion.div>
 
         {/* Resources Grid */}
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16">
           {resources.map((resource, index) => (
             <motion.div
               key={resource.title}
@@ -119,46 +119,46 @@ export default function GetHelpResources() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="relative group"
             >
-              <div className="bg-white rounded-lg p-10 relative overflow-hidden border border-[#06402B]/30 transition-colors duration-300 h-full">
+              <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 relative overflow-hidden border border-[#06402B]/30 transition-colors duration-300 h-full">
                 {/* Icon Container */}
                 <div className="relative z-10 h-full flex flex-col">
-                  <div className="mb-8 inline-block">
+                  <div className="mb-6 sm:mb-8 inline-block">
                     {/* Icon */}
-                    <div className="w-16 h-16 flex items-center justify-center bg-[#06402B]/5 rounded-full">
-                      <resource.icon className="w-8 h-8 text-[#06402B]" />
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-[#06402B]/5 rounded-full">
+                      <resource.icon className="w-6 h-6 sm:w-8 sm:h-8 text-[#06402B]" />
                     </div>
                   </div>
                   
-                  <h3 className="text-2xl font-light text-[#06402B] mb-5">
+                  <h3 className="text-xl sm:text-2xl font-light text-[#06402B] mb-3 sm:mb-5">
                     {resource.title}
                   </h3>
                   
-                  <p className="text-lg font-light text-black/70 leading-relaxed mb-8 line-clamp-1">
+                  <p className="text-base sm:text-lg font-light text-black/70 leading-relaxed mb-6 sm:mb-8">
                     {resource.description}
                   </p>
 
-                  <ul className="space-y-5 mt-auto">
+                  <ul className="space-y-3 sm:space-y-5 mt-auto">
                     {resource.items.map((item, i) => (
                       <li key={i}>
                         <Link 
                           href={item.link}
                           target={item.link.startsWith('tel:') ? '_self' : '_blank'}
                           rel="noopener noreferrer"
-                          className="block p-4 rounded-lg border border-[#06402B]/20 bg-white hover:border-[#06402B]/40 transition-colors duration-300"
+                          className="block p-3 sm:p-4 rounded-lg border border-[#06402B]/20 bg-white hover:border-[#06402B]/40 transition-colors duration-300"
                         >
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center space-x-3">
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center space-x-3 min-w-0">
                               <span className="w-2 h-2 bg-[#06402B]/40 rounded-full flex-shrink-0"></span>
-                              <div>
-                                <span className="font-medium text-lg text-[#06402B]">
+                              <div className="min-w-0">
+                                <span className="font-medium text-base sm:text-lg text-[#06402B] block sm:inline">
                                   {item.text}
                                 </span>
-                                <span className="ml-2 text-sm text-black/40">
+                                <span className="text-xs sm:text-sm text-black/40 block sm:inline sm:ml-2">
                                   {item.details}
                                 </span>
                               </div>
                             </div>
-                            <div className={`px-3 py-1 rounded-full text-sm ${
+                            <div className={`shrink-0 px-3 py-1 rounded-full text-xs sm:text-sm ${
                               item.link.startsWith('tel:') 
                                 ? 'bg-green-100 text-green-700' 
                                 : 'bg-[#B7C9B7]/20 text-[#06402B]'

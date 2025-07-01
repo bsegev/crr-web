@@ -25,6 +25,12 @@ const travelOptions = [
   },
 ]
 
+const environmentOptions = [
+  { id: "nature", label: "Nature Setting", description: "Mountains or forest" },
+  { id: "urban", label: "Urban Setting", description: "City conveniences" },
+  { id: "beach", label: "Beachfront", description: "Ocean views and sand" },
+]
+
 const timelineOptions = [
   { 
     id: "immediate", 
@@ -53,7 +59,7 @@ export default function Step3Practical({ formData, updateFormData }: Step3Practi
     <div className="space-y-12">
       <div>
         <Label className="text-base font-medium text-[#06402B] mb-4 block">
-          What are your location preferences?
+          Where are you willing to travel for treatment?
         </Label>
         <div className="grid gap-4">
           {travelOptions.map((option) => {
@@ -87,6 +93,37 @@ export default function Step3Practical({ formData, updateFormData }: Step3Practi
               </div>
             )
           })}
+        </div>
+      </div>
+
+      <div>
+        <Label className="text-base font-medium text-[#06402B] mb-4 block">
+          What setting do you prefer?
+        </Label>
+        <div className="grid gap-4">
+          {environmentOptions.map((option) => (
+            <div
+              key={option.id}
+              className={`relative p-6 rounded-lg border cursor-pointer transition-all duration-300 ${
+                formData.locationType === option.id
+                  ? "border-[#06402B] bg-[#06402B]/5"
+                  : "border-[#06402B]/10 hover:border-[#06402B]/30"
+              }`}
+              onClick={() => updateFormData("locationType", option.id)}
+            >
+              <div>
+                <h3 className="text-lg font-medium text-[#06402B] mb-1">{option.label}</h3>
+                <p className="text-sm text-[#06402B]/70">{option.description}</p>
+              </div>
+              <div
+                className={`absolute inset-0 border-2 rounded-lg transition-opacity duration-300 ${
+                  formData.locationType === option.id
+                    ? "border-[#06402B] opacity-100"
+                    : "border-transparent opacity-0"
+                }`}
+              />
+            </div>
+          ))}
         </div>
       </div>
 

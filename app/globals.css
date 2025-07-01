@@ -204,3 +204,106 @@ select:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Mobile-First UX Enhancements */
+@layer utilities {
+  /* Touch-friendly interactions */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Better mobile scrolling */
+  .scroll-smooth-mobile {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Mobile text selection improvements */
+  .select-none-mobile {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  /* Mobile-optimized focus states */
+  .focus-mobile {
+    @media (max-width: 768px) {
+      outline: none;
+      ring: 3px;
+      ring-color: var(--color-primary);
+      ring-opacity: 0.5;
+    }
+  }
+}
+
+/* Mobile-Specific Media Queries */
+@media (max-width: 768px) {
+  /* Improve tap targets - minimum 44px */
+  button, 
+  a, 
+  input, 
+  textarea, 
+  select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better mobile typography */
+  body {
+    font-size: 16px; /* Prevent zoom on iOS */
+    line-height: 1.5;
+  }
+
+  /* Optimize hero sections for mobile */
+  .hero-section {
+    min-height: 100vh;
+    min-height: 100dvh; /* Use dynamic viewport height when available */
+  }
+
+  /* Mobile-specific spacing */
+  .content-section {
+    @apply py-16;
+  }
+
+  /* Better mobile image handling */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* High DPI Display Optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Crisp borders on high DPI */
+  .border {
+    border-width: 0.5px;
+  }
+}
+
+/* Dark Mode Mobile Optimizations */
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+  /* Darker backgrounds to reduce eye strain */
+  body {
+    background-color: #000000;
+  }
+}
+
+/* Mobile Safe Areas (for notched devices) */
+@supports (padding: max(0px)) {
+  .safe-area-inset-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+  
+  .safe-area-inset-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  
+  .safe-area-inset-left {
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+  
+  .safe-area-inset-right {
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}

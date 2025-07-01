@@ -52,6 +52,11 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
     loop: true,
     align: "center",
     duration: 30,
+    breakpoints: {
+      '(max-width: 768px)': {
+        align: 'start'
+      }
+    }
   })
 
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -92,30 +97,30 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
         />
       ))}
 
-      <div className="relative py-24">
+      <div className="relative py-16 md:py-24">
         {/* Section Header */}
-        <div className="text-center mb-16 px-4">
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Our Centers</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+        <div className="text-center mb-12 md:mb-16 px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-4 md:mb-6">Our Centers</h2>
+          <p className="text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
             Whether seeking treatment for yourself or a loved one, discover our most inspiring healing centers around the
             world.
           </p>
         </div>
 
         {/* Carousel */}
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
+        <div className="max-w-[1400px] mx-auto px-2 sm:px-4 md:px-6">
           <div className="overflow-visible" ref={emblaRef}>
-            <div className="flex px-16">
+            <div className="flex md:px-16 px-4">
               {centers.map((center, index) => {
                 const isSelected = selectedIndex === index
                 return (
                   <div
                     key={center.id}
-                    className="relative min-w-0 px-6 cursor-pointer flex-[0_0_500px]"
+                    className="relative min-w-0 px-2 md:px-6 cursor-pointer flex-[0_0_280px] sm:flex-[0_0_350px] md:flex-[0_0_500px] touch-manipulation"
                     onClick={() => scrollTo(index)}
                   >
                     <motion.div 
-                      className="bg-white h-[600px] overflow-hidden border-2 border-white/20"
+                      className="bg-white overflow-hidden border-2 border-white/20 h-[500px] sm:h-[550px] md:h-[600px]"
                       animate={{
                         scale: isSelected ? 1 : 0.85,
                         backgroundColor: isSelected ? "#ffffff" : "transparent",
@@ -127,9 +132,9 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
                       }}
                     >
                       {/* Header - Always visible */}
-                      <div className="h-[100px] flex items-center justify-center border-b border-black/10">
+                      <div className="h-[80px] sm:h-[90px] md:h-[100px] flex items-center justify-center border-b border-black/10 px-4">
                         <motion.h3 
-                          className="text-2xl font-serif text-center px-8"
+                          className="text-lg sm:text-xl md:text-2xl font-serif text-center leading-tight"
                           animate={{
                             color: isSelected ? "#000000" : "#ffffff",
                           }}
@@ -144,7 +149,7 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
 
                       {/* Image - Fades based on selection */}
                       <motion.div 
-                        className="h-[300px] relative"
+                        className="h-[250px] sm:h-[280px] md:h-[300px] relative"
                         animate={{
                           opacity: isSelected ? 1 : 0,
                         }}
@@ -164,7 +169,7 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
 
                       {/* Content - Fades based on selection */}
                       <motion.div 
-                        className="p-8 text-center flex flex-col items-center justify-between h-[200px]"
+                        className="p-4 sm:p-6 md:p-8 text-center flex flex-col items-center justify-between h-[170px] sm:h-[180px] md:h-[200px]"
                         animate={{
                           opacity: isSelected ? 1 : 0,
                         }}
@@ -173,10 +178,12 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
                           ease: "easeInOut"
                         }}
                       >
-                        <p className="text-base text-black/80 leading-relaxed mb-6">{center.description}</p>
+                        <p className="text-sm sm:text-base text-black/80 leading-relaxed mb-4 md:mb-6 line-clamp-3">
+                          {center.description}
+                        </p>
                         <a 
                           href={center.link}
-                          className="inline-block px-8 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition-colors uppercase text-sm tracking-wider font-medium"
+                          className="inline-block px-6 sm:px-8 py-2 sm:py-3 border-2 border-black text-black hover:bg-black hover:text-white transition-colors uppercase text-xs sm:text-sm tracking-wider font-medium touch-manipulation"
                         >
                           View Center
                         </a>
@@ -190,15 +197,16 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-center items-center mt-12 space-x-2">
+        <div className="flex justify-center items-center mt-8 md:mt-12 space-x-2 px-4">
           {scrollSnaps.map((_, index) => (
             <button
               key={index}
               className={cn(
-                "w-2 h-2 rounded-full transition-all duration-300",
+                "w-2 h-2 rounded-full transition-all duration-300 touch-manipulation",
                 selectedIndex === index ? "bg-white w-4" : "bg-white/40 hover:bg-white/60"
               )}
               onClick={() => scrollTo(index)}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
