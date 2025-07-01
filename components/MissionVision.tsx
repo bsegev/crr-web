@@ -23,41 +23,41 @@ const MissionVision = () => {
   ]
 
   return (
-    <section className="relative bg-[#F9FAF9] py-24 md:py-32 overflow-hidden">
+    <section className="relative bg-[#F9FAF9] py-20 sm:py-24 md:py-32 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute right-0 top-0 w-[800px] h-[800px] bg-[#06402B]/5 rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="absolute left-0 bottom-0 w-[600px] h-[600px] bg-[#06402B]/5 rounded-full translate-y-1/2 -translate-x-1/2" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12">
         {/* Top Content */}
         <motion.div 
-          className="mb-20 md:mb-24 text-center"
+          className="mb-16 sm:mb-20 md:mb-24 text-left sm:text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           {/* Editorial eyebrow */}
-          <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-8">
+          <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-6 sm:mb-8">
             Our Purpose
           </p>
-          <div className="w-16 h-px bg-[#06402B]/20 mx-auto mb-12"></div>
+          <div className="w-16 h-px bg-[#06402B]/20 mb-8 sm:mb-12 sm:mx-auto"></div>
 
-          <h2 className="text-4xl md:text-6xl font-light text-black leading-[1.1] tracking-[-0.02em] mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light text-black leading-[1.1] tracking-[-0.02em] mb-6 sm:mb-8">
             Guided by a
             <br />
             <span className="italic font-serif text-[#06402B]">higher purpose</span>
           </h2>
           
-          <p className="text-xl md:text-2xl font-light text-black/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-light text-black/70 max-w-3xl sm:mx-auto leading-relaxed">
             Every decision we make is anchored in our commitment to transformative care.
           </p>
         </motion.div>
 
         {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
           {cards.map((card, index) => (
             <motion.div
               key={card.title}
@@ -67,27 +67,27 @@ const MissionVision = () => {
               transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
               className="relative group"
             >
-              <div className="bg-white rounded-lg p-10 relative overflow-hidden border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-500">
+              <div className="bg-white rounded-lg p-6 sm:p-8 md:p-10 relative overflow-hidden border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-500">
                 {/* Icon Container */}
                 <div className="relative z-10">
                   <motion.div 
-                    className="relative mb-8 inline-block"
+                    className="relative mb-6 sm:mb-8 inline-block"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
                     {/* Decorative ring */}
                     <div className="absolute inset-0 border-2 border-[#06402B]/20 rounded-full transform rotate-45 group-hover:rotate-90 transition-transform duration-700" />
                     {/* Icon */}
-                    <div className="relative z-10 w-14 h-14 flex items-center justify-center">
-                      <card.icon className="w-7 h-7 text-[#06402B] transform group-hover:scale-110 transition-transform duration-500" />
+                    <div className="relative z-10 w-12 sm:w-14 h-12 sm:h-14 flex items-center justify-center">
+                      <card.icon className="w-6 sm:w-7 h-6 sm:h-7 text-[#06402B] transform group-hover:scale-110 transition-transform duration-500" />
                     </div>
                   </motion.div>
                   
-                  <h3 className="text-2xl font-light text-[#06402B] mb-4 group-hover:translate-x-1 transition-transform duration-300">
+                  <h3 className="text-xl sm:text-2xl font-light text-[#06402B] mb-3 sm:mb-4 group-hover:translate-x-1 transition-transform duration-300">
                     {card.title}
                   </h3>
                   
-                  <p className="text-lg font-light text-black/70 leading-relaxed">
+                  <p className="text-base sm:text-lg font-light text-black/70 leading-relaxed">
                     {card.description}
                   </p>
                 </div>
