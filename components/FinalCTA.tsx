@@ -17,7 +17,7 @@ const FinalCTA = () => {
           {/* Editorial eyebrow */}
           <div className="space-y-6 sm:space-y-8">
             <p className="text-sm font-light text-[#B7C9B7] tracking-widest uppercase">
-              Ready to Begin
+              Begin Your Journey
             </p>
             <div className="w-16 h-px bg-[#B7C9B7]/20 mx-auto"></div>
           </div>
@@ -75,7 +75,7 @@ const FinalCTA = () => {
           >
             <div className="w-32 h-px bg-[#B7C9B7]/10 mx-auto mb-6"></div>
             <p className="text-xs font-light text-[#B7C9B7]/40 tracking-widest uppercase">
-              Four owned centers
+              Transform With Us
             </p>
           </motion.div>
         </motion.div>
