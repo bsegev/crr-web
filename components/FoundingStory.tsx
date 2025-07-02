@@ -55,10 +55,11 @@ const FoundingStory = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                   >
-                    IWC was born from a moment of profound realization: the traditional addiction 
-                    treatment industry was failing the very families it claimed to serve. Breached 
-                    confidentiality, false promises, cookie-cutter programs, and facilities that 
-                    prioritized profit over protecting your privacy.
+                    IWC was born from a vision of what addiction treatment could become—a system 
+                    that truly serves the diverse needs of families seeking healing. Our founders 
+                    recognized that while traditional approaches had served many well, the landscape 
+                    was evolving, and families deserved more choice, more accessibility, and more 
+                    personalized care options.
                   </motion.p>
 
                   <motion.p
@@ -67,10 +68,10 @@ const FoundingStory = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                   >
-                    Our founders, having navigated this broken system with their own loved ones, 
-                    knew there had to be a better way. They envisioned centers where absolute 
-                    discretion wasn't revolutionary—it was sacred. Where complete confidentiality 
-                    wasn't optional—it was fundamental.
+                    They envisioned a network that could bring quality care into the modern era—where 
+                    complete confidentiality wasn't revolutionary, it was fundamental. Where families 
+                    could choose from clinical excellence, holistic healing, or wellness prevention, 
+                    all within environments that honor their dignity and respect their journey.
                   </motion.p>
 
                   <motion.p
@@ -79,10 +80,10 @@ const FoundingStory = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                   >
-                    Today, IWC represents that vision made real: a global network of healing 
-                    sanctuaries where dignity guides every decision, your privacy is never 
-                    compromised, and lasting transformation happens in settings that honor both 
-                    your journey and your need for utmost discretion.
+                    Today, IWC represents that vision realized: a global network of healing 
+                    sanctuaries where quality care is accessible, where choice empowers families, 
+                    and where every individual can find the approach that resonates with their 
+                    unique path to healing.
                   </motion.p>
                 </div>
               </div>
@@ -119,7 +120,7 @@ const FoundingStory = () => {
                 className="absolute -bottom-8 -left-8 bg-white rounded-xl p-6 shadow-xl max-w-sm border border-forest-light/20"
               >
                 <p className="text-lg italic font-primary text-forest-deep leading-relaxed">
-                  "We built the treatment center we wished existed—one that honors both healing and dignity."
+                  "We envisioned what addiction treatment could become—a system that truly serves diverse needs with dignity and choice."
                 </p>
                 <p className="text-sm font-light text-forest-deep/70 tracking-widest uppercase mt-4">
                   Dr. James Chen • Co-Founder

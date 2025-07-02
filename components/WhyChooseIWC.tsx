@@ -4,29 +4,29 @@ import { motion } from "framer-motion"
 
 const comparisons = [
   {
-    category: "Ownership Model",
-    iwc: "Direct ownership of four specialized centers",
-    traditional: "Referral networks and partnerships"
+    category: "Accessibility",
+    iwc: "Multiple price points and locations",
+    traditional: "Limited regional options"
   },
   {
-    category: "Quality Control",
-    iwc: "Unified standards across owned facilities",
-    traditional: "Variable quality across network providers"
-  },
-  {
-    category: "Geographic Strategy",
-    iwc: "Intentional US and Costa Rica presence",
-    traditional: "Regional or domestic-only options"
-  },
-  {
-    category: "Spectrum of Care",
-    iwc: "Clinical to holistic, accessible to luxury",
-    traditional: "Single approach or price point"
+    category: "Personalization",
+    iwc: "Spectrum of care approaches",
+    traditional: "Single methodology"
   },
   {
     category: "Transparency",
-    iwc: "No middleman fees, direct relationships",
-    traditional: "Third-party commissions and markups"
+    iwc: "Direct relationships and clear pricing",
+    traditional: "Complex referral networks"
+  },
+  {
+    category: "Choice",
+    iwc: "Clinical to holistic, accessible to luxury",
+    traditional: "One-size-fits-all approach"
+  },
+  {
+    category: "Quality Assurance",
+    iwc: "Unified standards across owned facilities",
+    traditional: "Variable quality across providers"
   }
 ]
 
@@ -43,13 +43,13 @@ const WhyChooseIWC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-6xl font-light text-black mb-6 tracking-[-0.02em] leading-[1.1]">
-            Owned, not
+            Bringing quality
             <br />
-            <span className="italic font-serif text-[#06402B]">referred</span>
+            <span className="italic font-serif text-[#06402B]">forward</span>
           </h2>
           <div className="w-16 h-px bg-black/20 mb-8"></div>
           <p className="text-xl md:text-2xl font-light text-black/70 max-w-3xl leading-relaxed">
-            We own four specialized treatment centers across the US and Costa Rica—ensuring quality, transparency, and authentic care.
+            We own four specialized treatment centers across the US and Costa Rica—advancing the standard of care and making quality accessible to more families.
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ const WhyChooseIWC = () => {
                 <div className="md:col-span-1">
                   <div className="space-y-2">
                     <div className="text-sm font-medium text-[#06402B] tracking-widest uppercase">
-                      Our Approach
+                      Our Modern Approach
                     </div>
                     <p className="text-lg md:text-xl font-light text-black leading-relaxed">
                       {comparison.iwc}
@@ -93,7 +93,7 @@ const WhyChooseIWC = () => {
                 <div className="md:col-span-1">
                   <div className="space-y-2">
                     <div className="text-sm font-medium text-black/40 tracking-widest uppercase">
-                      Industry Standard
+                      Traditional Options
                     </div>
                     <p className="text-lg md:text-xl font-light text-black/60 leading-relaxed">
                       {comparison.traditional}

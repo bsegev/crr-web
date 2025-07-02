@@ -1,0 +1,148 @@
+ABOUT PAGE MESSAGING ANALYSIS
+============================
+
+CURRENT "BROKEN SYSTEM" MESSAGING IDENTIFIED
+===========================================
+
+1. FOUNDING STORY COMPONENT (Most Problematic)
+   Location: components/FoundingStory.tsx
+   Lines: 47-67
+
+   PROBLEMATIC LANGUAGE:
+   - "the traditional addiction treatment industry was failing the very families it claimed to serve"
+   - "Breached confidentiality, false promises, cookie-cutter programs, and facilities that prioritized profit over protecting your privacy"
+   - "Our founders, having navigated this broken system with their own loved ones"
+   - "knew there had to be a better way"
+
+   ISSUES:
+   - Uses "failing" and "broken system" language
+   - Positions as adversarial to existing industry
+   - Creates negative framing around traditional approaches
+   - Implies industry-wide problems rather than opportunities for improvement
+
+2. WHY CHOOSE IWC COMPONENT (Less Problematic)
+   Location: components/WhyChooseIWC.tsx
+   Lines: 3-25
+
+   COMPARISON TABLE LANGUAGE:
+   - "Industry Standard" column creates implicit criticism
+   - "Variable quality across network providers"
+   - "Single approach or price point"
+   - "Third-party commissions and markups"
+
+   ISSUES:
+   - "Industry Standard" implies inferiority
+   - Comparison format creates "us vs them" dynamic
+   - Focuses on problems rather than opportunities
+
+RECOMMENDED REFRAMING APPROACH
+=============================
+
+CORE MESSAGING PRINCIPLES:
+1. Focus on evolution and improvement, not replacement
+2. Emphasize accessibility and choice
+3. Highlight modernization and advancement
+4. Use positive, forward-looking language
+5. Maintain sophistication and dignity
+
+PROPOSED NEW MESSAGING FRAMEWORK:
+=================================
+
+THEME: "Bringing Quality Care into the Modern Era"
+
+Key Messages:
+- "Advancing the standard of care"
+- "Making quality accessible to more families"
+- "Meeting people where they are"
+- "Bringing the system up to speed"
+- "Creating choice and personalization"
+- "Honoring individual preferences and needs"
+
+SPECIFIC REFRAMING RECOMMENDATIONS:
+==================================
+
+1. FOUNDING STORY - NEW APPROACH:
+   Current: "broken system" narrative
+   Proposed: "evolution and advancement" narrative
+
+   NEW MESSAGING:
+   "IWC was born from a vision of what addiction treatment could become—a system that truly serves the diverse needs of families seeking healing. Our founders recognized that while traditional approaches had served many well, the landscape was evolving, and families deserved more choice, more accessibility, and more personalized care options."
+
+   "They envisioned a network that could bring quality care into the modern era—where complete confidentiality wasn't revolutionary, it was fundamental. Where families could choose from clinical excellence, holistic healing, or wellness prevention, all within environments that honor their dignity and respect their journey."
+
+   "Today, IWC represents that vision realized: a global network of healing sanctuaries where quality care is accessible, where choice empowers families, and where every individual can find the approach that resonates with their unique path to healing."
+
+2. WHY CHOOSE IWC - NEW APPROACH:
+   Current: "Industry Standard" vs "Our Approach"
+   Proposed: "Traditional Options" vs "Modern Choice"
+
+   NEW COMPARISON FRAMEWORK:
+   - "Traditional Options" (neutral, respectful)
+   - "Our Modern Approach" (evolutionary, not replacement)
+   - Focus on benefits and choices rather than problems
+
+   NEW COMPARISON POINTS:
+   - "Accessibility": "Multiple price points and locations" vs "Limited regional options"
+   - "Personalization": "Spectrum of care approaches" vs "Single methodology"
+   - "Transparency": "Direct relationships and clear pricing" vs "Complex referral networks"
+   - "Choice": "Clinical to holistic, accessible to luxury" vs "One-size-fits-all approach"
+
+3. OVERALL TONE SHIFT:
+   From: "The system is broken, we're fixing it"
+   To: "The system is evolving, we're advancing it"
+
+   From: "Traditional approaches are failing"
+   To: "Families deserve more choice and accessibility"
+
+   From: "We're different from the industry"
+   To: "We're bringing the industry forward"
+
+IMPLEMENTATION STRATEGY:
+=======================
+
+1. REPLACE "BROKEN SYSTEM" LANGUAGE:
+   - "failing" → "evolving"
+   - "broken system" → "traditional approaches"
+   - "industry problems" → "opportunities for advancement"
+   - "cookie-cutter" → "one-size-fits-all" (then reframe to "personalized")
+
+2. SHIFT FROM PROBLEM TO OPPORTUNITY:
+   - Focus on what families deserve, not what's wrong
+   - Emphasize choice and accessibility
+   - Highlight modernization and advancement
+
+3. MAINTAIN SOPHISTICATION:
+   - Keep the dignified, premium tone
+   - Use sophisticated language that matches your verbal identity
+   - Avoid simplistic "one-size-fits-all" language in favor of "personalized approaches"
+
+4. EMPHASIZE DIVERSITY OF OPTIONS:
+   - "Multiple centers with different focuses"
+   - "Spectrum of care from clinical to holistic"
+   - "Accessible to luxury price points"
+   - "Meeting people where they are"
+
+VERBAL IDENTITY CONSIDERATIONS:
+==============================
+
+AVOID:
+- "Modernization" (too technical)
+- "One-size-fits-all" (too simplistic)
+- "Broken" or "failing" (too negative)
+- "Industry standard" (implies inferiority)
+
+EMBRACE:
+- "Advancing care"
+- "Bringing quality forward"
+- "Making excellence accessible"
+- "Honoring individual journeys"
+- "Creating meaningful choice"
+- "Meeting diverse needs"
+
+NEXT STEPS:
+===========
+1. Rewrite FoundingStory component with new messaging
+2. Update WhyChooseIWC comparison framework
+3. Review other components for any remaining "broken system" language
+4. Test new messaging for tone and sophistication
+5. Ensure consistency across all About page components 
