@@ -44,39 +44,34 @@ export default function GetHelpNext() {
               Our centers offer personalized treatment programs designed to support your unique path to recovery.
             </p>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="pt-8 space-x-6"
-            >
-              <Link href="/find-your-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center pt-8">
+              <Link href="/find-your-center" className="w-full sm:w-auto">
                 <motion.button 
-                  className="group relative text-white text-sm tracking-widest uppercase font-medium"
+                  className="group relative text-forest-extra-dark text-sm tracking-widest uppercase font-secondary font-bold w-full touch-manipulation"
+                  style={{ letterSpacing: '0.02em' }}
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <span className="relative z-10 px-12 py-4 block">Find Your Center</span>
-                  <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
-                  <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+                  <span className="relative z-10 px-8 sm:px-10 py-4 block bg-stone-extra-light text-forest-extra-dark">Find Your Center</span>
+                  <div className="absolute inset-0 bg-stone-extra-light group-hover:bg-stone-light transition-all duration-300"></div>
                 </motion.button>
               </Link>
-
-              <Link href="/contact">
+              
+              <Link href="/contact" className="w-full sm:w-auto">
                 <motion.button 
-                  className="group relative text-white text-sm tracking-widest uppercase font-medium"
+                  className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold w-full touch-manipulation"
+                  style={{ letterSpacing: '0.02em' }}
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <span className="relative z-10 px-12 py-4 block flex items-center">
+                  <span className="relative z-10 px-8 sm:px-10 py-4 block flex items-center justify-center">
                     Contact Us <ArrowRight className="ml-2 w-4 h-4" />
                   </span>
-                  <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
-                  <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+                  <div className="absolute inset-0 border border-stone-light/30 group-hover:border-stone-light/60 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
                 </motion.button>
               </Link>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
