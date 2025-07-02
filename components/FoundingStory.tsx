@@ -68,7 +68,7 @@ const FoundingStory = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                   >
-                    They envisioned a network that could bring quality care into the modern era—where 
+                    We envisioned a network that could bring quality care into the modern era—where 
                     complete confidentiality wasn't revolutionary, it was fundamental. Where families 
                     could choose from clinical excellence, holistic healing, or wellness prevention, 
                     all within environments that honor their dignity and respect their journey.
@@ -123,7 +123,7 @@ const FoundingStory = () => {
                   "We envisioned what addiction treatment could become—a system that truly serves diverse needs with dignity and choice."
                 </p>
                 <p className="text-sm font-light text-forest-deep/70 tracking-widest uppercase mt-4">
-                  Dr. James Chen • Co-Founder
+                  Scott Huseby • Co-Founder
                 </p>
               </motion.div>
             </motion.div>

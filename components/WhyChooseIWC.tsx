@@ -4,29 +4,29 @@ import { motion } from "framer-motion"
 
 const comparisons = [
   {
-    category: "Accessibility",
-    iwc: "Multiple price points and locations",
-    traditional: "Limited regional options"
+    category: "Ownership Model",
+    iwc: "Direct ownership of four specialized centers",
+    traditional: "Referral networks and partnerships"
   },
   {
-    category: "Personalization",
-    iwc: "Spectrum of care approaches",
-    traditional: "Single methodology"
+    category: "Geographic Diversity",
+    iwc: "Intentional US and Costa Rica presence",
+    traditional: "Regional or domestic-only options"
+  },
+  {
+    category: "Spectrum of Care",
+    iwc: "Clinical to holistic, accessible to luxury",
+    traditional: "Single approach or price point"
   },
   {
     category: "Transparency",
-    iwc: "Direct relationships and clear pricing",
-    traditional: "Complex referral networks"
+    iwc: "No middleman fees, direct relationships",
+    traditional: "Third-party commissions and markups"
   },
   {
-    category: "Choice",
-    iwc: "Clinical to holistic, accessible to luxury",
-    traditional: "One-size-fits-all approach"
-  },
-  {
-    category: "Quality Assurance",
+    category: "Quality Control",
     iwc: "Unified standards across owned facilities",
-    traditional: "Variable quality across providers"
+    traditional: "Variable quality across network providers"
   }
 ]
 
