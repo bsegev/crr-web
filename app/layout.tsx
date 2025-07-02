@@ -41,5 +41,12 @@ export default function RootLayout({
 }
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  title: 'IWC - International Wellness Collective',
+  description: 'Transformative healing experiences delivered with absolute discretion and dignity. Four distinctive centers offering trauma-informed care, addiction recovery, and holistic healing.',
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
+};

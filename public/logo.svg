@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with forest-extra-dark color -->
+  <circle cx="24" cy="24" r="24" fill="#1a3a2e"/>
+  
+  <!-- Outer circle border (white, 2px stroke) -->
+  <circle cx="24" cy="24" r="12" fill="none" stroke="white" stroke-width="2"/>
+  
+  <!-- Inner circle border (white, 1px stroke) -->
+  <circle cx="24" cy="24" r="8" fill="none" stroke="white" stroke-width="1"/>
+</svg> 
