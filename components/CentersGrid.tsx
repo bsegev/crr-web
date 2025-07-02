@@ -152,7 +152,7 @@ export default function CentersGrid({ centers }: CentersGridProps) {
                       <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <Link href={`/centers/${center.id}`} className="flex-1">
                           <Button variant="default" className="w-full bg-[#06402B] hover:bg-[#06402B]/90 text-sm py-2.5 sm:py-3 touch-manipulation">
-                            Learn More
+                            View Details
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Button>
                         </Link>
