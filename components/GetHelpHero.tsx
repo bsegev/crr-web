@@ -145,13 +145,13 @@ export default function GetHelpHero() {
                                   {contact.text}
                                 </div>
                                 <div className={`shrink-0 inline-flex px-3 py-1 rounded-full text-xs ${
-                                  contact.isText 
-                                    ? 'bg-[#B7C9B7]/20 text-[#B7C9B7]' 
+                                    contact.isText 
+                                      ? 'bg-[#B7C9B7]/20 text-[#B7C9B7]' 
                                     : contact.urgent
                                       ? 'bg-red-500/30 text-red-200'
                                       : 'bg-red-500/20 text-red-300'
-                                }`}>
-                                  {contact.isText ? 'Text' : 'Call Now'}
+                                  }`}>
+                                    {contact.isText ? 'Text' : 'Call Now'}
                                 </div>
                               </div>
                               <p className="text-sm text-red-200/70 mt-0.5 line-clamp-1">

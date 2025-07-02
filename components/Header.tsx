@@ -36,7 +36,7 @@ const Header = () => {
             <div className="flex items-center space-x-3">
               <div className={`w-12 h-12 rounded-full ${
                 isScrolled 
-                  ? 'bg-[#06402B] group-hover:bg-[#06402B]/90' 
+                  ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
                   : 'bg-white/20 backdrop-blur-sm'
               } flex items-center justify-center transition-colors`}>
                 <div className={`w-6 h-6 border-2 ${
@@ -47,9 +47,9 @@ const Header = () => {
                   } rounded-full`}></div>
                 </div>
               </div>
-              <span className={`text-2xl font-light tracking-wide transition-colors ${
-                isScrolled ? 'text-[#06402B]' : 'text-white'
-              } group-hover:text-[#B7C9B7]`}>
+              <span className={`text-2xl font-primary font-light tracking-wide transition-colors ${
+                isScrolled ? 'text-forest-extra-dark' : 'text-white'
+              } group-hover:text-stone-light`}>
                 IWC
               </span>
             </div>
@@ -61,8 +61,8 @@ const Header = () => {
               <Link 
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-light tracking-wide uppercase transition-colors hover:text-[#B7C9B7] ${
-                  isScrolled ? 'text-[#06402B]/80' : 'text-white/90'
+                className={`text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-stone-light ${
+                  isScrolled ? 'text-forest-extra-dark/80' : 'text-white/90'
                 }`}
               >
                 {item.label}
@@ -72,19 +72,20 @@ const Header = () => {
             {/* CTA Button */}
             <Link href="/get-help">
               <motion.button 
-                className={`group relative text-sm tracking-widest uppercase font-medium transition-all duration-300 ${
+                className={`group relative text-sm tracking-widest uppercase font-secondary font-bold transition-all duration-300 ${
                   isScrolled 
                     ? 'text-white' 
-                    : 'text-[#06402B]'
+                    : 'text-forest-extra-dark'
                 }`}
+                style={{ letterSpacing: '0.02em' }}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="relative z-10 px-8 py-3 block">Get Help</span>
+                <span className="relative z-10 px-8 py-3 block">For Hope and Healing</span>
                 <div className={`absolute inset-0 transition-all duration-300 ${
                   isScrolled 
-                    ? 'bg-[#06402B] group-hover:bg-[#06402B]/90' 
-                    : 'bg-white/90 group-hover:bg-white border border-white/30'
+                    ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
+                    : 'bg-stone-extra-light group-hover:bg-stone-light border border-stone-light/30'
                 }`}></div>
               </motion.button>
             </Link>
@@ -93,7 +94,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             className={`md:hidden p-2 transition-colors ${
-              isScrolled ? 'text-[#06402B]' : 'text-white'
+              isScrolled ? 'text-forest-extra-dark' : 'text-white'
             }`}
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open menu"
@@ -117,26 +118,26 @@ const Header = () => {
             />
             
             {/* Drawer */}
-            <motion.div
+        <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
               className="fixed top-0 right-0 bottom-0 w-[300px] bg-white shadow-2xl z-50 md:hidden"
-            >
+        >
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-[#06402B] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-forest-extra-dark flex items-center justify-center">
                     <div className="w-5 h-5 border-2 border-white rounded-full relative">
                       <div className="absolute inset-1 border border-white rounded-full"></div>
                     </div>
                   </div>
-                  <span className="text-xl font-light tracking-wide text-[#06402B]">IWC</span>
+                  <span className="text-xl font-primary font-light tracking-wide text-forest-extra-dark">IWC</span>
                 </div>
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 text-gray-500 hover:text-[#06402B] transition-colors"
+                  className="p-2 text-gray-500 hover:text-forest-extra-dark transition-colors"
                   aria-label="Close menu"
                 >
                   <X className="h-5 w-5" />
@@ -148,18 +149,18 @@ const Header = () => {
                 {/* Navigation Links */}
                 <nav className="space-y-6">
                   {menuItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
+              <Link 
+                key={item.href}
+                href={item.href}
                       className="flex items-center justify-between group py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <span className="text-base text-gray-600 group-hover:text-[#06402B] transition-colors">
-                        {item.label}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                      <span className="text-base font-secondary text-gray-600 group-hover:text-forest-extra-dark transition-colors">
+                {item.label}
                       </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-[#06402B] transition-colors" />
-                    </Link>
-                  ))}
+                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-forest-extra-dark transition-colors" />
+              </Link>
+            ))}
                 </nav>
 
                 {/* Divider */}
@@ -173,19 +174,20 @@ const Header = () => {
                     className="block"
                   >
                     <motion.button 
-                      className="w-full bg-[#06402B] text-white py-4 px-6 text-sm uppercase tracking-wider font-medium hover:bg-[#06402B]/90 transition-colors"
+                      className="w-full bg-forest-extra-dark text-white py-4 px-6 text-sm uppercase tracking-wider font-secondary font-bold hover:bg-forest-extra-dark/90 transition-colors"
+                      style={{ letterSpacing: '0.02em' }}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
                     >
-                      Get Help Now
+                      For Hope and Healing
                     </motion.button>
-                  </Link>
-                  <p className="text-xs text-gray-500 text-center">
-                    Available 24/7 • Confidential Support
+            </Link>
+                  <p className="text-xs font-secondary text-gray-500 text-center">
+                    Absolute discretion • Utmost dignity • Complete confidentiality
                   </p>
                 </div>
-              </div>
-            </motion.div>
+          </div>
+        </motion.div>
           </>
         )}
       </AnimatePresence>

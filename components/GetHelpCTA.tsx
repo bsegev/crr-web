@@ -30,13 +30,13 @@ export default function GetHelpCTA() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
             <Link href="tel:5551234567" className="w-full sm:w-auto">
-              <Button
-                size="lg"
+            <Button
+              size="lg"
                 className="bg-white text-[#06402B] hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 h-14 w-full px-8 sm:px-10 text-base sm:text-lg font-semibold"
-              >
-                <Phone className="mr-3 h-5 w-5" />
-                Call Now: (555) 123-4567
-              </Button>
+            >
+              <Phone className="mr-3 h-5 w-5" />
+              Call Now: (555) 123-4567
+            </Button>
             </Link>
             <Link href="/contact" className="w-full sm:w-auto">
               <Button

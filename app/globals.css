@@ -5,13 +5,35 @@
 /* Design System */
 @layer base {
   :root {
-    /* Core Colors */
-    --color-primary: #2E7D6B;
-    --color-primary-light: #B7C9B7;
-    --color-primary-dark: #06402B;
-    --color-secondary: #CFE3DB;
-    --color-secondary-light: #F7F9F8;
-    --color-secondary-dark: #58605E;
+    /* El Tirol Brand Colors */
+    /* Stone Palette */
+    --color-stone-extra-light: #F1EDE4;
+    --color-stone-light: #E8E1D5;
+    --color-stone: #D4C7B4;
+    --color-stone-dark: #A89B85;
+    --color-stone-extra-dark: #223A39;
+    
+    /* Forest Palette */
+    --color-forest-extra-light: #ECF0DF;
+    --color-forest-light: #D4E0C1;
+    --color-forest: #A8C584;
+    --color-forest-dark: #4A7C59;
+    --color-forest-extra-dark: #0E522C;
+    
+    /* Water Palette */
+    --color-water-extra-light: #D7F8F0;
+    --color-water-light: #B8F0E4;
+    --color-water: #7FE0CC;
+    --color-water-dark: #3ABAA3;
+    --color-water-extra-dark: #13534C;
+    
+    /* Legacy mappings for compatibility */
+    --color-primary: var(--color-forest-dark);
+    --color-primary-light: var(--color-forest-light);
+    --color-primary-dark: var(--color-forest-extra-dark);
+    --color-secondary: var(--color-stone);
+    --color-secondary-light: var(--color-stone-extra-light);
+    --color-secondary-dark: var(--color-stone-dark);
     
     /* Semantic Colors */
     --color-success: #2E7D6B;
@@ -31,9 +53,11 @@
     --ring: #2E7D6B;
     --radius: 0.75rem;
 
-    /* Typography */
-    --font-sans: var(--font-inter);
-    --font-serif: var(--font-playfair);
+    /* Typography - El Tirol Brand Fonts */
+    --font-primary: var(--font-quadrant); /* Quadrant Text for headlines */
+    --font-secondary: var(--font-messina); /* Messina Sans for body/buttons */
+    --font-sans: var(--font-messina);
+    --font-serif: var(--font-quadrant);
     --line-height-tight: 1.1;
     --line-height-normal: 1.5;
     --line-height-relaxed: 1.75;

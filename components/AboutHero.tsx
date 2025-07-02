@@ -52,8 +52,8 @@ const AboutHero = () => {
 
     const updateImages = () => {
       const shuffled = shuffleArray(allPhotos)
-      // For mobile background grid: 20 images (2x10); desktop: 15 images
-      const gridImageCount = isMobile ? 20 : 15
+      // For mobile background grid: 16 images (2x8); desktop: 15 images
+      const gridImageCount = isMobile ? 16 : 15
       const gridImages = shuffled.length >= gridImageCount 
         ? shuffled.slice(0, gridImageCount)
         : [...shuffled, ...shuffled, ...shuffled].slice(0, gridImageCount)
@@ -93,24 +93,24 @@ const AboutHero = () => {
   }, [allPhotos, isMobile])
 
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden">
+    <section className="relative min-h-screen bg-stone-extra-light overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0">
         {/* Desktop: Full ImageGrid animation */}
         <div className="hidden md:block">
-          {currentImages.length === 15 && <ImageGrid images={currentImages} interval={6000} />}
+      {currentImages.length === 15 && <ImageGrid images={currentImages} interval={6000} />}
         </div>
         
-        {/* Mobile: 2x10 static background grid */}
+        {/* Mobile: 2x8 static background grid */}
         <div className="md:hidden">
-          {currentImages.length >= 20 && (
+          {currentImages.length >= 16 && (
             <div className="absolute inset-0 grid grid-cols-2 gap-1 p-3">
-              {currentImages.slice(0, 20).map((image, index) => (
+              {currentImages.slice(0, 16).map((image, index) => (
                 <motion.div
                   key={`${image.src}-${index}`}
                   className="relative aspect-square overflow-hidden rounded-lg"
                   initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 0.4, scale: 1 }}
+                  animate={{ opacity: 0.6, scale: 1 }}
                   transition={{ 
                     duration: 1,
                     delay: index * 0.03,
@@ -120,21 +120,21 @@ const AboutHero = () => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover grayscale"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="absolute inset-0 bg-black/30" />
                 </motion.div>
               ))}
             </div>
           )}
-          {/* Mobile gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70" />
+          {/* Mobile dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/90" />
         </div>
       </div>
 
       {/* Content */}
-      <div className="relative z-20 h-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-20 sm:py-24 md:py-32">
+      <div className="relative z-20 h-full md:absolute md:inset-0 md:flex md:items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-20 sm:py-24 md:py-32 md:w-full">
           <div className="max-w-xl space-y-6 sm:space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -142,13 +142,13 @@ const AboutHero = () => {
               transition={{ duration: 0.8 }}
               className="space-y-3 sm:space-y-4"
             >
-              <p className="text-sm font-light text-[#B7C9B7] tracking-widest uppercase">
-                Our Team
+              <p className="text-sm font-light text-forest-light tracking-widest uppercase">
+                Nourished by Nature
               </p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-[-0.02em]">
-                The faces of
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-primary text-white leading-[1.1] tracking-[-0.02em]">
+                Dedicated to
                 <br />
-                <span className="italic font-serif text-[#B7C9B7]">compassion</span>
+                <span className="italic text-forest-light">your wellbeing</span>
               </h1>
             </motion.div>
 
@@ -158,9 +158,9 @@ const AboutHero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl md:text-2xl font-light text-white/90 leading-relaxed"
             >
-              Our team brings together decades of experience in trauma-informed care, 
-              addiction recovery, and holistic healing. Each member is dedicated to 
-              walking alongside you on your journey to wellness.
+              Our experienced team brings together the best in trauma-informed care, 
+              addiction recovery, and holistic healing. We're here to support your 
+              journey with respect and understanding.
             </motion.p>
 
             <motion.div
@@ -170,9 +170,9 @@ const AboutHero = () => {
             >
               <Link href="/get-help" className="inline-block">
                 <button className="group relative text-white text-sm tracking-widest uppercase font-medium touch-manipulation">
-                  <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Meet Our Team</span>
-                  <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
-                  <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+                  <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">For Hope and Healing</span>
+                  <div className="absolute inset-0 border border-forest-light/30 group-hover:border-forest-light/60 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-forest-light/5 group-hover:bg-forest-light/10 transition-all duration-300"></div>
                 </button>
               </Link>
             </motion.div>
@@ -203,14 +203,14 @@ const AboutHero = () => {
                       }}
                     />
                   </AnimatePresence>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-darkest/20 via-transparent to-transparent" />
                 </div>
                 {/* Subtle caption */}
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
-                  className="text-center text-white/60 text-sm mt-4 font-light"
+                  className="text-center text-stone-darker text-sm mt-4 font-light"
                 >
                   One of our dedicated team members
                 </motion.p>
@@ -222,7 +222,7 @@ const AboutHero = () => {
 
       {/* Elegant scroll indicator - hidden on mobile */}
       <div className="absolute bottom-8 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-10 hidden sm:block">
-        <ScrollIndicator color="light" />
+        <ScrollIndicator color="dark" />
       </div>
     </section>
   )

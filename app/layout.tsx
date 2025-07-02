@@ -3,16 +3,25 @@ import "./globals.css"
 import { Inter, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
+// El Tirol Brand Font Alternatives
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
 })
 
-const playfair = Playfair_Display({
+// Playfair Display - closest free alternative to Quadrant Text
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-playfair",
+  variable: "--font-quadrant",
+})
+
+// Inter - clean alternative for Messina Sans body/button text
+const messinaSans = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-messina",
 })
 
 export default function RootLayout({
@@ -21,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${messinaSans.variable}`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

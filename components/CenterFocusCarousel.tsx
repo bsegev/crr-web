@@ -49,7 +49,7 @@ const BackgroundImage = ({ src, isVisible }: { src: string; isVisible: boolean }
 
 export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
+    loop: false,
     align: "center",
     duration: 30,
     breakpoints: {
@@ -64,13 +64,33 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
 
   const scrollTo = useCallback((index: number) => {
     if (!emblaApi) return
-    emblaApi.scrollTo(index)
-  }, [emblaApi])
+    const n = centers.length
+    const targetIndex = (index + n) % n
+    setSelectedIndex(targetIndex)
+    emblaApi.scrollTo(targetIndex)
+  }, [emblaApi, centers.length])
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return
-    setSelectedIndex(emblaApi.selectedScrollSnap())
-  }, [emblaApi])
+    const currentSnap = emblaApi.selectedScrollSnap()
+    const n = centers.length
+    const wrappedIndex = (currentSnap + n) % n
+    setSelectedIndex(wrappedIndex)
+  }, [emblaApi, centers.length])
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return
+    const n = centers.length
+    const nextIndex = (selectedIndex + 1 + n) % n
+    scrollTo(nextIndex)
+  }, [emblaApi, centers.length, selectedIndex, scrollTo])
+
+  const scrollPrev = useCallback(() => {
+    if (!emblaApi) return
+    const n = centers.length
+    const prevIndex = (selectedIndex - 1 + n) % n
+    scrollTo(prevIndex)
+  }, [emblaApi, centers.length, selectedIndex, scrollTo])
 
   useEffect(() => {
     if (!emblaApi) return
@@ -86,8 +106,24 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
     }
   }, [emblaApi, onSelect])
 
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault()
+        scrollPrev()
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault()
+        scrollNext()
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [scrollNext, scrollPrev])
+
   return (
-    <section className="relative w-screen bg-black overflow-hidden">
+    <section className="relative w-full bg-black overflow-hidden">
       {/* Background Images */}
       {centers.map((center, index) => (
         <BackgroundImage
@@ -108,15 +144,15 @@ export default function CenterFocusCarousel({ centers }: CenterFocusCarouselProp
         </div>
 
         {/* Carousel */}
-        <div className="max-w-[1400px] mx-auto px-2 sm:px-4 md:px-6">
-          <div className="overflow-visible" ref={emblaRef}>
-            <div className="flex md:px-16 px-4">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
               {centers.map((center, index) => {
                 const isSelected = selectedIndex === index
                 return (
                   <div
                     key={center.id}
-                    className="relative min-w-0 px-2 md:px-6 cursor-pointer flex-[0_0_280px] sm:flex-[0_0_350px] md:flex-[0_0_500px] touch-manipulation"
+                    className="relative min-w-0 px-3 sm:px-4 md:px-6 cursor-pointer flex-[0_0_280px] sm:flex-[0_0_350px] md:flex-[0_0_500px] touch-manipulation"
                     onClick={() => scrollTo(index)}
                   >
                     <motion.div 

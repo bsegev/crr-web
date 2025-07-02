@@ -25,38 +25,65 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // El Tirol Brand Palette
+        stone: {
+          "extra-light": "var(--color-stone-extra-light)",
+          light: "var(--color-stone-light)",
+          DEFAULT: "var(--color-stone)",
+          dark: "var(--color-stone-dark)",
+          "extra-dark": "var(--color-stone-extra-dark)",
+        },
+        forest: {
+          "extra-light": "var(--color-forest-extra-light)",
+          light: "var(--color-forest-light)",
+          DEFAULT: "var(--color-forest)",
+          dark: "var(--color-forest-dark)",
+          "extra-dark": "var(--color-forest-extra-dark)",
+        },
+        water: {
+          "extra-light": "var(--color-water-extra-light)",
+          light: "var(--color-water-light)",
+          DEFAULT: "var(--color-water)",
+          dark: "var(--color-water-dark)",
+          "extra-dark": "var(--color-water-extra-dark)",
+        },
+        
+        // Legacy compatibility
         primary: {
-          DEFAULT: "#2E7D6B",
-          foreground: "#F7F9F8",
+          DEFAULT: "var(--color-forest-dark)",
+          foreground: "var(--color-stone-extra-light)",
         },
         secondary: {
-          DEFAULT: "#CFE3DB",
-          foreground: "#58605E",
+          DEFAULT: "var(--color-stone)",
+          foreground: "var(--color-stone-dark)",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#F7F9F8",
-          foreground: "#58605E",
+          DEFAULT: "var(--color-stone-extra-light)",
+          foreground: "var(--color-stone-dark)",
         },
         accent: {
-          DEFAULT: "#CFE3DB",
-          foreground: "#58605E",
+          DEFAULT: "var(--color-stone)",
+          foreground: "var(--color-stone-dark)",
         },
         popover: {
-          DEFAULT: "#F7F9F8",
-          foreground: "#58605E",
+          DEFAULT: "var(--color-stone-extra-light)",
+          foreground: "var(--color-stone-dark)",
         },
         card: {
-          DEFAULT: "#F7F9F8",
-          foreground: "#58605E",
+          DEFAULT: "var(--color-stone-extra-light)",
+          foreground: "var(--color-stone-dark)",
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        serif: ["var(--font-playfair)"],
+        primary: ["var(--font-quadrant)", "serif"], // Quadrant Text for headlines
+        secondary: ["var(--font-messina)", "sans-serif"], // Messina Sans for body/buttons
+        sans: ["var(--font-messina)", "sans-serif"],
+        serif: ["var(--font-quadrant)", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

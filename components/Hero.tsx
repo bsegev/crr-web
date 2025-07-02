@@ -20,7 +20,7 @@ const Hero = () => {
     return () => clearInterval(interval)
   }, [images.length])
 
-  const textHighlight = "text-[#B7C9B7]"
+  const textHighlight = "text-stone-light"
 
   return (
     <section className="relative h-screen w-full overflow-hidden bg-black">
@@ -42,22 +42,30 @@ const Hero = () => {
       {/* Left-aligned, refined editorial text */}
       <div className="absolute inset-0 flex items-center z-10">
         <div className="max-w-3xl ml-4 sm:ml-8 md:ml-12 lg:ml-24 px-4 sm:px-0">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 sm:mb-8 md:mb-10 tracking-[-0.01em] leading-[1.1]">
-            Healing
-            <br />
-            <span className={`${textHighlight} italic font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl`}>without</span>
-            <br />
-            borders
-          </h1>
-          
-          <p className="text-lg sm:text-xl md:text-2xl font-light text-white/90 max-w-lg mb-8 sm:mb-12 md:mb-14 leading-relaxed">
-            The world's most transformative wellness experiences, curated for your unique journey.
+          {/* El Tirol inspired eyebrow */}
+          <p className="text-sm font-light text-white/60 tracking-widest uppercase mb-4">
+            Purpose. Wellness. Possibility.
           </p>
           
-          <button className="group relative text-white text-sm tracking-widest uppercase font-medium touch-manipulation">
-            <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Begin Journey</span>
-            <div className="absolute inset-0 border border-[#B7C9B7] border-opacity-30 group-hover:border-opacity-60 transition-all duration-300"></div>
-            <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-primary font-light text-white mb-6 sm:mb-8 md:mb-10 tracking-[-0.01em] leading-[1.1]">
+            This is
+            <br />
+            <span className={`${textHighlight} italic font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl`}>nature's grace</span>
+          </h1>
+          
+          <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-white/90 max-w-lg mb-6 leading-relaxed">
+            Transformative healing experiences delivered with absolute discretion and dignity.
+          </p>
+          
+          {/* Enhanced discretion messaging */}
+          <p className="text-sm font-light text-white/70 max-w-md mb-8 sm:mb-12 md:mb-14 leading-relaxed">
+            Complete confidentiality • Utmost discretion • Safe harbor for healing
+          </p>
+          
+          <button className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold touch-manipulation" style={{ letterSpacing: '0.02em' }}>
+            <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">For Hope and Healing</span>
+            <div className="absolute inset-0 border border-stone-light border-opacity-30 group-hover:border-opacity-60 transition-all duration-300"></div>
+            <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
           </button>
         </div>
       </div>
@@ -72,7 +80,7 @@ const Hero = () => {
         {images.map((_, index) => (
           <div
             key={index}
-            className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${currentImage === index ? "bg-[#B7C9B7]" : "bg-white bg-opacity-50"}`}
+            className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${currentImage === index ? "bg-stone-light" : "bg-white bg-opacity-50"}`}
           />
         ))}
       </div>
