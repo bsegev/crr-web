@@ -1,0 +1,124 @@
+El Tirol – Consolidated Brand Identity
+(based exclusively on the 88-page guidelines PDF)
+
+1. Brand Core
+Element	Essence
+Brand Idea	Nature’s grace / Roots of renewal – healing powered by Costa Rica’s extraordinary environment and the growth that follows renewal. 
+Context	Luxury rehab sector is dominated by clinical, US-based centers; discerning guests now seek holistic, nature-based recovery delivered with true privacy. 
+Proposition	A 90-day, world-class recovery ecosystem that blends modernized 12-step, evidence-based psychotherapy and holistic wellness, culminating in a 5-day Blue-Zone yoga retreat. 
+Audience	1) High-achieving, affluent individuals needing discreet, transformative care 2) Their sophisticated advocates/loved ones. 
+
+2. Personality Pillars
+Pillar	Rationale
+Beauty	Healing accelerates in surroundings that celebrate nature and design excellence. 
+Wisdom	Marries timeless recovery principles with cutting-edge therapeutic expertise. 
+Trust	Absolute discretion, dignity and clinical rigor build a safe “home” for guests. 
+Purpose	Recovery is sustained when guests reconnect to personal meaning and to the wider Move Forward, Give Back community mission. 
+
+3. Verbal Identity & Tone of Voice
+Guiding Principle	Expression
+Natural Beauty	Authentic, gracious, earth-connected language.
+Premium Understatement	Measured warmth, calm assurance, knowledge over claims; no hype.
+Gentle Structure	Clear frameworks delivered with hopeful, mindful pacing. 
+
+Key Message Pillars
+
+Clinical & Medical Excellence
+
+Personalized Paths
+
+Utmost Discretion
+
+Holistic Transformation
+
+Power of Place
+
+Dignity of Time
+
+Evolve through Education
+
+A Vision for Living 
+
+Sample Expressive Headlines
+
+Purpose. Wellness. Possibility.
+
+For hope and healing.
+
+This is nature’s grace. 
+
+4. Visual Identity
+4.1 Logo System
+Version	Use-case	Min Size	Exclusion Zone
+Primary Wordmark	All standard comms	100 px / 20 mm	“O” height (x) around logo
+Secondary Lock-up
+(incl. location + descriptor)	Awareness pieces, large formats	300 px / 50 mm	Same “O” rule
+Monogram “ET”	Favicons, social avatars, internal signage	30 px / 5 mm	Width of bottom serif of “T”
+
+Allowed logo colours: any from Stone, Forest or Water palettes except Stone, Dark Forest, Dark Water; ensure WCAG contrast. 
+
+4.2 Typography
+Role	Typeface	Notes
+Primary	Quadrant Text (Regular & Italic)	Headlines, sub-heads; all-caps or sentence case.
+Secondary	Messina Sans (Regular, Semi Bold, Bold + italics)	Body copy, CTAs; uppercase for buttons with slight letter-spacing.
+Hierarchy	Combine size/weight, not colour, to signal importance; reserve Quadrant Text for long‐form print body only. 
+
+4.3 Colour Palette
+Group	Swatch Range	HEX example
+Stone	Extra Light → Extra Dark	#F1EDE4 → #223A39
+Forest	Extra Light → Extra Dark	#ECF0DF → #0E522C
+Water	Extra Light → Extra Dark	#D7F8F0 → #13534C
+
+Rules :
+
+Use black only for text, never as a background.
+
+No gradients, tints, translucency or off-palette colours.
+
+Follow AAA/AA WCAG matrix for text contrast. 
+
+4.4 Graphic Assets – Watercolour Pebbles
+Built from 7 base vector “pebbles”; 12 approved multi-pebble combos.
+
+Coloured only with Watercolour Palette inspired by Hydrangea, Roots, Poro Tree, Sunshine, Roble Sabana.
+
+Use multiply blend; maintain generous clear space; never over photographs, never create new combos, patterns or tints. 
+
+4.5 Photography & Art Direction
+Category	Look & Feel
+Nature	Lush, serene landscapes conveying Costa Rican mountains, forests & coastline.
+People	Warm, authentic moments; no guest photography; staff/actors only.
+Site	Architecture & interiors highlighting privacy and design detail.
+
+Overall style: soft light, inviting warmth, mix of colour + black-and-white; hero the subject, avoid clutter. 
+
+5. Accessibility & Misuse Check-list
+Do	Don’t
+Keep logo clear space & minimum sizes	Rotate, outline, stretch or shadow the logo
+Maintain WCAG AA/AAA colour contrast	Use gradients or off-palette colours
+Use Quadrant Text for headlines only	Set large bodies of copy in all-caps
+Apply approved pebble combos with multiply	Layer pebbles, recolour them, place over images
+
+6. Signature Taglines & Calls-to-Action
+Central lines: Purpose. Wellness. Possibility. / Your way back to wellness.
+
+Section tags: Find your strength. · Nourished by nature. · Centered in Stillness.
+Use sparingly; pair with imagery and generous whitespace. 
+
+7. Quick-Reference Cheat Sheet
+Item	Spec
+Buttons	Messina Sans Bold, UPCASE, 2 % letter-spacing, Dark Forest on Extra Light Stone
+Body copy (web)	Messina Sans Regular 16 pt, Stone on Extra Light Stone
+Social tile	1080 × 1080 px; Quadrant Text 40 pt centred; use one watercolour pebble as focal
+Footer	Messina Sans Regular 13 pt, centred or left-aligned, Extra Light Stone background
+
+8. Bringing It to Life
+Digital – apply colour sparingly, leverage whitespace, hero nature imagery, keep navigation minimal.
+
+Print & Signage – use primary wordmark in Dark Stone on Extra Light Stone; avoid black backgrounds.
+
+Merch – monogram in circle for small formats; adhere to exclusion zone.
+
+On-site – photographic art that echoes nature category; calming palette in interiors. 
+
+This consolidation captures every strategic, verbal and visual element specified in the El Tirol Brand Guidelines PDF, distilled into a single reference for quick alignment and execution.

@@ -23,14 +23,14 @@ const Testimonials = () => {
         >
           {/* El Tirol Section Tag */}
           <p className="text-sm font-secondary font-light text-forest-extra-dark tracking-widest uppercase mb-6 sm:mb-8">
-            Centered in Stillness
+            Centered in Truth
           </p>
           <div className="w-16 h-px bg-forest-dark/20 mx-auto mb-8 sm:mb-12"></div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-primary font-light text-forest-extra-dark leading-[1.1] tracking-[-0.02em] mb-6 sm:mb-8">
             Voices of
             <br />
-            <span className="italic font-serif text-forest-dark">healing</span>
+            <span className="italic font-serif text-forest-dark">the transformed</span>
           </h2>
           
           <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-stone-extra-dark/70 max-w-3xl mx-auto leading-relaxed">

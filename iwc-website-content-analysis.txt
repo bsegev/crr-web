@@ -1,0 +1,109 @@
+IWC WEBSITE CONTENT ANALYSIS & COMPLIANCE REPORT
+===================================================
+
+EXECUTIVE SUMMARY
+-----------------
+The current IWC website generally aligns well with the provided content guidelines, using wellness-focused language while avoiding medical claims. However, some areas need attention for better LegitScript and Google Ads compliance, especially given the mix of medical centers (Cornerstone, Costa Rica Recovery, El Tirol) and wellness retreat (Nosara).
+
+CURRENT COPY ANALYSIS
+---------------------
+
+✅ COMPLIANT LANGUAGE (Good Examples):
+- "Transformative healing experiences" ✓
+- "Your Path to Healing" ✓ 
+- "Personal transformation" ✓
+- "Holistic experiences" ✓
+- "Mind-body-spirit integration" (implied) ✓
+- "Journey of renewal" ✓
+- "Healing journey" ✓
+- "Safe harbor for healing" ✓
+
+✅ SAFE WELLNESS PHRASES USED:
+- "nature's grace"
+- "transformative healing experiences"
+- "healing journey"
+- "personal transformation"
+- "discretion and dignity"
+- "holistic healing"
+
+⚠️ BORDERLINE/RISK AREAS:
+1. "treatment center" (multiple mentions) - Could imply medical treatment claims
+2. "addiction treatment" in center descriptions - Medical claims for some centers
+3. "clinical excellence" - Could be seen as medical claim
+4. "evidence-based treatment" - Medical terminology
+5. "medical oversight" / "medical detox" - Direct medical claims
+
+🚫 POTENTIAL COMPLIANCE ISSUES:
+1. Centers data includes explicit medical claims:
+   - "Evidence-Based Treatment"
+   - "Medical Model" 
+   - "Medical oversight"
+   - "Medical detox program"
+   - "Dual diagnosis treatment"
+   - "Joint Commission accredited"
+
+2. Mixed messaging between IWC (wellness) and center descriptions (medical)
+
+FOUNDER'S SUGGESTED EDITS ANALYSIS
+----------------------------------
+
+From the screenshots, founder suggests:
+
+1. "intention commitment sovereignty" → ASSESSMENT: ✅ GOOD
+   - Philosophical/wellness language
+   - Avoids medical claims
+   - Aligns with wellness messaging
+
+2. "truthNESS" instead of "Centered in Stillness" → ASSESSMENT: ✅ NEUTRAL TO GOOD
+   - Both are wellness concepts
+   - "truthNESS" is more unique/branded
+   - No compliance issues
+
+3. "the transformed" in testimonials → ASSESSMENT: ✅ GOOD
+   - Implies personal growth/wellness
+   - Avoids medical cure claims
+   - Testimonial language is generally safer
+
+4. Keeping "nature's grace" → ASSESSMENT: ✅ EXCELLENT
+   - Pure wellness language
+   - Poetic, non-medical
+   - Aligns perfectly with guidelines
+
+RECOMMENDATIONS
+---------------
+
+IMMEDIATE ACTIONS:
+1. ✅ Implement founder's suggested edits - all are compliant and improve messaging
+2. 🔄 Separate center descriptions by type:
+   - IWC main copy: Pure wellness language
+   - Medical centers: Medical claims allowed but separate pages
+   - Nosara: Wellness-only language
+
+3. 🔄 Replace risky language:
+   - "treatment center" → "healing center" or "wellness center" 
+   - "addiction treatment" → "addiction recovery support" (for main IWC copy)
+   - "clinical excellence" → "excellence in care"
+
+CONTENT STRATEGY BY CENTER TYPE:
+1. **Nosara (Wellness Only)**: Current approach is perfect - continue wellness language
+2. **Medical Centers (Cornerstone, CRR, El Tirol)**: Can use medical claims but separate from main IWC domain
+3. **IWC Main Site**: Focus on matching/referral service using wellness language
+
+REVISED SAFE LANGUAGE SUGGESTIONS:
+- "Healing experiences" instead of "treatment programs"
+- "Recovery support" instead of "addiction treatment" 
+- "Wellness centers" instead of "treatment centers"
+- "Therapeutic environments" instead of "clinical settings"
+- "Personalized healing" instead of "medical treatment"
+
+COMPLIANCE SCORE
+----------------
+Current Site: 7/10 (Good with room for improvement)
+With Founder Edits: 8/10 (Better, more branded)
+With Full Recommendations: 9.5/10 (Excellent compliance)
+
+CONCLUSION
+----------
+The founder's suggested edits are all positive improvements that enhance both branding and compliance. The main compliance risk comes from mixing medical claims (appropriate for licensed centers) with the main IWC wellness messaging. Implementing the founder's changes plus separating medical vs. wellness content would create an excellent, compliant website.
+
+The current "nature's grace" positioning is perfect and should be emphasized further as it captures the essence of wellness without any medical implications. 

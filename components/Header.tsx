@@ -81,7 +81,7 @@ const Header = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="relative z-10 px-8 py-3 block">For Hope and Healing</span>
+                <span className="relative z-10 px-8 py-3 block">Begin Your Transformation</span>
                 <div className={`absolute inset-0 transition-all duration-300 ${
                   isScrolled 
                     ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
@@ -179,7 +179,7 @@ const Header = () => {
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
                     >
-                      For Hope and Healing
+                      Begin Your Transformation
                     </motion.button>
             </Link>
                   <p className="text-xs font-secondary text-gray-500 text-center">

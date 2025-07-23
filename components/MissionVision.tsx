@@ -41,7 +41,7 @@ const MissionVision = () => {
         >
           {/* Editorial eyebrow */}
           <p className="text-sm font-light text-forest-deep tracking-widest uppercase mb-6 sm:mb-8">
-            Centered in Stillness
+            Centered in Truth
           </p>
           <div className="w-16 h-px bg-forest-deep/20 mb-8 sm:mb-12 sm:mx-auto"></div>
 

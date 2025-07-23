@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="max-w-3xl ml-4 sm:ml-8 md:ml-12 lg:ml-24 px-4 sm:px-0">
           {/* El Tirol inspired eyebrow */}
           <p className="text-sm font-light text-white/60 tracking-widest uppercase mb-4">
-            Purpose. Wellness. Possibility.
+            Intention. Commitment. Sovereignty.
           </p>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-primary font-light text-white mb-6 sm:mb-8 md:mb-10 tracking-[-0.01em] leading-[1.1]">
@@ -54,7 +54,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-white/90 max-w-lg mb-6 leading-relaxed">
-            Transformative healing experiences delivered with absolute discretion and dignity.
+            Transformative healing experiences delivered with intention, wisdom and discretion.
           </p>
           
           {/* Enhanced discretion messaging */}
@@ -63,7 +63,7 @@ const Hero = () => {
           </p>
           
           <button className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold touch-manipulation" style={{ letterSpacing: '0.02em' }}>
-            <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">For Hope and Healing</span>
+            <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Begin Your Transformation</span>
             <div className="absolute inset-0 border border-stone-light border-opacity-30 group-hover:border-opacity-60 transition-all duration-300"></div>
             <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
           </button>

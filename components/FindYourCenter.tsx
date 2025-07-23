@@ -31,7 +31,7 @@ const FindYourCenter = () => {
                   Find Your Strength
                 </p>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-primary font-light text-white leading-[1.1] tracking-[-0.02em]">
-                  Your Path to{" "}
+                  Your Personalized Path to{" "}
                   <span className="italic font-serif text-stone-light">Healing</span>
                 </h2>
               </div>
