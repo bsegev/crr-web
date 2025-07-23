@@ -28,7 +28,7 @@ export default function Footer() {
               
               <div className="space-y-4">
                 <p className="text-sm uppercase tracking-widest text-[#B7C9B7] font-light">
-                  International Wellness Collective
+                  International Wellness Centers
                 </p>
                 <p className="text-lg font-light leading-relaxed text-white/80 max-w-md">
                   Connecting families to world-class healing centers across four continents. 
@@ -112,7 +112,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-8">
               <p className="text-sm text-white/60 font-light">
-                © 2024 International Wellness Collective
+                © 2024 International Wellness Centers
               </p>
               <div className="flex space-x-6">
                 <Link 
