@@ -64,7 +64,7 @@ const Hero = () => {
           
           <button className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold touch-manipulation" style={{ letterSpacing: '0.02em' }}>
             <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Begin Your Transformation</span>
-            <div className="absolute inset-0 border border-stone-light border-opacity-30 group-hover:border-opacity-60 transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-stone-light/30 group-hover:border-stone-light/60 transition-all duration-300"></div>
             <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
           </button>
         </div>
