@@ -168,7 +168,7 @@ const AboutHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <Link href="/get-help" className="inline-block">
+              <Link href="/contact" className="inline-block">
                 <button className="group relative text-white text-sm tracking-widest uppercase font-medium touch-manipulation">
                                       <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Begin Your Transformation</span>
                   <div className="absolute inset-0 border border-forest-light/30 group-hover:border-forest-light/60 transition-all duration-300"></div>

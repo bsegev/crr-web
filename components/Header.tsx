@@ -70,7 +70,7 @@ const Header = () => {
             ))}
             
             {/* CTA Button */}
-            <Link href="/get-help">
+            <Link href="/contact">
               <motion.button 
                 className={`group relative text-sm tracking-widest uppercase font-secondary font-bold transition-all duration-300 ${
                   isScrolled 
@@ -81,7 +81,7 @@ const Header = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="relative z-10 px-8 py-3 block">Begin Your Transformation</span>
+                <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Begin Your Transformation</span>
                 <div className={`absolute inset-0 transition-all duration-300 ${
                   isScrolled 
                     ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
@@ -169,7 +169,7 @@ const Header = () => {
                 {/* CTA Section */}
                 <div className="space-y-4">
                   <Link 
-                    href="/get-help"
+                    href="/contact"
                     onClick={() => setIsMenuOpen(false)}
                     className="block"
                   >

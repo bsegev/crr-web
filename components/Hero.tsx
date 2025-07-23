@@ -1,5 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react"
+import Link from "next/link"
+import { motion } from "framer-motion"
 import { ScrollIndicator } from "./ui/scroll-indicator"
 
 const Hero = () => {
@@ -62,11 +64,18 @@ const Hero = () => {
             Complete confidentiality • Utmost discretion • Safe harbor for healing
           </p>
           
-          <button className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold touch-manipulation" style={{ letterSpacing: '0.02em' }}>
-            <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Begin Your Transformation</span>
-            <div className="absolute inset-0 border border-stone-light/30 group-hover:border-stone-light/60 transition-all duration-300"></div>
-            <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
-          </button>
+          <Link href="/contact">
+            <motion.button 
+              className="group relative text-white text-sm tracking-widest uppercase font-secondary font-bold touch-manipulation"
+              style={{ letterSpacing: '0.02em' }}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
+              <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Begin Your Transformation</span>
+              <div className="absolute inset-0 border border-stone-light/30 group-hover:border-stone-light/60 transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-stone-light/5 group-hover:bg-stone-light/10 transition-all duration-300"></div>
+            </motion.button>
+          </Link>
         </div>
       </div>
       
