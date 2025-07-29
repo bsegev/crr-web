@@ -31,7 +31,7 @@ export default function Footer() {
                   International Wellness Centers
                 </p>
                 <p className="text-lg font-light leading-relaxed text-white/80 max-w-md">
-                  Connecting families to world-class healing centers worldwide. 
+                  Connecting families to world-class healing centers. 
                   Healing without borders.
                 </p>
               </div>
