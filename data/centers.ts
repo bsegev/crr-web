@@ -10,7 +10,7 @@ export const centers = [
     environment: "Clinical Excellence",
     image: "/centers/cornerstone-socal.png",
     description:
-      "Our flagship clinical center combines medical excellence with evidence-based addiction treatment in Southern California.",
+      "Combines medical excellence with evidence-based addiction treatment in Southern California.",
     features: ["Medical oversight", "Evidence-based protocols", "Clinical rigor", "Structured programming", "Premium medical care", "40+ years experience", "Joint Commission accredited", "Medical detox program", "Dual diagnosis treatment"],
     icon: Building2,
     website: "https://cornerstonesocal.com"
@@ -24,7 +24,7 @@ export const centers = [
     environment: "Tropical Healing",
     image: "/centers/crr-space.jpg",
     description:
-      "Authentic holistic addiction treatment in Costa Rica's healing environment at an accessible price point.",
+      "Holistic addiction treatment in Costa Rica's healing environment at an accessible price point.",
     features: ["Holistic modalities", "Cultural immersion", "Accessible pricing", "Natural setting", "Evidence-based holistic treatment", "Clinical excellence", "Urban oasis in San José", "Medical detox services", "Airport proximity", "City conveniences"],
     icon: Stethoscope,
     website: "https://costaricarecovery.com"
@@ -38,7 +38,7 @@ export const centers = [
     environment: "Luxury Retreat",
     image: "/centers/eltirol-space.jpg",
     description:
-      "Premium holistic addiction treatment combining luxury amenities with transformative healing modalities.",
+      "Mountain-top addiction treatment combining luxury amenities with transformative care.",
     features: ["Luxury accommodations", "Premium holistic care", "Personalized treatment", "Exclusive setting", "Mountain recovery village", "Clean fresh air", "Private cabins", "Nature immersion", "Complete privacy", "Secluded sanctuary"],
     icon: Mountain,
     website: "#"
