@@ -3,7 +3,7 @@ import { Building2, Stethoscope, Mountain, Waves } from "lucide-react"
 export const centers = [
   {
     id: "cornerstone-recovery",
-    name: "Cornerstone Recovery Center",
+    name: "Cornerstone of Southern California",
     location: "Southern California, USA",
     type: "Clinical Recovery",
     specialties: ["Evidence-Based Treatment", "Medical Model", "Structured Care"],

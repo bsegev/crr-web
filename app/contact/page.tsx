@@ -13,7 +13,7 @@ import ContactProcess from "@/components/ContactProcess"
 const centers = [
   {
     id: "cornerstone",
-    name: "Cornerstone Recovery Center",
+    name: "Cornerstone of Southern California",
     description: "Located in the heart of Southern California, our flagship center offers comprehensive treatment programs in a serene, modern environment.",
     image: "/centers/cornerstone-socal.png",
     link: "/our-centers/cornerstone"
