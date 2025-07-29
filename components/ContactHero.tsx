@@ -40,13 +40,13 @@ export default function ContactHero() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp} className="space-y-4">
-            <p className="text-sm font-light text-[#B7C9B7] tracking-widest uppercase">
+            <p className="text-sm font-light text-info tracking-widest uppercase">
               Contact Us
             </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-[-0.02em]">
               We're here to help,
               <br />
-              <span className="italic font-serif text-[#B7C9B7]">24/7</span>
+              <span className="italic font-serif text-info">24/7</span>
             </h1>
               <p className="text-lg sm:text-xl md:text-2xl font-light text-white/90 max-w-2xl leading-relaxed mt-6">
               Whether you need immediate crisis support or want to learn more about our centers, our care coordinators

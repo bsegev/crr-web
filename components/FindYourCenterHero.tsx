@@ -40,13 +40,13 @@ export default function FindYourCenterHero() {
           variants={staggerContainer}
         >
             <motion.div variants={fadeInUp} className="space-y-4">
-              <p className="text-sm font-light text-[#B7C9B7] tracking-widest uppercase">
-                Find Your Center
-              </p>
+                          <p className="text-sm font-light text-info tracking-widest uppercase">
+              Find Your Center
+            </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-[-0.02em]">
-                Your path to
+              Your path to
               <br />
-                <span className="italic font-serif text-[#B7C9B7]">recovery</span>
+              <span className="italic font-serif text-info">recovery</span>
             </h1>
               <p className="text-lg sm:text-xl md:text-2xl font-light text-white/90 max-w-2xl leading-relaxed mt-6">
                 Answer a few questions about your needs and preferences, and we'll match you with the perfect recovery center.

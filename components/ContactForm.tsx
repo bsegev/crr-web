@@ -72,13 +72,13 @@ export default function ContactForm() {
             className="space-y-8"
           >
             <div className="inline-block">
-              <p className="text-sm font-light text-[#06402B] tracking-widest uppercase mb-4">
+              <p className="text-sm font-light text-foreground tracking-widest uppercase mb-4">
                 Reach Out
               </p>
               <h2 className="text-3xl md:text-5xl font-light text-black leading-tight tracking-[-0.02em]">
                 Start your journey to
                 <br />
-                <span className="italic font-serif text-[#06402B]">wellness</span>
+                <span className="italic font-serif text-foreground">wellness</span>
               </h2>
             </div>
             <p className="text-xl font-light text-black/70 max-w-2xl mx-auto leading-relaxed">

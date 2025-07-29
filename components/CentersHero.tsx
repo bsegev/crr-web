@@ -25,13 +25,13 @@ export default function CentersHero() {
               transition={{ duration: 0.8 }}
               className="space-y-4"
             >
-              <p className="text-sm font-light text-[#B7C9B7] tracking-widest uppercase">
+              <p className="text-sm font-light text-info tracking-widest uppercase">
                 Our Four Centers
               </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-[-0.02em]">
                 Where healing
                 <br />
-                <span className="italic font-serif text-[#B7C9B7]">happens</span>
+                <span className="italic font-serif text-info">happens</span>
               </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-light text-white/90 max-w-2xl leading-relaxed mt-6">
               From clinical excellence in California to authentic holistic healing in Costa Rica—each center represents our commitment to ethical, transparent care.

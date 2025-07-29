@@ -78,6 +78,9 @@ const config: Config = {
           DEFAULT: "var(--color-stone-extra-light)",
           foreground: "var(--color-stone-dark)",
         },
+        info: {
+          DEFAULT: "var(--color-info)",
+        },
       },
       fontFamily: {
         primary: ["var(--font-quadrant)", "serif"], // Quadrant Text for headlines
