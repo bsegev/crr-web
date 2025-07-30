@@ -11,7 +11,7 @@ const centers = [
     location: "San José, Costa Rica",
     description: "Our flagship center in Costa Rica's capital combines evidence-based treatment with holistic therapies in a serene urban oasis setting.",
     image: "/centers/crr-space.jpg",
-    href: "/our-centers#costa-rica",
+    website: "https://costaricarecovery.com",
     contact: {
       phone: "+1 (888) 722-3422",
       email: "care@costarica.iwc.com"
@@ -23,7 +23,7 @@ const centers = [
     location: "San José Outskirts, Costa Rica",
     description: "Discrete executive treatment in the lush hills outside San José, offering personalized care and dual diagnosis programs in a private estate setting.",
     image: "/centers/eltirol-space.jpg",
-    href: "/our-centers#el-tirol",
+    website: "#",
     contact: {
       phone: "+506 2222 4422",
       email: "care@eltirol.iwc.com"
@@ -35,7 +35,7 @@ const centers = [
     location: "Orange County, California",
     description: "Premier Southern California facility providing intensive outpatient programs and specialized trauma therapy in the heart of Orange County.",
     image: "/centers/cornerstone-socal.png",
-    href: "/our-centers#cornerstone",
+    website: "https://cornerstonesocal.com",
     contact: {
       phone: "+1 (855) 334-2622",
       email: "care@cornerstone.iwc.com"
@@ -47,7 +47,7 @@ const centers = [
     location: "Nosara, Costa Rica",
     description: "Integrative healing in Costa Rica's renowned wellness destination, combining evidence-based treatment with holistic practices in a beachside sanctuary.",
     image: "/centers/nosara-shala.jpg",
-    href: "/our-centers#nosara",
+    website: "https://nosararetreatcenter.com",
     contact: {
       phone: "+506 2682 2242",
       email: "care@nosara.iwc.com"
@@ -182,13 +182,21 @@ const GetHelpCenters = () => {
                   </div>
                 </div>
                 
-                  <Link href={centers[currentIndex].href} className="mt-6 sm:mt-8 block">
-                  <button className="group relative text-white text-sm tracking-widest uppercase font-medium">
-                      <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Get Treatment Here</span>
-                    <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
-                    <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
-                  </button>
-                </Link>
+                  {centers[currentIndex].website === "#" ? (
+                    <button className="mt-6 sm:mt-8 block group relative text-white text-sm tracking-widest uppercase font-medium opacity-50 cursor-not-allowed">
+                      <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Coming Soon</span>
+                      <div className="absolute inset-0 border border-[#B7C9B7]/30"></div>
+                      <div className="absolute inset-0 bg-[#B7C9B7]/5"></div>
+                    </button>
+                  ) : (
+                    <a href={centers[currentIndex].website} target="_blank" rel="noopener noreferrer" className="mt-6 sm:mt-8 block">
+                      <button className="group relative text-white text-sm tracking-widest uppercase font-medium">
+                        <span className="relative z-10 px-8 sm:px-10 py-3 sm:py-4 block">Get Treatment Here</span>
+                        <div className="absolute inset-0 border border-[#B7C9B7]/30 group-hover:border-[#B7C9B7]/60 transition-all duration-300"></div>
+                        <div className="absolute inset-0 bg-[#B7C9B7]/5 group-hover:bg-[#B7C9B7]/10 transition-all duration-300"></div>
+                      </button>
+                    </a>
+                  )}
               </motion.div>
             </AnimatePresence>
 

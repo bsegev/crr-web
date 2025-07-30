@@ -67,8 +67,8 @@ const centers = [
     treatmentStyle: "clinical",
     locationType: "nature",
     travelRegion: "international",
-    description: "A serene mountain facility providing comprehensive addiction treatment with a focus on dual diagnosis and family healing.",
-    features: ["Medical Support", "Group Setting", "Mountain Views", "Evidence-Based Treatment", "Family Program"],
+    description: "A serene cloud forest facility providing comprehensive addiction treatment with a focus on dual diagnosis and family healing.",
+    features: ["Medical Support", "Group Setting", "Cloud Forest Views", "Evidence-Based Treatment", "Family Program"],
   },
   {
     id: "cornerstone-socal",

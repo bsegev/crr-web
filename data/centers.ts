@@ -38,7 +38,7 @@ export const centers = [
     environment: "Luxury Retreat",
     image: "/centers/eltirol-space.jpg",
     description:
-      "Mountain-top addiction treatment combining luxury amenities with transformative care.",
+      "Cloud forest wellness and treatment center combining luxury amenities with transformative care.",
     features: ["Luxury accommodations", "Premium holistic care", "Personalized treatment", "Exclusive setting", "Mountain recovery village", "Clean fresh air", "Private cabins", "Nature immersion", "Complete privacy", "Secluded sanctuary"],
     icon: Mountain,
     website: "#"

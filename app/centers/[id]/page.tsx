@@ -188,7 +188,7 @@ const enhancedData: Record<string, EnhancedCenterData> = {
       },
       {
         category: "Natural Setting",
-        items: ["Tropical gardens", "Outdoor spaces", "Walking trails", "Fresh mountain air"]
+        items: ["Tropical gardens", "Outdoor spaces", "Walking trails", "Fresh cloud forest air"]
       }
     ]
   },
@@ -213,13 +213,13 @@ const enhancedData: Record<string, EnhancedCenterData> = {
       {
         name: "Luxury Holistic Program",
         duration: "30-90 days",
-        description: "Premium holistic treatment in private mountain sanctuary",
+        description: "Premium holistic treatment in private cloud forest sanctuary",
         highlights: ["Private cabins", "Personal chef", "Luxury amenities", "Personalized treatment"]
       }
     ],
     testimonials: [
       {
-        quote: "El Tirol provided the privacy and luxury I needed while delivering world-class treatment. The mountain setting was transformative.",
+        quote: "El Tirol provided the privacy and luxury I needed while delivering world-class treatment. The cloud forest setting was transformative.",
         author: "Anonymous",
         role: "Executive Client",
         rating: 5
@@ -229,7 +229,7 @@ const enhancedData: Record<string, EnhancedCenterData> = {
       { label: "Privacy Level", value: "100%", description: "Complete discretion" },
       { label: "Staff Ratio", value: "1:2", description: "Staff to client ratio" },
       { label: "Luxury Rating", value: "5-Star", description: "Premium accommodations" },
-      { label: "Mountain Views", value: "360°", description: "Panoramic vistas" }
+      { label: "Cloud Forest Views", value: "360°", description: "Panoramic vistas" }
     ],
     approach: {
       title: "Luxury Holistic Healing",

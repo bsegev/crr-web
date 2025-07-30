@@ -150,21 +150,15 @@ export default function CentersGrid({ centers }: CentersGridProps) {
                       </AnimatePresence>
 
                       <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4">
-                        <Link href={`/centers/${center.id}`} className="flex-1">
-                          <Button variant="default" className="w-full bg-[#06402B] hover:bg-[#06402B]/90 text-sm py-2.5 sm:py-3 touch-manipulation">
-                            View Details
-                            <ArrowRight className="ml-2 h-4 w-4" />
-                          </Button>
-                        </Link>
                         {center.website === "#" ? (
-                          <Button variant="outline" className="border-[#B7C9B7] text-[#06402B] bg-transparent w-full text-sm py-2.5 sm:py-3 touch-manipulation" disabled>
+                          <Button variant="default" className="w-full bg-[#06402B] hover:bg-[#06402B]/90 text-sm py-2.5 sm:py-3 touch-manipulation" disabled>
                             Coming Soon
                           </Button>
                         ) : (
                           <a href={center.website} target="_blank" rel="noopener noreferrer" className="flex-1">
-                            <Button variant="outline" className="border-[#B7C9B7] text-[#06402B] bg-transparent w-full text-sm py-2.5 sm:py-3 touch-manipulation">
-                              Visit Website
-                              <ExternalLink className="h-4 w-4 ml-2" />
+                            <Button variant="default" className="w-full bg-[#06402B] hover:bg-[#06402B]/90 text-sm py-2.5 sm:py-3 touch-manipulation">
+                              Visit Center
+                              <ExternalLink className="ml-2 h-4 w-4" />
                             </Button>
                           </a>
                         )}
