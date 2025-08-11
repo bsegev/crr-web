@@ -1,0 +1,192 @@
+IWC PITCH DECK AUDIT
+====================
+
+OVERALL ASSESSMENT:
+- Tone is appropriately measured and premium, matching IWC's brand voice
+- Structure flows logically from problem → solution → execution
+- Missing critical financial metrics and market validation
+- Some claims need substantiation with data
+- Visual direction is clear but needs specific imagery guidance
+
+SLIDE-BY-SLIDE ANALYSIS:
+
+SLIDE 1: COVER
+✓ Good: Clean, professional, establishes brand immediately
+✓ Good: Tagline "One platform. Four settings. Real outcomes" is strong
+⚠️ Issue: Missing date and presenter name
+⚠️ Issue: "Intention • Commitment • Sovereignty" feels disconnected from business context
+💡 Suggestion: Add "Investment Overview" or "Business Presentation" subtitle
+💡 Suggestion: Consider adding a brief value proposition (e.g., "Premium wellness & recovery platform")
+
+SLIDE 2: THE SIMPLE IDEA
+✓ Good: Clear value proposition with "continuum that actually holds"
+✓ Good: Emphasizes discretion and dignity - key differentiators
+⚠️ Issue: Vague claim about "shared intake and clinical wisdom" - needs specifics
+⚠️ Issue: No mention of competitive advantage or market gap
+💡 Suggestion: Add brief market context (e.g., "While most providers operate in silos...")
+💡 Suggestion: Include a brief metric about current market fragmentation
+
+SLIDE 3: IWC AT A GLANCE
+✓ Good: Clear portfolio overview
+✓ Good: Geographic diversification highlighted
+⚠️ Issue: "Hold-co owner–operator" jargon may confuse investors
+⚠️ Issue: Missing key operational metrics (revenue, occupancy, etc.)
+⚠️ Issue: No mention of ownership structure or investment history
+💡 Suggestion: Add current operational status (revenue, beds, occupancy)
+💡 Suggestion: Clarify ownership structure (founder-owned, previous funding rounds)
+
+SLIDE 4: WHY NOW
+✓ Good: Market timing narrative is compelling
+✓ Good: Cross-border advantage is well articulated
+⚠️ Issue: No supporting data for "mental-health and recovery support keeps rising"
+⚠️ Issue: Vague about Costa Rica's "wellness halo" - needs specifics
+⚠️ Issue: Missing market size and growth projections
+💡 Suggestion: Add 2-3 key market statistics (market size, growth rate, demand drivers)
+💡 Suggestion: Include specific examples of Costa Rica's wellness reputation
+
+SLIDE 5: PORTFOLIO POSITIONING
+✓ Good: Clear differentiation strategy
+✓ Good: 2x2 matrix approach is effective
+⚠️ Issue: "Range without dilution" claim needs substantiation
+⚠️ Issue: No pricing strategy or revenue model explanation
+⚠️ Issue: Missing competitive positioning analysis
+💡 Suggestion: Add price ranges for each tier
+💡 Suggestion: Include brief competitive landscape
+💡 Suggestion: Show how cross-referrals work between centers
+
+SLIDE 6: CENTER SNAPSHOTS (1/2)
+✓ Good: Individual center descriptions are clear
+✓ Good: Operational status is noted
+⚠️ Issue: All placeholder metrics are missing
+⚠️ Issue: No financial performance data
+⚠️ Issue: "Blue Zone" claim needs substantiation
+⚠️ Issue: Missing key differentiators for each center
+💡 Suggestion: Add actual capacity, ADR, occupancy rates
+💡 Suggestion: Include brief financial performance highlights
+💡 Suggestion: Add unique selling propositions for each center
+
+SLIDE 7: CENTER SNAPSHOTS (2/2)
+✓ Good: Clear distinction between US clinical and luxury offerings
+✓ Good: El Tirol positioning as premium destination is clear
+⚠️ Issue: "Cloud-forest sanctuary" needs visual context
+⚠️ Issue: No mention of El Tirol's competitive advantages
+⚠️ Issue: Missing construction/development timeline details
+⚠️ Issue: All placeholder metrics missing
+💡 Suggestion: Add construction timeline and milestones
+💡 Suggestion: Include El Tirol's unique features and amenities
+💡 Suggestion: Add projected financials for El Tirol
+
+SLIDE 8: HOW WE OPERATE
+✓ Good: Clear operational model explanation
+✓ Good: Centralized approach is well articulated
+⚠️ Issue: "Lift outcomes" claim needs data
+⚠️ Issue: No mention of quality metrics or compliance
+⚠️ Issue: Missing operational efficiency metrics
+💡 Suggestion: Add specific outcome metrics (completion rates, satisfaction scores)
+💡 Suggestion: Include compliance and accreditation details
+💡 Suggestion: Show operational efficiency gains
+
+SLIDE 9: BRAND & EXPERIENCE
+✓ Good: Brand positioning is clear and premium
+✓ Good: Tone matches IWC's voice
+⚠️ Issue: Too abstract for investors - needs concrete examples
+⚠️ Issue: No mention of brand recognition or market positioning
+⚠️ Issue: Missing customer testimonials or validation
+💡 Suggestion: Add brief customer testimonials or satisfaction metrics
+💡 Suggestion: Include brand recognition or market positioning data
+💡 Suggestion: Show specific examples of "hospitality with clinical rigor"
+
+SLIDE 10: GO-TO-MARKET
+✓ Good: Multi-channel approach is clear
+✓ Good: Emphasis on referrals and digital scaling
+⚠️ Issue: All placeholder KPIs are missing
+⚠️ Issue: No mention of marketing budget or customer acquisition costs
+⚠️ Issue: Missing competitive marketing analysis
+💡 Suggestion: Add actual conversion rates and time-to-admit metrics
+💡 Suggestion: Include marketing budget and CAC analysis
+💡 Suggestion: Show competitive marketing advantages
+
+SLIDE 11: WHY THIS WORKS
+✓ Good: Enterprise approach is well articulated
+✓ Good: Diversification benefits are clear
+⚠️ Issue: "Premium halo" claim needs substantiation
+⚠️ Issue: No mention of operational synergies or cost savings
+⚠️ Issue: Missing financial impact of shared services
+💡 Suggestion: Add specific operational synergies and cost savings
+💡 Suggestion: Include financial impact of shared services
+💡 Suggestion: Show how premium positioning benefits other centers
+
+SLIDE 12: WHAT YOU'RE BUYING
+✓ Good: Clear investment proposition
+✓ Good: Multiple revenue streams highlighted
+⚠️ Issue: No valuation or financial projections
+⚠️ Issue: Missing exit strategy or return expectations
+⚠️ Issue: No mention of previous funding rounds or cap table
+💡 Suggestion: Add current valuation and projected returns
+💡 Suggestion: Include exit strategy and timeline
+💡 Suggestion: Show cap table and funding history
+
+SLIDE 13: CAPITAL DEPLOYMENT
+✓ Good: Clear investment priorities
+✓ Good: Milestone-based approach
+⚠️ Issue: All placeholder percentages missing
+⚠️ Issue: No ROI projections for each investment area
+⚠️ Issue: Missing risk mitigation strategies
+💡 Suggestion: Add specific investment amounts and expected returns
+💡 Suggestion: Include risk mitigation strategies
+💡 Suggestion: Show expected timeline for returns
+
+SLIDE 14: 12-MONTH ROADMAP
+✓ Good: Clear timeline and milestones
+✓ Good: Quarterly structure is investor-friendly
+⚠️ Issue: All placeholder KPIs missing
+⚠️ Issue: No mention of key risks or dependencies
+⚠️ Issue: Missing contingency plans
+💡 Suggestion: Add specific KPIs and success metrics
+💡 Suggestion: Include key risks and mitigation strategies
+💡 Suggestion: Show contingency plans for delays
+
+SLIDE 15: TEAM & ADVISORS
+✓ Good: Emphasis on senior operators and clinical leadership
+⚠️ Issue: No specific team bios or credentials
+⚠️ Issue: Missing key team gaps or hiring plans
+⚠️ Issue: No mention of team's track record or previous exits
+💡 Suggestion: Add brief team bios with relevant experience
+💡 Suggestion: Include team's track record and previous successes
+💡 Suggestion: Show key hiring plans and team expansion
+
+SLIDE 16: HOW TO ENGAGE
+✓ Good: Clear next steps
+✓ Good: Founder-led approach is appropriate
+⚠️ Issue: All placeholder contact information missing
+⚠️ Issue: No mention of investment timeline or urgency
+⚠️ Issue: Missing due diligence process
+💡 Suggestion: Add specific contact information
+💡 Suggestion: Include investment timeline and urgency factors
+💡 Suggestion: Show due diligence process and timeline
+
+CRITICAL MISSING ELEMENTS:
+1. Financial projections and metrics
+2. Market size and competitive analysis
+3. Risk factors and mitigation strategies
+4. Team credentials and track record
+5. Valuation and investment terms
+6. Exit strategy and timeline
+7. Due diligence materials
+8. Legal and regulatory considerations
+
+RECOMMENDATIONS:
+1. Add a financial summary slide with key metrics
+2. Include market size and competitive landscape
+3. Add risk factors and mitigation strategies
+4. Include team bios and track record
+5. Add valuation and investment terms
+6. Include exit strategy and timeline
+7. Add due diligence checklist
+8. Include legal and regulatory considerations
+
+OVERALL RATING: 7/10
+- Strong brand voice and positioning
+- Clear value proposition
+- Needs significant financial and market data
+- Requires more concrete metrics and validation 
