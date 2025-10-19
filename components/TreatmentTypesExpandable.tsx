@@ -33,7 +33,13 @@ export function TreatmentTypesExpandable() {
     <>
       <section className="w-full py-16 sm:py-20 md:py-24 lg:py-32 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="text-center mb-12 sm:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12 sm:mb-16"
+          >
             <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
               Evidence-Based Treatment
             </p>
@@ -44,7 +50,7 @@ export function TreatmentTypesExpandable() {
             <p className="text-lg sm:text-xl font-secondary font-light text-gray-700 max-w-3xl mx-auto mt-6 leading-relaxed">
               Click each therapy type to learn more about how we support your recovery
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
       
@@ -143,12 +149,22 @@ export function TreatmentTypesExpandable() {
               </div>
             ) : null}
           </AnimatePresence>
-          <ul className="max-w-2xl mx-auto w-full gap-4">
+          <motion.ul 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-2xl mx-auto w-full gap-4"
+          >
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
                 onClick={() => setActive(card)}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-white rounded-xl cursor-pointer text-sm"
               >
                 <div className="flex gap-4 flex-col md:flex-row ">
@@ -182,9 +198,9 @@ export function TreatmentTypesExpandable() {
                 >
                   {card.ctaText}
                 </motion.button>
-              </motion.div>
-            ))}
-          </ul>
+            </motion.div>
+          ))}
+        </motion.ul>
         </div>
       </section>
     </>
