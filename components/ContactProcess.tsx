@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Clock, Shield, CheckCircle } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 const processSteps = [
   {

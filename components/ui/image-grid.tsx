@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence, LayoutGroup } from "framer-motion"
+import { motion, AnimatePresence, LayoutGroup } from "motion/react"
 
 interface Image {
   src: string

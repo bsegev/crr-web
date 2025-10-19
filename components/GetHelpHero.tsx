@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { AlertCircle, Phone, MessageSquare } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import Link from "next/link"
 import { ScrollIndicator } from "./ui/scroll-indicator"
 

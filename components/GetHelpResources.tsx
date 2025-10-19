@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { Phone, Heart, Users, Globe, BookOpen, Handshake } from "lucide-react"
 import Link from "next/link"
 

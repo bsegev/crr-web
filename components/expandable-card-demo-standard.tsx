@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
+
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
-export function ExpandableCardDemo() {
+export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -43,8 +43,8 @@ export function ExpandableCardDemo() {
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {active && typeof active === "object" && (
-          <div className="fixed inset-0 grid place-items-center z-[100]">
+        {active && typeof active === "object" ? (
+          <div className="fixed inset-0  grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -71,8 +71,7 @@ export function ExpandableCardDemo() {
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
-                <Image
-                  priority
+                <img
                   width={200}
                   height={200}
                   src={active.src}
@@ -102,7 +101,7 @@ export function ExpandableCardDemo() {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-orange text-white"
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
                   >
                     {active.ctaText}
                   </motion.a>
@@ -123,7 +122,7 @@ export function ExpandableCardDemo() {
               </div>
             </motion.div>
           </div>
-        )}
+        ) : null}
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full gap-4">
         {cards.map((card, index) => (
@@ -135,7 +134,7 @@ export function ExpandableCardDemo() {
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
-                <Image
+                <img
                   width={100}
                   height={100}
                   src={card.src}
@@ -160,7 +159,7 @@ export function ExpandableCardDemo() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-orange hover:text-white text-black mt-4 md:mt-0"
+              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
             >
               {card.ctaText}
             </motion.button>
@@ -206,11 +205,11 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Individual Therapy",
-    title: "One-on-one sessions",
+    description: "Lana Del Rey",
+    title: "Summertime Sadness",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "Learn More",
-    ctaLink: "#",
+    ctaText: "Play",
+    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
@@ -229,11 +228,11 @@ const cards = [
     },
   },
   {
-    description: "Group Therapy",
-    title: "Connect with peers",
+    description: "Babbu Maan",
+    title: "Mitran Di Chhatri",
     src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "Learn More",
-    ctaLink: "#",
+    ctaText: "Play",
+    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
@@ -252,17 +251,17 @@ const cards = [
   },
 
   {
-    description: "Family Therapy",
-    title: "Healing together",
+    description: "Metallica",
+    title: "For Whom The Bell Tolls",
     src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Learn More",
-    ctaLink: "#",
+    ctaText: "Play",
+    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
           Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with their
-          audience. Formed in Los Angeles, California, they have become a
+          powerful sound and intense performances that resonate deeply with
+          their audience. Formed in Los Angeles, California, they have become a
           cultural icon in the heavy metal music industry. <br /> <br /> Their
           songs often reflect themes of aggression, social issues, and personal
           struggles, capturing the essence of the heavy metal genre. With a
@@ -274,11 +273,11 @@ const cards = [
     },
   },
   {
-    description: "Holistic Therapies",
-    title: "Yoga, Meditation & More",
+    description: "Led Zeppelin",
+    title: "Stairway To Heaven",
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "Learn More",
-    ctaLink: "#",
+    ctaText: "Play",
+    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
@@ -286,13 +285,34 @@ const cards = [
           innovative sound and profound impact on the music industry. Formed in
           London in 1968, they have become a cultural icon in the rock music
           world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era. With
-          a career spanning over a decade, Led Zeppelin has released numerous hit
-          albums and singles that have garnered them a massive fan following both
-          in the United Kingdom and abroad.
+          rock, and folk music, capturing the essence of the 1970s rock era.
+          With a career spanning over a decade, Led Zeppelin has released
+          numerous hit albums and singles that have garnered them a massive fan
+          following both in the United Kingdom and abroad.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Mustafa Zahid",
+    title: "Toh Phir Aao",
+    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+    ctaText: "Play",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
+          renowned for its intense storyline and powerful performances. Directed
+          by Mohit Suri, the film has become a significant work in the Indian
+          film industry. <br /> <br /> The movie explores themes of love,
+          redemption, and sacrifice, capturing the essence of human emotions and
+          relationships. With a gripping narrative and memorable music,
+          &quot;Aawarapan&quot; has garnered a massive fan following both in
+          India and abroad, solidifying Emraan Hashmi&apos;s status as a
+          versatile actor.
         </p>
       );
     },
   },
 ];
-

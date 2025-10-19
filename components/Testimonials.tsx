@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 const testimonial = {
   quote: "Costa Rica Recovery didn't just treat my addiction—they helped me rebuild my life. The combination of professional care and the healing environment of Costa Rica made all the difference. I found myself again.",

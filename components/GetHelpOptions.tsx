@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Phone, MessageCircle, Calendar, Clock } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 const cardHover = {
   rest: { scale: 1, y: 0 },

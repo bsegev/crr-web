@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "motion/react"
 import Link from "next/link"
 import { Menu, X, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"

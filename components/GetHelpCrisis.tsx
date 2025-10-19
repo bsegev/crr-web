@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Clock } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 const cardHover = {
   rest: { scale: 1, y: 0 },
