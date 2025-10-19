@@ -63,11 +63,12 @@ export function TreatmentTypesExpandable() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
                 className="fixed inset-0 bg-black/20 h-full w-full z-10"
               />
             )}
           </AnimatePresence>
-          <AnimatePresence>
+          <AnimatePresence mode="wait">
             {active && typeof active === "object" ? (
               <div className="fixed inset-0 grid place-items-center z-[100]">
                 <motion.button
