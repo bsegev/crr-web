@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import Link from "next/link"
-import { Menu, X, ChevronRight } from "lucide-react"
+import { Menu, X, ChevronRight, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,8 +22,16 @@ const Header = () => {
 
   const menuItems = [
     { href: "/our-centers", label: "Our Centers" },
-    { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" }
+  ]
+
+  const aboutMenuItems = [
+    { href: "/about/articles", label: "Articles" },
+    { href: "/about/licenses-accreditations", label: "Licenses & Accreditations" },
+    { href: "/about/mission-vision", label: "Mission & Vision" },
+    { href: "/about/our-facility", label: "Our Facility" },
+    { href: "/about/our-team", label: "Our Team" },
+    { href: "/about/testimonials", label: "Testimonials" }
   ]
 
   return (
@@ -56,6 +66,44 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
+            
+            {/* About Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsAboutDropdownOpen(true)}
+              onMouseLeave={() => setIsAboutDropdownOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-orange ${
+                  isScrolled ? 'text-navy-dark/80' : 'text-white/90'
+                }`}
+              >
+                About
+                <ChevronDown className={`h-4 w-4 transition-transform ${isAboutDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              <AnimatePresence>
+                {isAboutDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl rounded-lg overflow-hidden z-50"
+                  >
+                    {aboutMenuItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="block px-6 py-3 text-sm font-secondary text-gray-700 hover:bg-orange hover:text-white transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             
             {/* CTA Button */}
             <Link href="/contact">
@@ -147,6 +195,45 @@ const Header = () => {
                       <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-orange transition-colors" />
               </Link>
             ))}
+                  
+                  {/* About Dropdown for Mobile */}
+                  <div>
+                    <button
+                      onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
+                      className="flex items-center justify-between w-full group py-2"
+                    >
+                      <span className="text-base font-secondary text-gray-600 group-hover:text-orange transition-colors">
+                        About
+                      </span>
+                      <ChevronDown className={`h-4 w-4 text-gray-400 group-hover:text-orange transition-all ${isMobileAboutOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    
+                    <AnimatePresence>
+                      {isMobileAboutOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="pl-4 space-y-3 pt-3"
+                        >
+                          {aboutMenuItems.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              onClick={() => {
+                                setIsMenuOpen(false)
+                                setIsMobileAboutOpen(false)
+                              }}
+                              className="block text-sm font-secondary text-gray-500 hover:text-orange transition-colors py-1"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 </nav>
 
                 {/* Divider */}

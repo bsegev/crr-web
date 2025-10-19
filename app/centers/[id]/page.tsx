@@ -8,8 +8,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { centers } from "@/data/centers"
 import { use, useState } from "react"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
 
 // Enhanced data structure for landing pages
 interface EnhancedCenterData {
@@ -334,7 +332,6 @@ export default function CenterPage({ params }: { params: Promise<{ id: string }>
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[600px] overflow-hidden">
@@ -792,8 +789,6 @@ export default function CenterPage({ params }: { params: Promise<{ id: string }>
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 } 

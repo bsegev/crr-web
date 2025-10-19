@@ -34,8 +34,7 @@ const Testimonials = () => {
           </h2>
           
           <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Hear from individuals and families who found hope and healing at Costa Rica Recovery, 
-            shared with their permission and protected with absolute discretion.
+            Real stories of hope and healing, shared with permission and protected with absolute discretion.
           </p>
         </motion.div>
 
