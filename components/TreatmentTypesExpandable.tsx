@@ -87,7 +87,7 @@ export function TreatmentTypesExpandable() {
                 <motion.div
                   layoutId={`card-${active.title}-${id}`}
                   ref={ref}
-                  className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-hidden"
+                  className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-hidden text-sm"
                 >
                   <motion.div layoutId={`image-${active.title}-${id}`}>
                     <img
@@ -99,18 +99,18 @@ export function TreatmentTypesExpandable() {
                     />
                   </motion.div>
 
-                  <div className="text-base">
+                  <div>
                     <div className="flex justify-between items-start p-4">
                       <div className="">
                         <motion.h3
                           layoutId={`title-${active.title}-${id}`}
-                          className="font-bold text-navy-extra-dark text-sm"
+                          className="font-bold text-navy-extra-dark"
                         >
                           {active.title}
                         </motion.h3>
                         <motion.p
                           layoutId={`description-${active.description}-${id}`}
-                          className="text-gray-600 text-sm"
+                          className="text-gray-600"
                         >
                           {active.description}
                         </motion.p>
@@ -131,7 +131,7 @@ export function TreatmentTypesExpandable() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="text-gray-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                        className="text-gray-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [&>p]:!text-xs md:[&>p]:!text-sm lg:[&>p]:!text-base"
                       >
                         {typeof active.content === "function"
                           ? active.content()
@@ -149,7 +149,7 @@ export function TreatmentTypesExpandable() {
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
                 onClick={() => setActive(card)}
-                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-white rounded-xl cursor-pointer text-base"
+                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-white rounded-xl cursor-pointer text-sm"
               >
                 <div className="flex gap-4 flex-col md:flex-row ">
                   <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -164,13 +164,13 @@ export function TreatmentTypesExpandable() {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${card.title}-${id}`}
-                      className="font-medium text-navy-extra-dark text-center md:text-left text-sm"
+                      className="font-medium text-navy-extra-dark text-center md:text-left"
                     >
                       {card.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${card.description}-${id}`}
-                      className="text-gray-600 text-center md:text-left text-sm"
+                      className="text-gray-600 text-center md:text-left"
                     >
                       {card.description}
                     </motion.p>
