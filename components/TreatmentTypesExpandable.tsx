@@ -110,7 +110,7 @@ export function TreatmentTypesExpandable() {
                       <div className="">
                         <motion.h3
                           layoutId={`title-${active.title}-${id}`}
-                          className="font-bold text-navy-extra-dark !text-sm"
+                          className="!font-bold text-navy-extra-dark !text-sm !leading-normal"
                         >
                           {active.title}
                         </motion.h3>
@@ -180,7 +180,7 @@ export function TreatmentTypesExpandable() {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${card.title}-${id}`}
-                      className="font-medium text-navy-extra-dark text-center md:text-left !text-sm"
+                      className="!font-medium text-navy-extra-dark text-center md:text-left !text-sm !leading-normal"
                     >
                       {card.title}
                     </motion.h3>
