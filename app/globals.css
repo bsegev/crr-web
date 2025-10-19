@@ -203,11 +203,11 @@
 }
 
 /* Smooth Transitions */
+/* Note: transform removed to avoid conflicts with Framer Motion layout animations */
 * {
   transition: color var(--transition-normal), 
              background-color var(--transition-normal), 
-             border-color var(--transition-normal),
-             transform var(--transition-normal);
+             border-color var(--transition-normal);
 }
 
 /* Typography Improvements */
