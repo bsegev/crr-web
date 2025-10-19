@@ -3,10 +3,10 @@ import React from "react"
 import { motion } from "framer-motion"
 
 const testimonial = {
-  quote: "IWC didn't just find us a treatment center—they helped heal our entire family. The discretion, dignity, and genuine care in matching us to the right place made all the difference in our journey.",
-  author: "A Grateful Family",
+  quote: "Costa Rica Recovery didn't just treat my addiction—they helped me rebuild my life. The combination of professional care and the healing environment of Costa Rica made all the difference. I found myself again.",
+  author: "Former Client",
   role: "Protected Identity",
-  location: "Matched with Absolute Confidentiality"
+  location: "Grateful for a Second Chance"
 }
 
 const Testimonials = () => {
@@ -21,20 +21,20 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* El Tirol Section Tag */}
-          <p className="text-sm font-secondary font-light text-forest-extra-dark tracking-widest uppercase mb-6 sm:mb-8">
-            Centered in Truth
+          {/* Section Tag */}
+          <p className="text-sm font-light text-orange tracking-widest uppercase mb-6 sm:mb-8">
+            Real Stories, Real Healing
           </p>
-          <div className="w-16 h-px bg-forest-dark/20 mx-auto mb-8 sm:mb-12"></div>
+          <div className="w-16 h-px bg-orange/20 mx-auto mb-8 sm:mb-12"></div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-primary font-light text-forest-extra-dark leading-[1.1] tracking-[-0.02em] mb-6 sm:mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em] mb-6 sm:mb-8">
             Voices of
             <br />
-            <span className="italic font-serif text-forest-dark">the transformed</span>
+            <span className="italic font-serif text-orange">Transformation</span>
           </h2>
           
-          <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-stone-extra-dark/70 max-w-3xl mx-auto leading-relaxed">
-            Real stories from families who have found their path through our network, 
+          <p className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Hear from individuals and families who found hope and healing at Costa Rica Recovery, 
             shared with their permission and protected with absolute discretion.
           </p>
         </motion.div>
@@ -47,15 +47,15 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-primary font-light text-forest-extra-dark leading-[1.3] tracking-[-0.01em] mb-8 sm:mb-10 md:mb-12">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-primary font-light text-navy-extra-dark leading-[1.3] tracking-[-0.01em] mb-8 sm:mb-10 md:mb-12">
             "{testimonial.quote}"
           </blockquote>
           
-          <div className="w-16 h-px bg-stone-light/20 mx-auto mb-6 sm:mb-8"></div>
-          <div className="text-lg font-secondary font-light text-forest-extra-dark mb-2">
+          <div className="w-16 h-px bg-orange/20 mx-auto mb-6 sm:mb-8"></div>
+          <div className="text-lg font-secondary font-light text-navy-extra-dark mb-2">
             {testimonial.author}
           </div>
-          <div className="text-sm font-secondary font-light text-stone-dark tracking-wide uppercase">
+          <div className="text-sm font-secondary font-light text-gray-600 tracking-wide uppercase">
             {testimonial.role} • {testimonial.location}
           </div>
         </motion.div>

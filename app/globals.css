@@ -5,59 +5,65 @@
 /* Design System */
 @layer base {
   :root {
-    /* El Tirol Brand Colors */
-    /* Stone Palette */
-    --color-stone-extra-light: #F1EDE4;
-    --color-stone-light: #E8E1D5;
-    --color-stone: #D4C7B4;
-    --color-stone-dark: #A89B85;
-    --color-stone-extra-dark: #223A39;
+    /* Costa Rica Recovery Brand Colors */
+    /* Orange Palette - Main Brand Color */
+    --color-orange-extra-light: #fef5f2;
+    --color-orange-light: #f9d4c6;
+    --color-orange: #f19471;
+    --color-orange-dark: #e67347;
+    --color-orange-extra-dark: #d4521c;
     
-    /* Forest Palette */
-    --color-forest-extra-light: #ECF0DF;
-    --color-forest-light: #D4E0C1;
-    --color-forest: #A8C584;
-    --color-forest-dark: #4A7C59;
-    --color-forest-extra-dark: #0E522C;
+    /* Navy Palette - Secondary Color */
+    --color-navy-extra-light: #e8edf3;
+    --color-navy-light: #c5d3e0;
+    --color-navy: #4a5f7f;
+    --color-navy-dark: #2a3f5f;
+    --color-navy-extra-dark: #1a2940;
     
-    /* Water Palette */
-    --color-water-extra-light: #D7F8F0;
-    --color-water-light: #B8F0E4;
-    --color-water: #7FE0CC;
-    --color-water-dark: #3ABAA3;
-    --color-water-extra-dark: #13534C;
+    /* Neutral Palette */
+    --color-white: #ffffff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
     
     /* Legacy mappings for compatibility */
-    --color-primary: var(--color-forest-dark);
-    --color-primary-light: var(--color-forest-light);
-    --color-primary-dark: var(--color-forest-extra-dark);
-    --color-secondary: var(--color-stone);
-    --color-secondary-light: var(--color-stone-extra-light);
-    --color-secondary-dark: var(--color-stone-dark);
+    --color-primary: var(--color-orange);
+    --color-primary-light: var(--color-orange-light);
+    --color-primary-dark: var(--color-orange-dark);
+    --color-secondary: var(--color-navy);
+    --color-secondary-light: var(--color-navy-light);
+    --color-secondary-dark: var(--color-navy-dark);
     
     /* Semantic Colors */
-    --color-success: #2E7D6B;
-    --color-warning: #F5A623;
-    --color-error: #FF4444;
-    --color-info: #B7C9B7;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #3b82f6;
 
     /* UI Colors */
     --background: #FFFFFF;
-    --foreground: #06402B;
+    --foreground: var(--color-navy-extra-dark);
     --card: #FFFFFF;
-    --card-foreground: #06402B;
+    --card-foreground: var(--color-navy-extra-dark);
     --popover: #FFFFFF;
-    --popover-foreground: #06402B;
-    --border: #CFE3DB;
-    --input: #CFE3DB;
-    --ring: #2E7D6B;
-    --radius: 0.75rem;
+    --popover-foreground: var(--color-navy-extra-dark);
+    --border: var(--color-gray-200);
+    --input: var(--color-gray-200);
+    --ring: var(--color-orange);
+    --radius: 0.5rem;
 
-    /* Typography - El Tirol Brand Fonts */
-    --font-primary: var(--font-quadrant); /* Quadrant Text for headlines */
-    --font-secondary: var(--font-messina); /* Messina Sans for body/buttons */
-    --font-sans: var(--font-messina);
-    --font-serif: var(--font-quadrant);
+    /* Typography - Costa Rica Recovery Fonts */
+    --font-primary: var(--font-inter); /* Inter for headlines */
+    --font-secondary: var(--font-inter); /* Inter for body/buttons */
+    --font-sans: var(--font-inter);
+    --font-serif: var(--font-quadrant); /* Playfair for accents */
     --line-height-tight: 1.1;
     --line-height-normal: 1.5;
     --line-height-relaxed: 1.75;

@@ -2,6 +2,20 @@ import { Building2, Stethoscope, Mountain, Waves } from "lucide-react"
 
 export const centers = [
   {
+    id: "costa-rica-recovery",
+    name: "Costa Rica Recovery",
+    location: "San José, Costa Rica",
+    type: "Holistic Accessible",
+    specialties: ["Holistic Treatment", "Accessible Pricing", "Cultural Immersion"],
+    environment: "Tropical Healing",
+    image: "/centers/crr-space.jpg",
+    description:
+      "Experience transformative recovery in paradise. Accessible holistic care combining evidence-based treatment with Costa Rica's natural beauty.",
+    features: ["Holistic modalities", "Cultural immersion", "Accessible pricing", "Natural setting", "Evidence-based holistic treatment", "Clinical excellence", "Urban oasis in San José", "Medical detox services", "Airport proximity", "City conveniences", "Professional medical staff", "24/7 care", "Yoga & meditation", "Nutritional therapy", "Adventure therapy"],
+    icon: Stethoscope,
+    website: "https://costaricarecovery.com"
+  },
+  {
     id: "cornerstone-recovery",
     name: "Cornerstone of Southern California",
     location: "Southern California, USA",
@@ -14,20 +28,6 @@ export const centers = [
     features: ["Medical oversight", "Evidence-based protocols", "Clinical rigor", "Structured programming", "Premium medical care", "40+ years experience", "Joint Commission accredited", "Medical detox program", "Dual diagnosis treatment"],
     icon: Building2,
     website: "https://cornerstonesocal.com"
-  },
-  {
-    id: "costa-rica-recovery",
-    name: "Costa Rica Recovery",
-    location: "San José, Costa Rica",
-    type: "Holistic Accessible",
-    specialties: ["Holistic Treatment", "Accessible Pricing", "Cultural Immersion"],
-    environment: "Tropical Healing",
-    image: "/centers/crr-space.jpg",
-    description:
-      "Holistic addiction treatment in Costa Rica's healing environment at an accessible price point.",
-    features: ["Holistic modalities", "Cultural immersion", "Accessible pricing", "Natural setting", "Evidence-based holistic treatment", "Clinical excellence", "Urban oasis in San José", "Medical detox services", "Airport proximity", "City conveniences"],
-    icon: Stethoscope,
-    website: "https://costaricarecovery.com"
   },
   {
     id: "el-tirol",

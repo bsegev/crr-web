@@ -93,7 +93,7 @@ const AboutHero = () => {
   }, [allPhotos, isMobile])
 
   return (
-    <section className="relative min-h-screen bg-stone-extra-light overflow-hidden">
+    <section className="relative min-h-screen bg-navy-extra-dark overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0">
         {/* Desktop: Full ImageGrid animation */}
@@ -142,13 +142,13 @@ const AboutHero = () => {
               transition={{ duration: 0.8 }}
               className="space-y-3 sm:space-y-4"
             >
-              <p className="text-sm font-light text-forest-light tracking-widest uppercase">
-                Nourished by Nature
+              <p className="text-sm font-light text-orange tracking-widest uppercase">
+                Our Team & Mission
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-primary text-white leading-[1.1] tracking-[-0.02em]">
                 Dedicated to
                 <br />
-                <span className="italic text-forest-light">your wellbeing</span>
+                <span className="italic font-serif text-orange">your recovery</span>
               </h1>
             </motion.div>
 
@@ -158,9 +158,9 @@ const AboutHero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl md:text-2xl font-light text-white/90 leading-relaxed"
             >
-              Our experienced team brings together the best in trauma-informed care, 
-              addiction recovery, and holistic healing. We're here to support your 
-              journey with respect and understanding.
+              Our experienced team combines clinical expertise with compassionate care. 
+              We're here to support your journey to lasting recovery with evidence-based 
+              treatment and holistic healing.
             </motion.p>
 
             <motion.div
@@ -170,9 +170,9 @@ const AboutHero = () => {
             >
               <Link href="/contact" className="inline-block">
                 <button className="group relative text-white text-sm tracking-widest uppercase font-medium touch-manipulation">
-                                      <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Begin Your Transformation</span>
-                  <div className="absolute inset-0 border border-forest-light/30 group-hover:border-forest-light/60 transition-all duration-300"></div>
-                  <div className="absolute inset-0 bg-forest-light/5 group-hover:bg-forest-light/10 transition-all duration-300"></div>
+                  <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Start Your Journey</span>
+                  <div className="absolute inset-0 border border-orange/30 group-hover:border-orange/60 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-orange/5 group-hover:bg-orange/10 transition-all duration-300"></div>
                 </button>
               </Link>
             </motion.div>
@@ -210,9 +210,9 @@ const AboutHero = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.8 }}
-                  className="text-center text-stone-darker text-sm mt-4 font-light"
+                  className="text-center text-white/70 text-sm mt-4"
                 >
-                  One of our dedicated team members
+                  Our caring team at Costa Rica Recovery
                 </motion.p>
               </div>
             </motion.div>

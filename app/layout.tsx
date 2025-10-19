@@ -41,8 +41,8 @@ export default function RootLayout({
 }
 
 export const metadata = {
-      title: 'IWC - International Wellness Centers',
-  description: 'Transformative healing experiences delivered with absolute discretion and dignity. Four distinctive centers offering trauma-informed care, addiction recovery, and holistic healing.',
+  title: 'Costa Rica Recovery - Holistic Addiction Treatment in Paradise',
+  description: 'Experience transformative addiction recovery in Costa Rica. Accessible holistic treatment combining evidence-based care with the healing power of nature. Medical detox, clinical excellence, and cultural immersion in San José.',
   generator: 'v0.dev',
   icons: {
     icon: '/favicon.ico',

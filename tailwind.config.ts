@@ -26,67 +26,60 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         
-        // El Tirol Brand Palette
-        stone: {
-          "extra-light": "var(--color-stone-extra-light)",
-          light: "var(--color-stone-light)",
-          DEFAULT: "var(--color-stone)",
-          dark: "var(--color-stone-dark)",
-          "extra-dark": "var(--color-stone-extra-dark)",
+        // Costa Rica Recovery Brand Palette
+        orange: {
+          "extra-light": "var(--color-orange-extra-light)",
+          light: "var(--color-orange-light)",
+          DEFAULT: "var(--color-orange)",
+          dark: "var(--color-orange-dark)",
+          "extra-dark": "var(--color-orange-extra-dark)",
         },
-        forest: {
-          "extra-light": "var(--color-forest-extra-light)",
-          light: "var(--color-forest-light)",
-          DEFAULT: "var(--color-forest)",
-          dark: "var(--color-forest-dark)",
-          "extra-dark": "var(--color-forest-extra-dark)",
-        },
-        water: {
-          "extra-light": "var(--color-water-extra-light)",
-          light: "var(--color-water-light)",
-          DEFAULT: "var(--color-water)",
-          dark: "var(--color-water-dark)",
-          "extra-dark": "var(--color-water-extra-dark)",
+        navy: {
+          "extra-light": "var(--color-navy-extra-light)",
+          light: "var(--color-navy-light)",
+          DEFAULT: "var(--color-navy)",
+          dark: "var(--color-navy-dark)",
+          "extra-dark": "var(--color-navy-extra-dark)",
         },
         
         // Legacy compatibility
         primary: {
-          DEFAULT: "var(--color-forest-dark)",
-          foreground: "var(--color-stone-extra-light)",
+          DEFAULT: "var(--color-orange)",
+          foreground: "white",
         },
         secondary: {
-          DEFAULT: "var(--color-stone)",
-          foreground: "var(--color-stone-dark)",
+          DEFAULT: "var(--color-navy)",
+          foreground: "white",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "var(--color-stone-extra-light)",
-          foreground: "var(--color-stone-dark)",
+          DEFAULT: "var(--color-gray-100)",
+          foreground: "var(--color-gray-600)",
         },
         accent: {
-          DEFAULT: "var(--color-stone)",
-          foreground: "var(--color-stone-dark)",
+          DEFAULT: "var(--color-orange-light)",
+          foreground: "var(--color-navy-extra-dark)",
         },
         popover: {
-          DEFAULT: "var(--color-stone-extra-light)",
-          foreground: "var(--color-stone-dark)",
+          DEFAULT: "var(--color-white)",
+          foreground: "var(--color-navy-extra-dark)",
         },
         card: {
-          DEFAULT: "var(--color-stone-extra-light)",
-          foreground: "var(--color-stone-dark)",
+          DEFAULT: "var(--color-white)",
+          foreground: "var(--color-navy-extra-dark)",
         },
         info: {
           DEFAULT: "var(--color-info)",
         },
       },
       fontFamily: {
-        primary: ["var(--font-quadrant)", "serif"], // Quadrant Text for headlines
-        secondary: ["var(--font-messina)", "sans-serif"], // Messina Sans for body/buttons
-        sans: ["var(--font-messina)", "sans-serif"],
-        serif: ["var(--font-quadrant)", "serif"],
+        primary: ["var(--font-inter)", "sans-serif"], // Inter for headlines
+        secondary: ["var(--font-inter)", "sans-serif"], // Inter for body/buttons
+        sans: ["var(--font-inter)", "sans-serif"],
+        serif: ["var(--font-quadrant)", "serif"], // Playfair for accents
       },
       borderRadius: {
         lg: "var(--radius)",

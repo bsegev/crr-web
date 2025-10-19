@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-navy-extra-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 lg:py-20">
@@ -15,30 +15,26 @@ export default function Footer() {
             <div className="space-y-8">
               <div>
                 <Link href="/" className="inline-block group">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center group-hover:bg-info transition-colors">
-                      <div className="w-6 h-6 border-2 border-white rounded-full relative">
-                        <div className="absolute inset-1 border border-white rounded-full"></div>
-                      </div>
-                    </div>
-                    <span className="text-2xl font-light tracking-wide group-hover:text-info transition-colors">IWC</span>
+                  <div className="text-2xl font-primary font-light tracking-wide transition-colors group-hover:opacity-80">
+                    <span className="text-orange">Costa Rica</span>
+                    <span className="font-light"> Recovery</span>
                   </div>
                 </Link>
               </div>
               
               <div className="space-y-4">
-                <p className="text-sm uppercase tracking-widest text-info font-light">
-                  International Wellness Centers
+                <p className="text-sm uppercase tracking-widest text-orange font-light">
+                  Holistic Addiction Treatment
                 </p>
                 <p className="text-lg font-light leading-relaxed text-white/80 max-w-md">
-                  Connecting families to world-class healing centers. 
-                  Healing without borders.
+                  Experience transformative recovery in paradise. Accessible holistic healing combining evidence-based care with Costa Rica's natural beauty.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <p className="text-sm text-white/60">Available worldwide</p>
-                <p className="text-sm text-white/60">24/7 support</p>
+                <p className="text-sm text-white/60">San José, Costa Rica</p>
+                <p className="text-sm text-white/60">24/7 Admissions Support</p>
+                <p className="text-sm text-white/60">Part of International Wellness Centers</p>
               </div>
             </div>
 
@@ -46,58 +42,58 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8 lg:gap-12">
               {/* Navigation Links */}
               <div className="space-y-6">
-                <h3 className="text-sm uppercase tracking-widest text-info font-light">
-                  Navigate
+                <h3 className="text-sm uppercase tracking-widest text-orange font-light">
+                  Explore
                 </h3>
                 <nav className="space-y-4">
                   <Link 
-                    href="/our-centers" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    href="/about" 
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
-                    Our Centers
+                    About Us
                   </Link>
                   <Link 
-                    href="/about" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    href="/our-centers" 
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
-                    About
+                    Treatment Programs
                   </Link>
                   <Link 
                     href="/contact" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
                     Contact
                   </Link>
                   <Link 
                     href="/find-your-center" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
-                    Find Your Center
+                    Admissions
                   </Link>
                 </nav>
               </div>
 
               {/* Support Links */}
               <div className="space-y-6">
-                <h3 className="text-sm uppercase tracking-widest text-info font-light">
-                  Support
+                <h3 className="text-sm uppercase tracking-widest text-orange font-light">
+                  Get Help
                 </h3>
                 <nav className="space-y-4">
                   <Link 
                     href="/get-help" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
-                    Get Help
+                    Start Your Journey
                   </Link>
                   <Link 
                     href="/contact" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
-                    Emergency Support
+                    24/7 Support
                   </Link>
                   <Link 
                     href="/contact" 
-                    className="block text-white/80 hover:text-info transition-colors duration-200 font-light"
+                    className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
                     Family Resources
                   </Link>
@@ -108,30 +104,30 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-info border-opacity-20 py-8">
+        <div className="border-t border-white/10 py-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-8">
-              <p className="text-sm text-white/60 font-light">
-                © 2024 International Wellness Centers
+              <p className="text-sm text-white/60">
+                © 2025 Costa Rica Recovery
               </p>
               <div className="flex space-x-6">
                 <Link 
                   href="/privacy" 
-                  className="text-sm text-white/60 hover:text-info transition-colors duration-200"
+                  className="text-sm text-white/60 hover:text-orange transition-colors duration-200"
                 >
                   Privacy
                 </Link>
                 <Link 
                   href="/terms" 
-                  className="text-sm text-white/60 hover:text-info transition-colors duration-200"
+                  className="text-sm text-white/60 hover:text-orange transition-colors duration-200"
                 >
                   Terms
                 </Link>
               </div>
             </div>
             
-            <div className="text-info italic font-serif text-xl mt-12">
-              Healing without borders
+            <div className="text-orange italic font-serif text-lg">
+              Recovery. Reimagined.
             </div>
           </div>
         </div>

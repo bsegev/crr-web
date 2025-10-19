@@ -34,24 +34,12 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="group">
             <div className="flex items-center space-x-3">
-              <div className={`w-12 h-12 rounded-full ${
-                isScrolled 
-                  ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
-                  : 'bg-white/20 backdrop-blur-sm'
-              } flex items-center justify-center transition-colors`}>
-                <div className={`w-6 h-6 border-2 ${
-                  isScrolled ? 'border-white' : 'border-white'
-                } rounded-full relative`}>
-                  <div className={`absolute inset-1 border ${
-                    isScrolled ? 'border-white' : 'border-white'
-                  } rounded-full`}></div>
-                </div>
+              <div className={`text-2xl font-primary font-light tracking-wide transition-colors ${
+                isScrolled ? 'text-navy-extra-dark' : 'text-white'
+              } group-hover:text-orange`}>
+                <span className={isScrolled ? 'text-orange' : 'text-orange'}>Costa Rica</span>
+                <span className="font-light"> Recovery</span>
               </div>
-              <span className={`text-2xl font-primary font-light tracking-wide transition-colors ${
-                isScrolled ? 'text-forest-extra-dark' : 'text-white'
-              } group-hover:text-stone-light`}>
-                IWC
-              </span>
             </div>
           </Link>
 
@@ -61,8 +49,8 @@ const Header = () => {
               <Link 
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-stone-light ${
-                  isScrolled ? 'text-forest-extra-dark/80' : 'text-white/90'
+                className={`text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-orange ${
+                  isScrolled ? 'text-navy-dark/80' : 'text-white/90'
                 }`}
               >
                 {item.label}
@@ -75,17 +63,17 @@ const Header = () => {
                 className={`group relative text-sm tracking-widest uppercase font-secondary font-bold transition-all duration-300 ${
                   isScrolled 
                     ? 'text-white' 
-                    : 'text-forest-extra-dark'
+                    : 'text-navy-extra-dark'
                 }`}
                 style={{ letterSpacing: '0.02em' }}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Begin Your Transformation</span>
+                <span className="relative z-10 px-10 sm:px-12 py-3 sm:py-4 block">Get Help Now</span>
                 <div className={`absolute inset-0 transition-all duration-300 ${
                   isScrolled 
-                    ? 'bg-forest-extra-dark group-hover:bg-forest-extra-dark/90' 
-                    : 'bg-stone-extra-light group-hover:bg-stone-light border border-stone-light/30'
+                    ? 'bg-orange group-hover:bg-orange-dark' 
+                    : 'bg-white group-hover:bg-gray-50 border border-white/30'
                 }`}></div>
               </motion.button>
             </Link>
@@ -94,7 +82,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             className={`md:hidden p-2 transition-colors ${
-              isScrolled ? 'text-forest-extra-dark' : 'text-white'
+              isScrolled ? 'text-navy-extra-dark' : 'text-white'
             }`}
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open menu"
@@ -128,16 +116,14 @@ const Header = () => {
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-forest-extra-dark flex items-center justify-center">
-                    <div className="w-5 h-5 border-2 border-white rounded-full relative">
-                      <div className="absolute inset-1 border border-white rounded-full"></div>
-                    </div>
-                  </div>
-                  <span className="text-xl font-primary font-light tracking-wide text-forest-extra-dark">IWC</span>
+                  <span className="text-xl font-primary font-light tracking-wide">
+                    <span className="text-orange">Costa Rica</span>
+                    <span className="text-navy-extra-dark"> Recovery</span>
+                  </span>
                 </div>
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 text-gray-500 hover:text-forest-extra-dark transition-colors"
+                  className="p-2 text-gray-500 hover:text-navy-extra-dark transition-colors"
                   aria-label="Close menu"
                 >
                   <X className="h-5 w-5" />
@@ -155,10 +141,10 @@ const Header = () => {
                       className="flex items-center justify-between group py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                      <span className="text-base font-secondary text-gray-600 group-hover:text-forest-extra-dark transition-colors">
+                      <span className="text-base font-secondary text-gray-600 group-hover:text-orange transition-colors">
                 {item.label}
                       </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-forest-extra-dark transition-colors" />
+                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-orange transition-colors" />
               </Link>
             ))}
                 </nav>
@@ -174,16 +160,16 @@ const Header = () => {
                     className="block"
                   >
                     <motion.button 
-                      className="w-full bg-forest-extra-dark text-white py-4 px-6 text-sm uppercase tracking-wider font-secondary font-bold hover:bg-forest-extra-dark/90 transition-colors"
+                      className="w-full bg-orange text-white py-4 px-6 text-sm uppercase tracking-wider font-secondary font-bold hover:bg-orange-dark transition-colors"
                       style={{ letterSpacing: '0.02em' }}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
                     >
-                      Begin Your Transformation
+                      Get Help Now
                     </motion.button>
             </Link>
                   <p className="text-xs font-secondary text-gray-500 text-center">
-                    Absolute discretion • Utmost dignity • Complete confidentiality
+                    Complete confidentiality • Compassionate care • Clinical excellence
                   </p>
                 </div>
           </div>

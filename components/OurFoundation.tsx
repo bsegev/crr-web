@@ -1,34 +1,44 @@
 "use client"
 import React from "react"
 import { motion } from "framer-motion"
-import { Heart, Globe, Users, Shield } from "lucide-react"
+import { Heart, Globe, Users, Shield, MapPin, DollarSign, Lock } from "lucide-react"
 
 const OurFoundation = () => {
   const foundingPrinciples = [
     {
       icon: Heart,
-      title: "Beauty in Healing",
-      description: "We believe healing accelerates in surroundings that celebrate nature's grace and honor human dignity."
-    },
-    {
-      icon: Globe,
-      title: "Wisdom Through Excellence",
-      description: "Marrying timeless recovery principles with cutting-edge therapeutic expertise across four distinctive centers."
-    },
-    {
-      icon: Shield,
-      title: "Absolute Discretion",
-      description: "Creating safe harbors where vulnerability is met with unwavering support, privacy, and protection."
+      title: "Personalized Care",
+      description: "We create individualized treatment plans tailored to your unique needs and goals."
     },
     {
       icon: Users,
-      title: "Purpose-Driven Community",
-      description: "Recovery is sustained when guests reconnect to personal meaning and our wider healing community."
+      title: "Experienced Team",
+      description: "Our dedicated caretakers and supporters are committed to your well-being, providing compassionate, 24/7 support."
+    },
+    {
+      icon: Shield,
+      title: "Integrated Approach",
+      description: "Our blend of evidence-based therapies and holistic practices addresses all aspects of your recovery."
+    },
+    {
+      icon: MapPin,
+      title: "Urban Convenience",
+      description: "Located in San José, enjoy the amenities of city life with the healing benefits of nature through our organized excursions."
+    },
+    {
+      icon: DollarSign,
+      title: "Affordable Quality",
+      description: "Experience high-quality care at a more accessible investment compared to private centers in the U.S. and Canada."
+    },
+    {
+      icon: Lock,
+      title: "Commitment to Privacy",
+      description: "Your privacy is our priority. We provide a confidential and respectful environment."
     }
   ]
 
   return (
-    <section className="relative bg-stone-extra-light py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-white py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 z-10">
         {/* Top Content */}
         <div className="max-w-3xl">
@@ -39,12 +49,12 @@ const OurFoundation = () => {
             transition={{ duration: 0.8 }}
             className="space-y-4"
           >
-            <p className="text-sm font-secondary font-light text-forest-extra-dark tracking-widest uppercase">
-              Our Foundation
+            <p className="text-sm font-light text-orange tracking-widest uppercase">
+              Our Approach
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-forest-extra-dark leading-[1.1] tracking-[-0.02em]">
-              Why IWC Was{" "}
-              <span className="italic font-serif text-forest-dark">Founded</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em]">
+              Why Choose{" "}
+              <span className="italic font-serif text-orange">Costa Rica Recovery</span>
             </h2>
           </motion.div>
 
@@ -53,11 +63,11 @@ const OurFoundation = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-stone-extra-dark/80 leading-relaxed mt-6 sm:mt-8"
+            className="text-lg sm:text-xl md:text-2xl font-secondary font-light text-gray-700 leading-relaxed mt-6 sm:mt-8"
           >
-            Born from personal experience and professional insight, IWC emerged as a response 
-            to a critical gap in healing care. We envisioned a world where transformative treatment 
-            is accessible, delivered with dignity, and honors the profound nature of recovery.
+            We believe in recovery that's both effective and accessible. Located in the heart of San José, 
+            Costa Rica, we offer a unique blend of clinical excellence and holistic healing—all while 
+            immersing you in one of the world's most naturally therapeutic environments.
           </motion.p>
         </div>
 
@@ -74,8 +84,8 @@ const OurFoundation = () => {
             >
               <div className="flex items-start space-x-4 sm:space-x-6">
                 <div className="relative flex-shrink-0">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-forest-extra-dark/10 flex items-center justify-center">
-                    <principle.icon className="w-5 h-5 sm:w-6 sm:h-6 text-forest-extra-dark" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-orange/10 flex items-center justify-center">
+                    <principle.icon className="w-5 h-5 sm:w-6 sm:h-6 text-orange" />
                   </div>
                   <motion.div
                     initial={{ scale: 1 }}
@@ -87,21 +97,21 @@ const OurFoundation = () => {
                       stiffness: 100,
                       damping: 15
                     }}
-                    className="absolute inset-0 rounded-full border border-forest-dark/20"
+                    className="absolute inset-0 rounded-full border border-orange/20"
                   />
                 </div>
                 <div className="space-y-2 sm:space-y-3 flex-1 min-w-0">
-                  <h3 className="text-lg sm:text-xl font-secondary font-medium text-forest-extra-dark">
+                  <h3 className="text-lg sm:text-xl font-secondary font-medium text-navy-extra-dark">
                     {principle.title}
                   </h3>
-                  <p className="text-sm sm:text-base font-secondary text-stone-extra-dark/70 leading-relaxed">
+                  <p className="text-sm sm:text-base font-secondary text-gray-600 leading-relaxed">
                     {principle.description}
                   </p>
                 </div>
               </div>
               
               {/* Decorative line */}
-              <div className="absolute -inset-x-2 sm:-inset-x-4 -inset-y-2 sm:-inset-y-4 border border-forest-extra-dark/0 group-hover:border-forest-dark/8 rounded-xl transition-colors duration-700" />
+              <div className="absolute -inset-x-2 sm:-inset-x-4 -inset-y-2 sm:-inset-y-4 border border-transparent group-hover:border-orange/10 rounded-xl transition-colors duration-700" />
             </motion.div>
           ))}
         </div>
@@ -114,12 +124,12 @@ const OurFoundation = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="max-w-3xl mx-auto text-center mt-16 sm:mt-20 md:mt-24"
         >
-          <blockquote className="text-xl sm:text-2xl md:text-3xl font-primary font-light italic text-forest-dark leading-relaxed">
-            "We built the treatment centers we wished existed when our own families needed help—
-            places where healing happens with dignity, in community, surrounded by nature's grace."
+          <blockquote className="text-xl sm:text-2xl md:text-3xl font-primary font-light italic text-orange leading-relaxed">
+            "Costa Rica's natural beauty isn't just a backdrop—it's a fundamental part of the healing process. 
+            Combined with our evidence-based treatment, it creates transformation that lasts."
           </blockquote>
-          <p className="text-sm font-secondary font-light text-forest-dark/70 tracking-widest uppercase mt-4 sm:mt-6">
-            IWC Founding Family
+          <p className="text-sm font-secondary font-light text-orange/70 tracking-widest uppercase mt-4 sm:mt-6">
+            Costa Rica Recovery Team
           </p>
         </motion.div>
       </div>
