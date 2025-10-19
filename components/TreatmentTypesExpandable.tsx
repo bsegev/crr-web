@@ -70,12 +70,7 @@ export function TreatmentTypesExpandable() {
           </AnimatePresence>
           <AnimatePresence>
             {active && typeof active === "object" ? (
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="fixed inset-0 grid place-items-center z-[100]"
-              >
+              <div className="fixed inset-0  grid place-items-center z-[100]">
                 <motion.button
                   key={`button-${active.title}-${id}`}
                   layout
@@ -152,26 +147,16 @@ export function TreatmentTypesExpandable() {
                     </div>
                   </div>
                 </motion.div>
-              </motion.div>
+              </div>
             ) : null}
           </AnimatePresence>
-          <motion.ul 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-2xl mx-auto w-full gap-4"
-          >
+          <ul className="max-w-2xl mx-auto w-full gap-4">
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
                 onClick={() => setActive(card)}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-white rounded-xl cursor-pointer text-sm"
+                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
               >
                 <div className="flex gap-4 flex-col md:flex-row ">
                   <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -206,7 +191,7 @@ export function TreatmentTypesExpandable() {
                 </motion.button>
             </motion.div>
           ))}
-        </motion.ul>
+        </ul>
         </div>
       </section>
     </>
