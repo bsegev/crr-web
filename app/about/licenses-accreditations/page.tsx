@@ -142,17 +142,20 @@ export default function LicensesAccreditationsPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Trusted & Accredited
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               A Commitment to Excellence in
               <br />
               <span className="italic font-serif text-orange">Addiction Recovery Care</span>
             </h2>
             
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               At Costa Rica Recovery, we take pride in upholding the highest standards of care. Our licenses and accreditations reflect our dedication to providing ethical, high-quality treatment services. By meeting national and international regulatory requirements, we ensure you receive effective, professional care in a secure and supportive environment.
             </p>
             
-            <p className="text-base text-gray-600 mt-6 italic">
+            <p className="text-sm text-gray-600 mt-6 italic font-secondary font-light">
               Click on the relevant logos below to learn more about each accreditation and its significance for your treatment.
             </p>
           </motion.div>
@@ -507,13 +510,16 @@ export default function LicensesAccreditationsPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Official Documentation
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Supporting Your Legal and
               <br />
               <span className="italic font-serif text-orange">Professional Needs</span>
             </h2>
             
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               As a licensed facility, CRR is authorized to provide official documentation regarding your treatment. We can issue letters and reports to courts, employers, or government agencies as required, aiding in legal or professional matters.
             </p>
           </motion.div>
@@ -640,6 +646,9 @@ function LicensesAccreditationsFAQ() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-16"
         >
+          <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+            Got Questions?
+          </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em]">
             Your Questions,{" "}
             <span className="italic font-serif text-orange">Answered</span>

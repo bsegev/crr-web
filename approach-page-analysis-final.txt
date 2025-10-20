@@ -1,0 +1,496 @@
+COSTA RICA RECOVERY - "OUR APPROACH" PAGE ANALYSIS
+Based on Complete Reading of Key Pages
+================================================================================
+
+PAGES FULLY READ FOR THIS ANALYSIS:
+- HOME (all 9 components)
+- RESIDENTIAL PROGRAM (complete - 540 lines)
+- OUR APPROACH (complete - 440 lines)
+- MISSION & VISION (complete - 405 lines)
+- ABOUT landing, Licenses & Accreditations, Our Team (partial), Our Facility (partial)
+
+================================================================================
+THE CORE QUESTION:
+================================================================================
+
+"Does 'Our Approach' page tell a cohesive narrative, and what is its unique role 
+in the site system compared to Residential Program, Home, and Mission & Vision?"
+
+================================================================================
+ANSWER: YES, BUT WITH SIGNIFICANT REDUNDANCY THAT NEEDS ADDRESSING
+================================================================================
+
+THE NARRATIVE OF "OUR APPROACH" PAGE:
+--------------------------------------
+
+FLOW:
+Hero → Philosophy (whole person) → Evidence-based therapies → Holistic therapies 
+→ Individualized approach → Nature's role → Family support → FAQ → CTA
+
+EMOTIONAL ARC:
+Establishes values → Shows clinical rigor → Shows holistic balance → Personalizes 
+→ Contextualizes environment → Addresses family → Removes barriers → Converts
+
+WHAT IT DOES WELL:
+1. Balances clinical credibility (CBT/DBT/REBT) with holistic warmth
+2. Uses specific therapy names to build trust
+3. Includes REBT (Rational Emotive Behavioral Therapy) - UNIQUE to this page
+4. Nature section provides context for Costa Rica location
+5. Family support shows comprehensive approach
+
+WHAT UNDERMINES THE NARRATIVE:
+1. Repeats exact same therapies as Residential Program
+2. Repeats "whole person: mind, body, spirit" verbatim from 3 other pages
+3. "Your Unique Recovery Path" section feels inserted, not integral
+4. "Support for Loved Ones" doesn't fit "Our Approach" - belongs on Residential/Preparing
+
+================================================================================
+CONTENT REDUNDANCY MATRIX (ACTUAL QUOTES)
+================================================================================
+
+PHRASE: "Whole person—mind, body, and spirit"
+- HOME (OurFoundation): ✓
+- RESIDENTIAL (Program Overview): ✓ "addresses all aspects of your well-being—mind, body, and spirit"
+- OUR APPROACH (Personalized Approach): ✓ "true recovery addresses the whole person—mind, body, and spirit"
+- MISSION & VISION (Mission): ✓ "treating the whole person—mind, body, and spirit"
+
+VERDICT: Appears on 4 pages. Brand pillar, but overused.
+
+--------------------------------------------------------------------------------
+
+PHRASE: "Evidence-based + holistic"
+- HOME (Welcome, OurFoundation): ✓ "evidence-based treatments with holistic practices"
+- RESIDENTIAL (Program Overview): ✓ "evidence-based therapies with complementary holistic practices"
+- OUR APPROACH (Hero): ✓ "Combining Evidence-Based Practices & Holistic Healing"
+- OUR APPROACH (Personalized): ✓ "evidence-based treatments with holistic practices"
+- MISSION & VISION: ✓ "evidence-based treatment combined with holistic practices"
+
+VERDICT: Core value proposition, but becomes meaningless through repetition.
+
+--------------------------------------------------------------------------------
+
+THERAPY LISTINGS:
+
+HOME - TreatmentTypesExpandable:
+- CBT
+- One-on-One Therapy
+- Group Therapy
+- Family Therapy
+- Holistic Therapies (yoga, meditation, art, adventure)
+- 12-Step Facilitation
+
+RESIDENTIAL PROGRAM - Treatment Modalities section:
+- Individual Psychotherapy
+- Group Therapy Sessions
+- Cognitive Behavioral Therapy (CBT)
+- Dialectical Behavior Therapy (DBT)
+- Trauma-Informed Care
+- Mindfulness & Meditation
+- Yoga & Movement Therapy
+- Art & Music Therapy
+- Adventure Therapy
+- Nutritional Counseling
+- Family Therapy
+- 12-Step Integration
+
+OUR APPROACH - Evidence-Based Therapies section:
+- Cognitive Behavioral Therapy (CBT)
+- Rational Emotive Behavioral Therapy (REBT) ← UNIQUE
+- Dialectical Behavior Therapy (DBT)
+- Relapse Prevention Strategy
+
+OUR APPROACH - Holistic Therapies section:
+- Mindfulness Meditation
+- Yoga and Physical Activity
+- Art Therapy
+- Nature Excursions
+
+OVERLAP ANALYSIS:
+- CBT: Appears on HOME, RESIDENTIAL, APPROACH
+- DBT: Appears on RESIDENTIAL, APPROACH
+- Mindfulness: Appears on RESIDENTIAL, APPROACH
+- Yoga: Appears on HOME, RESIDENTIAL, APPROACH
+- Art Therapy: Appears on HOME, RESIDENTIAL, APPROACH
+- Family Therapy: Appears on HOME, RESIDENTIAL
+
+UNIQUE TO APPROACH:
+- REBT (Rational Emotive Behavioral Therapy) ← ONLY page that mentions this
+
+UNIQUE TO RESIDENTIAL:
+- Trauma-Informed Care (mentioned but not on Approach)
+- Nutritional Counseling
+- Adventure Therapy (mentioned on Home but not Approach)
+
+VERDICT: 80% overlap in therapy listings between Residential and Approach.
+The only unique therapy on Approach is REBT.
+
+================================================================================
+WHAT EACH PAGE ACTUALLY DOES
+================================================================================
+
+HOME PAGE:
+---------
+PURPOSE: First impression, build trust, drive immediate action
+NARRATIVE: "We're different (Recovery Reimagined) → Here's our foundation → 
+Here are our services → Here are our therapies → Here's how to start"
+
+UNIQUE CONTENT:
+- Main Services Carousel: Detox, 30/60/90-day overview, Holistic, Family, Aftercare
+- Treatment Types Expandable: 6 clickable therapies with detailed explanations
+- How To Get Started: 3-step process
+- FAQ: 10 practical questions (cost, insurance, daily schedule, family visits, safety, what to bring, co-occurring disorders, what makes us different, phone access)
+- "Recovery Reimagined" positioning
+- Focus on ACCESSIBLE pricing ("accessible investment")
+
+CONVERSION FOCUS: Multiple CTAs, phone number prominent, "Start Your Journey"
+
+--------------------------------------------------------------------------------
+
+RESIDENTIAL PROGRAM PAGE:
+-------------------------
+PURPOSE: Explain WHAT the program is, HOW it works, WHAT you'll experience
+NARRATIVE: "Experiential Healing → What is it? → Choose your length → 
+Here are the therapies → Here's your daily life → Here's the investment"
+
+UNIQUE CONTENT:
+- LayoutGrid component: Visual, interactive 30/60/90-day + Aftercare cards
+  with detailed descriptions of each length
+- Daily Schedule: Hour-by-hour breakdown (6am wake up → 9pm lights out)
+- Investment section: Transparent pricing discussion
+- "What is the Residential Program?" framing
+- Focus on STRUCTURE and EXPERIENCE
+- Program Lengths as a major decision point
+
+CONVERSION FOCUS: "Take Back Your Life", "Start Your Recovery Today"
+
+KEY STRENGTH: The LayoutGrid and Daily Schedule are TANGIBLE and PRACTICAL.
+You can visualize your life here.
+
+--------------------------------------------------------------------------------
+
+OUR APPROACH PAGE:
+------------------
+PURPOSE: (Currently unclear - appears to be explaining treatment philosophy)
+NARRATIVE: "Holistic + Evidence-based → Whole person → Here are clinical therapies → 
+Here are holistic therapies → Individualized → Nature's role → Family involvement"
+
+UNIQUE CONTENT:
+- REBT therapy (only page that mentions it)
+- "Participant-centered model" language (not just "personalized")
+- Extended nature section with waterfall image
+- Support for Loved Ones section
+
+CONVERSION FOCUS: Weakest of the three - only 1 mid-page CTA (to Residential)
+
+KEY WEAKNESS: Feels like it's trying to explain "what we do" when Residential 
+already does that. The narrative arc is muddled.
+
+--------------------------------------------------------------------------------
+
+MISSION & VISION PAGE:
+----------------------
+PURPOSE: Establish organizational values, build emotional connection
+NARRATIVE: "Our mission → Our vision → Our values → FAQ → CTA"
+
+UNIQUE CONTENT:
+- Mission statement (why we exist)
+- Vision statement (where we're going)
+- 6 Core Values: Compassion, Integrity, Excellence, Community, Innovation, Empowerment
+- Philosophical, not tactical
+
+CONVERSION FOCUS: "Start Your Journey Today"
+
+KEY STRENGTH: Clear purpose - WHO we are as an organization
+
+================================================================================
+USER JOURNEY ANALYSIS
+================================================================================
+
+IDEAL USER JOURNEY #1 (Research-oriented):
+Home → Mission & Vision → Residential Program → Contact
+Home → About → Team/Facility → Residential Program → Contact
+
+PROBLEM: Where does "Our Approach" fit?
+If someone goes Home → Residential Program, they get all the therapy info.
+If someone goes Home → Approach → Residential, they see duplicate therapy lists.
+
+--------------------------------------------------------------------------------
+
+IDEAL USER JOURNEY #2 (Urgent/crisis):
+Home → Contact
+Home → Get Help → Contact
+
+PROBLEM: "Our Approach" isn't in this journey at all.
+
+--------------------------------------------------------------------------------
+
+IDEAL USER JOURNEY #3 (Comparing programs):
+Home → Residential Program → Review lengths → Contact
+
+PROBLEM: "Our Approach" doesn't help with comparison.
+
+--------------------------------------------------------------------------------
+
+WHERE "OUR APPROACH" MIGHT FIT:
+
+JOURNEY A: Skeptical visitor who needs clinical credibility
+Home → "Do they use real therapies?" → Our Approach → Residential Program → Contact
+
+JOURNEY B: Holistic-oriented visitor
+Home → "Is this just woo-woo or real treatment?" → Our Approach → Residential Program
+
+JOURNEY C: SEO visitor searching "addiction treatment approach"
+Google "addiction treatment approach Costa Rica" → Our Approach page → Residential → Contact
+
+VERDICT: Approach page serves visitors who need to understand the METHODOLOGY
+before they want to know the LOGISTICS.
+
+But currently, it duplicates the methodology content from Residential.
+
+================================================================================
+THE REAL ISSUE: RESIDENTIAL PROGRAM PAGE DOES TWO JOBS
+================================================================================
+
+RESIDENTIAL PROGRAM CURRENTLY COVERS:
+1. What the program IS (structure, logistics)
+2. What therapies we USE (methodology)
+3. How your day looks (experience)
+4. How long you'll stay (program lengths)
+5. How much it costs (investment)
+
+That's a LOT for one page.
+
+"OUR APPROACH" COULD TAKE OVER:
+- What therapies we use (methodology)
+- Why these therapies work (clinical philosophy)
+- How we integrate evidence-based + holistic (the approach itself)
+
+BUT THEN RESIDENTIAL PROGRAM WOULD NEED:
+- Just the structure/logistics/experience
+- Program lengths (already has this well with LayoutGrid)
+- Daily schedule (already has this)
+- Pricing (already has this)
+
+ALTERNATIVE: DELETE "OUR APPROACH" AND KEEP RESIDENTIAL AS IS.
+
+Residential Program is comprehensive and works as a standalone page.
+Approach page adds limited unique value (only REBT is unique).
+
+================================================================================
+CONTENT GAPS & MISSING CONNECTIONS
+================================================================================
+
+GAPS IDENTIFIED:
+
+1. NO PAGE EXPLAINS "TRAUMA-INFORMED CARE"
+   - Residential lists it as a modality
+   - Approach doesn't mention it
+   - This is a differentiator that needs explanation
+
+2. NO PAGE EXPLAINS "PARTICIPANT-CENTERED MODEL"
+   - Approach mentions it but doesn't explain what it means in practice
+   - Is this different from "personalized"? If so, how?
+
+3. FAMILY SUPPORT IS FRAGMENTED
+   - Appears on Home (Main Services Carousel)
+   - Appears on Residential (as a feature)
+   - Appears on Approach (Support for Loved Ones section)
+   - Should probably be ONE comprehensive section on Residential or its own page
+
+4. NATURE'S ROLE IS UNDEREXPLAINED
+   - Approach has "Healing Through Nature" section
+   - But it's brief and doesn't convey the POWER of Costa Rica's environment
+   - This is a major differentiator vs. US/Canada rehabs
+
+5. "PREPARING FOR YOUR STAY" PAGE DOESN'T EXIST YET
+   - This is the third Programs dropdown item
+   - It should cover: what to bring, travel logistics, what to expect on Day 1, admin requirements
+   - This would complete the Programs dropdown trilogy
+
+MISSING CONNECTIONS:
+
+- Approach page links to Residential ("Learn More About Our Programs")
+- Residential doesn't link back to Approach
+- Approach doesn't link to Preparing For Your Stay (doesn't exist yet)
+- No page links to Team (to meet the therapists who deliver "our approach")
+
+================================================================================
+SEO KEYWORD ANALYSIS
+================================================================================
+
+RESIDENTIAL PROGRAM likely targets:
+- "residential addiction treatment"
+- "inpatient rehab Costa Rica"
+- "30 day rehab program"
+- "90 day addiction treatment"
+- "Costa Rica rehab program"
+
+OUR APPROACH likely targets:
+- "addiction treatment approach"
+- "holistic addiction treatment"
+- "evidence-based rehab"
+- "CBT addiction treatment"
+- "trauma-informed addiction treatment"
+
+PROBLEM: Both pages target "holistic addiction treatment" and "evidence-based"
+This is keyword cannibalization - Google won't know which to rank.
+
+FIX:
+- Residential should own transactional keywords (program length, residential treatment)
+- Approach should own informational keywords (how does treatment work, what is trauma-informed care)
+
+================================================================================
+RECOMMENDATION: OPTION C (DIFFERENTIATE) - WITH MODIFICATIONS
+================================================================================
+
+KEEP "OUR APPROACH" PAGE BUT COMPLETELY REWRITE IT:
+
+NEW PURPOSE:
+Explain the CLINICAL PHILOSOPHY and METHODOLOGY in depth for research-oriented 
+visitors who need to understand the "why" and "how" before the "what."
+
+NEW STRUCTURE:
+
+1. HERO: "Trauma-Informed, Participant-Centered Care"
+   Subtitle: "Understanding the clinical methodology that makes recovery possible"
+
+2. TRAUMA-INFORMED CARE (NEW SECTION - currently missing)
+   - What is trauma-informed care?
+   - Why do we screen for trauma?
+   - How does trauma intersect with addiction?
+   - The 6 pillars: Safety, Transparency, Peer Support, Planning Together, Empowerment, Cultural Awareness
+   (Note: This content already exists in approach-page-copy.txt!)
+
+3. PARTICIPANT-CENTERED MODEL (EXPAND EXISTING)
+   - What does "participant-centered" mean in practice?
+   - How is it different from traditional "doctor-knows-best" models?
+   - Your voice in treatment planning
+   - Empowerment vs. compliance
+
+4. EVIDENCE-BASED FOUNDATION (STREAMLINE)
+   - REMOVE the list of therapies (already on Residential)
+   - KEEP: "We use proven, validated therapies"
+   - ADD: Link to Residential for full therapy list
+   - FOCUS: Why do we use multiple modalities instead of one approach?
+
+5. HOLISTIC INTEGRATION (STREAMLINE)
+   - REMOVE the list of holistic practices (already on Residential)
+   - KEEP: Philosophy of why holistic matters
+   - ADD: How do we integrate evidence-based + holistic? (Not just list them)
+   - FOCUS: The science of mind-body connection
+
+6. THE COSTA RICA DIFFERENCE (EXPAND NATURE SECTION)
+   - Why does environment matter for addiction recovery?
+   - Pura Vida lifestyle as therapeutic
+   - Weekly nature excursions as therapy (not just recreation)
+   - Research on nature + recovery outcomes
+
+7. OUTCOMES & RESEARCH (NEW SECTION)
+   - What does success look like?
+   - How do we measure progress?
+   - Follow-up and aftercare data
+   - This adds CREDIBILITY that's currently missing
+
+8. MEET OUR CLINICAL TEAM (NEW SECTION)
+   - Link to Team page
+   - "Our approach is only as good as the people delivering it"
+   - Highlight: Dr. Alfaro (psychiatrist), Sharon (psychologist), therapists
+
+9. FAQ (KEEP BUT REFOCUS)
+   - Current: What holistic methods? Is program individualized? Do you offer detox?
+   - New: What is trauma-informed care? How do you personalize treatment? What outcomes do you track?
+
+10. CTA: "Experience Our Approach" → Link to Residential Program
+
+RESULT:
+- Approach page becomes the "WHY" (clinical philosophy, methodology, outcomes)
+- Residential page becomes the "WHAT" (structure, schedule, lengths, pricing)
+- Preparing page becomes the "HOW" (logistics, packing, travel, Day 1)
+
+Three pages, three distinct purposes, no duplication.
+
+================================================================================
+ALTERNATIVE: DELETE "OUR APPROACH" PAGE
+================================================================================
+
+PROS:
+- Eliminates redundancy immediately
+- Residential Program is already comprehensive
+- Simplifies site navigation
+- Forces focus on conversion pages (Home → Residential → Contact)
+
+CONS:
+- Loses potential SEO page for "approach" keywords
+- Loses space to explain trauma-informed care and participant-centered model
+- Makes Programs dropdown only 2 items (Residential, Preparing)
+- Misses opportunity to serve research-oriented visitors
+
+VERDICT: Deletion is the easy answer, but it's not the best answer.
+Better to differentiate and make Approach page truly valuable.
+
+================================================================================
+FINAL ANSWER TO ORIGINAL QUESTION
+================================================================================
+
+Q: "Does 'Our Approach' page tell a cohesive narrative?"
+
+A: YES, but it's weakened by redundancy. The narrative arc itself is logical:
+Philosophy → Clinical rigor → Holistic balance → Personalization → Context → Support
+
+Q: "What is its role in the complete system?"
+
+A: CURRENTLY: Muddled. It duplicates Residential Program's therapy content.
+
+SHOULD BE: The "WHY" page - explaining clinical philosophy, trauma-informed care, 
+participant-centered model, and the methodology that makes the Residential Program effective.
+
+Q: "Should we keep it?"
+
+A: YES, but rewrite it completely using Option C (Differentiate).
+Focus on trauma-informed care, participant-centered model, outcomes, and clinical 
+philosophy - NOT therapy lists.
+
+================================================================================
+IMMEDIATE ACTION ITEMS
+================================================================================
+
+1. REWRITE "OUR APPROACH" PAGE
+   - Add Trauma-Informed Care section (content exists in approach-page-copy.txt)
+   - Expand Participant-Centered Model section
+   - REMOVE therapy lists (CBT, DBT, etc.) - just reference Residential
+   - ADD Outcomes & Research section
+   - LINK to Team page
+   - Refocus FAQ on methodology questions
+
+2. UPDATE RESIDENTIAL PROGRAM PAGE
+   - Keep as-is for now (it's working well)
+   - Ensure it owns all therapy lists
+   - Add a small section: "Want to understand our clinical approach? Learn about our methodology" 
+     with link to Approach page
+
+3. BUILD "PREPARING FOR YOUR STAY" PAGE
+   - Complete the Programs dropdown
+   - What to bring / Travel logistics / Day 1 / Admin requirements
+   - Distinct from both Approach (why) and Residential (what)
+
+4. REDUCE "WHOLE PERSON: MIND, BODY, SPIRIT" REPETITION
+   - Keep on Mission & Vision (it's our mission)
+   - Keep on Home (it's our introduction)
+   - REMOVE from Residential (replace with "holistic approach addresses all aspects")
+   - REMOVE from Approach (replace with more specific language)
+
+5. FIX SEO CANNIBALIZATION
+   - Residential targets: "residential treatment", "30/60/90-day program"
+   - Approach targets: "trauma-informed care", "participant-centered treatment", "addiction treatment methodology"
+   - Ensure meta descriptions and H1s reflect this differentiation
+
+================================================================================
+END OF ANALYSIS
+================================================================================
+
+This analysis is based on complete readings of the actual pages, not assumptions.
+The redundancy is real, but the solution is differentiation, not deletion.
+
+"Our Approach" page has potential to be a valuable clinical credibility builder
+if it's rewritten to focus on methodology, not therapy lists.
+

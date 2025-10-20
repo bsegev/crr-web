@@ -1,0 +1,632 @@
+COSTA RICA RECOVERY WEBSITE - COMPREHENSIVE CONTENT AUDIT
+================================================================================
+Date: October 20, 2025
+Auditor: AI Assistant
+Purpose: Analyze all pages for purpose, content overlap, SEO focus, and conversion paths
+
+================================================================================
+SECTION 1: HOME PAGE
+================================================================================
+
+FILE: app/page.tsx
+
+PRIMARY PURPOSE:
+- First impression / brand introduction
+- Establish credibility and trust
+- Drive immediate action (call or contact)
+
+KEY CONTENT SECTIONS:
+1. Hero - "Recovery Reimagined"
+   - Rotating imagery (Costa Rica nature/healing spaces)
+   - Core messaging: "Personalized addiction recovery combining evidence-based therapies and holistic practices"
+   - Call to action: "Start Your Journey" → /contact
+   - Phone: (866) 804-1793 prominently displayed
+
+2. Welcome Section - "Where Your Journey to Lasting Recovery Begins"
+   - Philosophy: Whole-person healing (mind, body, spirit)
+   - Location: San José
+   - CTA: "Learn More About Our Methods" → /about
+
+3. Our Foundation - "Why Choose Costa Rica Recovery"
+   - 6 key differentiators:
+     * Personalized Care
+     * Experienced Team
+     * Integrated Approach (evidence-based + holistic)
+     * Urban Convenience (San José location)
+     * Affordable Quality
+     * Commitment to Privacy
+   - No direct CTA, builds trust
+
+4. Main Services Carousel (component not fully audited)
+   - Treatment modalities display
+
+5. Treatment Types Expandable (component not fully audited)
+   - Detailed treatment info
+
+6. How To Get Started - "Three Simple Steps to Start Your Recovery"
+   - Step 1: Reach Out
+   - Step 2: Confidential Consultation
+   - Step 3: Personalized Plan
+   - CTA: Phone number + "Start Your Recovery Today" → /contact
+   - Emphasizes: 24/7 availability
+
+7. Testimonials (social proof)
+
+8. FAQ (objection handling)
+
+9. Final CTA - "Recovery Starts Today"
+   - Large phone number display
+   - Dual CTAs: "Call Now" (tel link) + "Get in Touch Online" → /contact
+
+SEO FOCUS:
+- "addiction treatment Costa Rica"
+- "holistic addiction recovery"
+- "evidence-based addiction treatment"
+- "personalized addiction recovery"
+
+CONVERSION PATH:
+Primary: Hero → Contact (fast track)
+Secondary: Hero → Welcome → Foundation → How to Get Started → Contact
+Tertiary: Browse site → Final CTA → Contact
+
+OVERLAP CONCERNS:
+- "Personalized care" mentioned 3+ times
+- "Evidence-based + holistic" appears in multiple sections
+- Treatment philosophy repeated across sections
+
+STRENGTHS:
+- Clear, consistent messaging
+- Multiple conversion opportunities
+- Strong visual hierarchy
+- Phone number accessibility
+
+================================================================================
+SECTION 2: ABOUT DROPDOWN PAGES
+================================================================================
+
+A. ABOUT LANDING PAGE (app/about/page.tsx)
+----------
+Components: AboutHero, FoundingStory, MissionVision, WhyChooseIWC, FindYourCenter, FinalCTA
+
+PURPOSE: Gateway to deeper brand story, trust-building
+CTA: Final CTA → contact
+OVERLAP: Likely repeats mission/vision content with dedicated M&V page
+
+
+B. MISSION & VISION PAGE (app/about/mission-vision/page.tsx)
+----------
+PRIMARY PURPOSE:
+- Establish organizational values and long-term vision
+- Build emotional connection and trust
+- Position as mission-driven organization
+
+KEY CONTENT:
+1. Hero - "Empowering Recovery Through Compassionate, Holistic Care"
+   - Subtitle: "Transforming Lives by Supporting Mind, Body, and Spirit"
+
+2. Mission Section - "Our Mission"
+   - Empowering lasting recovery through compassionate, personalized care
+   - Evidence-based + holistic in supportive environment
+   - Whole person: mind, body, spirit
+   - Image/text layout
+
+3. Vision Section - "Our Vision"
+   - (Not fully read but follows same pattern)
+
+4. Core Values Section
+   - Multiple values displayed
+
+5. FAQ Section
+
+SEO FOCUS:
+- "holistic addiction recovery"
+- "compassionate addiction treatment"
+- "whole person recovery"
+
+CONVERSION PATH:
+Mission & Vision → Build trust → (No mid-page CTAs visible) → FAQ → Footer contact
+
+OVERLAP WITH OTHER PAGES:
+- ⚠️ HIGH OVERLAP with Home "Our Foundation" section
+- ⚠️ HIGH OVERLAP with "Our Approach" page (whole person, evidence-based + holistic)
+- Mission text repeats "personalized care" already on home
+
+
+C. OUR TEAM PAGE (app/about/our-team/page.tsx)
+----------
+PURPOSE: Build trust through team expertise, humanize the brand
+KEY CONTENT: Team member profiles with bios, credentials
+CTA: Contact form (implicit trust → reach out)
+OVERLAP: Minimal - unique content
+
+
+D. OUR FACILITY PAGE (app/about/our-facility/page.tsx)
+----------
+PURPOSE: Showcase physical environment, amenities, location benefits
+KEY CONTENT: Photo galleries of accommodations, wellness spaces, dining, nature
+CTA: Visual proof → implicit contact
+OVERLAP: Minimal - unique visual content
+
+
+E. LICENSES & ACCREDITATIONS PAGE (app/about/licenses-accreditations/page.tsx)
+----------
+PURPOSE: Establish credibility and regulatory compliance
+KEY CONTENT: Certifications, government approvals, medical standards
+CTA: Trust → contact
+OVERLAP: None - unique compliance content
+
+
+F. TESTIMONIALS PAGE (app/about/testimonials/page.tsx)
+----------
+PURPOSE: Social proof, build trust through success stories
+CTA: Stories → inspired action → contact
+OVERLAP: None - unique testimonial content
+
+
+G. ARTICLES PAGE (app/about/articles/page.tsx)
+----------
+PURPOSE: SEO blog/content marketing
+CTA: Educational → brand authority → contact
+OVERLAP: Likely minimal if well-executed
+
+================================================================================
+SECTION 3: PROGRAMS DROPDOWN PAGES
+================================================================================
+
+A. RESIDENTIAL PROGRAM PAGE (app/programs/residential-program/page.tsx)
+----------
+PRIMARY PURPOSE:
+- Explain what the residential program IS (logistics, structure, experience)
+- Showcase program lengths (30/60/90-day)
+- Detail daily schedule and treatment modalities
+- CONVERT: This is the main program page
+
+KEY CONTENT:
+1. Hero - "Experiential Healing at Costa Rica Recovery"
+   - "24/7 care, personalized therapies, supportive environment"
+
+2. Program Overview - "What is the Residential Program?"
+   - Safe, nurturing environment
+   - Holistic approach: evidence-based + holistic practices
+   - 6 feature cards:
+     * Personalized Treatment Plans
+     * Evidence-Based Therapies
+     * Holistic Practices
+     * Family Support
+     * Aftercare Planning
+     * 24/7 Nursing Care
+
+3. Program Lengths - "Find the Program Length That Fits Your Needs"
+   - LayoutGrid component with:
+     * 30-Day (Foundation)
+     * 60-Day (Growth)
+     * 90-Day (Transformation) ← emphasized
+     * Aftercare Planning
+   - Interactive cards with detailed descriptions
+   - Custom branded imagery (mountain metaphor)
+
+4. Treatment Modalities - "Evidence-Based Treatment Modalities"
+   - Lists specific therapies (CBT, DBT, REBT, etc.)
+   - Holistic practices (yoga, meditation, art therapy, nature)
+
+5. Daily Schedule - "A Typical Day in the Residential Program"
+   - Hour-by-hour breakdown
+   - Shows structure and support
+
+6. Investment Section - "Investing in Your Recovery"
+   - Cost transparency
+   - Value proposition
+
+7. FAQ Section
+
+8. CTA (implied throughout, contact footer)
+
+SEO FOCUS:
+- "residential addiction treatment"
+- "30 day rehab program"
+- "90 day addiction treatment"
+- "Costa Rica rehab program"
+- "structured addiction treatment"
+
+CONVERSION PATH:
+Hero → Program overview → Choose length → See daily life → Investment → FAQ → Contact
+
+OVERLAP CONCERNS:
+- ⚠️ CRITICAL: "Evidence-based + holistic" appears AGAIN (also on Home, Mission, Approach)
+- ⚠️ Treatment modalities section overlaps significantly with "Our Approach" page
+- ⚠️ "Personalized treatment plans" repeated from home
+- Daily schedule is unique content
+- Program lengths are unique
+
+STRENGTHS:
+- Most comprehensive program detail
+- Clear progression through content
+- Strong visual elements (LayoutGrid)
+- Practical information (schedule, investment)
+
+
+B. OUR APPROACH PAGE (app/programs/our-approach/page.tsx)
+----------
+PRIMARY PURPOSE:
+- ❓ UNCLEAR - seems to explain treatment philosophy
+- Distinguish clinical + holistic methodology
+
+KEY CONTENT:
+1. Hero - "Holistic, Participant-Centered Care for Comprehensive Recovery"
+   - "Combining Evidence-Based Practices & Holistic Healing"
+
+2. Personalized Approach - "Treating the Whole Person"
+   - "Recovery addresses whole person—mind, body, spirit"
+   - "Evidence-based + holistic practices"
+   - "Participant-centered model"
+
+3. Evidence-Based Therapies - "Proven, Effective Therapies"
+   - 4 therapy cards:
+     * CBT
+     * REBT
+     * DBT
+     * Relapse Prevention
+
+4. Holistic Therapies - "Healing the Whole Person"
+   - 4 holistic cards:
+     * Mindfulness Meditation
+     * Yoga and Physical Activity
+     * Art Therapy
+     * Nature Excursions
+
+5. Your Unique Recovery Path - "Your Unique Recovery Path"
+   - Individualized treatment emphasis
+   - CTA: "Learn More About Our Programs" → /programs/residential-program
+
+6. Healing Through Nature - "Healing Through Nature"
+   - San José location + weekly nature trips
+   - Image: waterfall
+
+7. Support for Loved Ones - "Support for Loved Ones"
+   - Family involvement
+   - Educational resources
+
+8. FAQ Section - 3 questions:
+   - What holistic methods?
+   - Is program individualized?
+   - Do you offer detox?
+
+9. CTA - "Contact Us for Personalized Support"
+   - → /contact
+
+SEO FOCUS:
+- "holistic addiction treatment"
+- "evidence-based rehab"
+- "whole person recovery"
+- "CBT addiction treatment"
+- "holistic therapies Costa Rica"
+
+CONVERSION PATH:
+Hero → Philosophy → Specific therapies → Individualized emphasis → Nature/family context → FAQ → Contact
+
+CRITICAL OVERLAP ANALYSIS:
+⚠️⚠️⚠️ SEVERE REDUNDANCY:
+
+1. WITH HOME PAGE:
+   - "Whole person: mind, body, spirit" (exact same language)
+   - "Evidence-based + holistic" (repeated verbatim)
+   - "Personalized/participant-centered" (same concept)
+
+2. WITH RESIDENTIAL PROGRAM:
+   - Treatment Modalities section on Residential lists EXACT SAME therapies:
+     * CBT, REBT, DBT (identical on both pages)
+     * Yoga, meditation, art therapy, nature (identical on both pages)
+   - "Personalized treatment plans" (both pages emphasize)
+
+3. WITH MISSION & VISION:
+   - "Whole person" philosophy (repeated)
+   - "Evidence-based + holistic" (repeated)
+
+NARRATIVE ISSUES:
+- Section 2 ("Treating the Whole Person") and Section 4 ("Healing the Whole Person") are nearly identical in message
+- "Your Unique Recovery Path" feels like it should be earlier in the flow
+- "Support for Loved Ones" doesn't fit "Our Approach" - should be on Residential Program or separate page
+- "Healing Through Nature" elaborates on one holistic method but doesn't fit overall narrative arc
+
+STRATEGIC QUESTIONS:
+- What is this page's UNIQUE purpose that Residential Program doesn't serve?
+- Is this meant for SEO (targeting "approach" keywords)?
+- Should this be folded into Residential Program?
+- OR should Residential Program focus on logistics/schedule, and Approach focus on clinical philosophy?
+
+
+C. PREPARING FOR YOUR STAY PAGE (app/programs/preparing-for-your-stay/page.tsx)
+----------
+STATUS: NOT YET BUILT
+
+EXPECTED PURPOSE:
+- Pre-arrival logistics
+- What to pack
+- Travel information
+- What to expect on Day 1
+- Administrative requirements
+
+EXPECTED SEO:
+- "what to bring to rehab"
+- "preparing for addiction treatment"
+- "Costa Rica travel rehab"
+
+EXPECTED OVERLAP:
+- Should be minimal - practical logistics only
+- Should NOT repeat treatment philosophy
+
+================================================================================
+SECTION 4: OTHER MAIN NAVIGATION PAGES
+================================================================================
+
+A. CONTACT PAGE (app/contact/page.tsx)
+----------
+PURPOSE: Convert visitors → leads (phone call or form submission)
+COMPONENTS: ContactHero, ContactMethods, ContactProcess
+CTA: Primary conversion point
+OVERLAP: None - functional page
+
+
+B. GET HELP PAGE (app/get-help/page.tsx)
+----------
+PURPOSE: Crisis resources, immediate help information
+COMPONENTS: GetHelpHero, GetHelpBanner, GetHelpCenters, GetHelpResources, GetHelpNext
+CTA: Multiple help resources + contact
+OVERLAP: None - emergency/crisis focus
+
+
+C. FIND YOUR CENTER / OUR CENTERS PAGES
+----------
+PURPOSE: Multi-center navigation (if International Wellness Centers has multiple locations)
+OVERLAP: N/A - directory page
+
+================================================================================
+SECTION 5: CONTENT REDUNDANCY MATRIX
+================================================================================
+
+KEY PHRASE: "Evidence-based + Holistic"
+- Home (Our Foundation section) ✓
+- Mission & Vision ✓
+- Residential Program (Program Overview) ✓
+- Our Approach (Hero, Personalized Approach, multiple sections) ✓✓✓
+
+KEY PHRASE: "Whole Person: Mind, Body, Spirit"
+- Home (Welcome Section) ✓
+- Mission & Vision (Mission section) ✓
+- Residential Program (Program Overview) ✓
+- Our Approach (Personalized Approach, Holistic section) ✓✓
+
+KEY PHRASE: "Personalized / Individualized Care"
+- Home (Hero, Our Foundation) ✓✓
+- Residential Program (Program Overview) ✓
+- Our Approach (Hero, Your Unique Recovery Path) ✓✓
+
+TREATMENT MODALITIES (CBT, DBT, REBT, etc.):
+- Residential Program (Treatment Modalities section) ✓ (full detail)
+- Our Approach (Evidence-Based Therapies section) ✓ (full detail)
+
+HOLISTIC PRACTICES (Yoga, Meditation, Art, Nature):
+- Residential Program (Treatment Modalities section) ✓ (full detail)
+- Our Approach (Holistic Therapies section) ✓ (full detail + Healing Through Nature)
+
+================================================================================
+SECTION 6: SEO KEYWORD OVERLAP ANALYSIS
+================================================================================
+
+PRIMARY KEYWORDS (likely shared across multiple pages):
+- "addiction treatment Costa Rica"
+- "rehab Costa Rica"
+- "holistic addiction recovery"
+- "evidence-based rehab"
+
+POTENTIAL KEYWORD CANNIBALIZATION:
+- Residential Program vs. Our Approach:
+  Both targeting "holistic addiction treatment Costa Rica"
+  Both targeting "evidence-based addiction therapy"
+  
+CONCERN: Google may not know which page to rank for these terms
+
+RECOMMENDATION:
+- Residential Program should target: "residential addiction program", "inpatient rehab Costa Rica", "30 60 90 day program"
+- Our Approach should target: "treatment approach", "addiction therapy methods", "CBT DBT Costa Rica"
+- OR: Consolidate into one comprehensive Residential Program page
+
+================================================================================
+SECTION 7: USER JOURNEY ANALYSIS
+================================================================================
+
+IDEAL USER JOURNEY #1 (Research-oriented visitor):
+Home → About/Mission-Vision → Residential Program → Contact
+- Wants to understand WHO you are, then WHAT you offer
+
+IDEAL USER JOURNEY #2 (Urgent/crisis visitor):
+Home → Get Help → Contact
+- Needs immediate action
+
+IDEAL USER JOURNEY #3 (Program comparison visitor):
+Home → Residential Program → Review program lengths → Contact
+- Shopping/comparing programs
+
+CURRENT ISSUE:
+"Our Approach" doesn't fit cleanly into any journey:
+- Too philosophical for urgent visitors
+- Redundant with Residential Program for detail-seekers
+- Doesn't add unique value beyond what's on Residential Program
+
+POTENTIAL VALUE OF "OUR APPROACH":
+- Could be valuable for SEO (ranking for "approach" keywords)
+- Could serve visitors specifically searching "what is your treatment approach"
+- Could be condensed and merged into Residential Program as a subsection
+
+================================================================================
+SECTION 8: CONVERSION PATH ANALYSIS
+================================================================================
+
+PAGES WITH STRONG CONVERSION DESIGN:
+1. Home (multiple CTAs, phone number prominent)
+2. Residential Program (clear progression to contact)
+3. How To Get Started component (embedded in home)
+
+PAGES WITH WEAK/UNCLEAR CONVERSION:
+1. Our Approach - Only 1 mid-page CTA (to Residential Program)
+2. Mission & Vision - No mid-page CTAs
+3. About landing - Unclear journey
+
+RECOMMENDATION:
+Every page needs at least one strong mid-page CTA, not just footer contact
+
+================================================================================
+SECTION 9: RECOMMENDATIONS
+================================================================================
+
+CRITICAL ISSUES:
+
+1. OUR APPROACH PAGE REDUNDANCY ⚠️⚠️⚠️
+   PROBLEM: 80% content overlap with Residential Program + Home + Mission
+   OPTIONS:
+   A. DELETE and redirect to Residential Program
+   B. CONSOLIDATE: Merge into Residential Program as "Our Treatment Approach" section
+   C. DIFFERENTIATE: Completely rewrite to focus on clinical philosophy, research, outcomes
+   D. REPURPOSE: Make it about "Trauma-Informed Care" or specific clinical methodology that's NOT covered elsewhere
+
+   RECOMMENDATION: Option B or D
+   - If Option B: Add "Our Treatment Approach" section to Residential Program, redirect /programs/our-approach → /programs/residential-program
+   - If Option D: Rewrite entirely - focus on trauma-informed care, dual diagnosis approach, or another clinical differentiation
+
+2. REDUNDANT MESSAGING ACROSS SITE
+   - Reduce repetition of "evidence-based + holistic" - use once on Home, once on Residential
+   - "Whole person: mind, body, spirit" should appear on Mission & Vision, not repeated on every page
+   - "Personalized care" is your differentiator - keep it, but vary the language
+
+3. TREATMENT MODALITIES DUPLICATION
+   - List detailed therapies (CBT, DBT, REBT) ONLY on Residential Program
+   - Home can mention "evidence-based therapies" generally
+   - Our Approach (if kept) should discuss therapeutic PHILOSOPHY, not list therapies again
+
+4. SEO KEYWORD CANNIBALIZATION
+   - Residential Program = target transactional keywords ("30 day rehab", "residential treatment")
+   - Our Approach = target informational keywords ("how does addiction treatment work", "what is holistic recovery")
+   - Mission & Vision = target brand keywords ("Costa Rica Recovery mission", "who is CRR")
+
+5. NARRATIVE FLOW OF OUR APPROACH (if kept)
+   - Move "Your Unique Recovery Path" to position 2 (after hero)
+   - Remove "Support for Loved Ones" (move to Residential or Preparing For Your Stay)
+   - Consolidate "Treating the Whole Person" and "Healing the Whole Person" into ONE section
+   - Add a section on OUTCOMES or RESEARCH (what makes your approach effective?)
+
+MEDIUM PRIORITY:
+
+6. ABOUT LANDING PAGE
+   - Likely duplicates content from Mission & Vision
+   - Consider making it a hub/navigation page instead of content-heavy
+
+7. ADD MID-PAGE CTAs
+   - Mission & Vision: Add CTA after Mission section
+   - Our Approach: Add second CTA after therapies section
+   - All About pages: Add "Ready to start?" CTA boxes
+
+8. PREPARING FOR YOUR STAY PAGE
+   - Build this page (it's pending)
+   - Focus ONLY on logistics, what to bring, travel info
+   - Do NOT repeat treatment philosophy
+
+LOW PRIORITY:
+
+9. PHONE NUMBER CONSISTENCY
+   - Ensure (866) 804-1793 is click-to-call on ALL pages
+   - Consider sticky header with phone number on mobile
+
+10. VISUAL CONSISTENCY
+   - All program/about pages now use same hero structure (good!)
+   - Maintain eyebrow + H2 + body text pattern (good!)
+
+================================================================================
+SECTION 10: FINAL VERDICT ON "OUR APPROACH" PAGE
+================================================================================
+
+CURRENT STATE: The page is well-designed but strategically unclear.
+
+QUESTIONS TO ANSWER:
+1. What does "Our Approach" tell visitors that "Residential Program" doesn't?
+   → Currently: Almost nothing unique
+
+2. What user intent does "Our Approach" serve?
+   → Currently: Unclear - overlaps with both Home (philosophy) and Residential (tactics)
+
+3. What should someone DO after reading "Our Approach"?
+   → Currently: Go to Residential Program (so why not start there?)
+
+4. What search queries should "Our Approach" rank for?
+   → Currently: Same as Residential Program (keyword cannibalization risk)
+
+STRATEGIC OPTIONS:
+
+OPTION A: DELETE
+- Redirect /programs/our-approach → /programs/residential-program
+- Pros: Eliminates redundancy, simplifies user journey
+- Cons: Loses potential SEO page, loses "Programs" dropdown link
+
+OPTION B: MERGE INTO RESIDENTIAL PROGRAM
+- Add "Our Treatment Approach" section to Residential Program (position 2, after "What is the Residential Program?")
+- Keep it brief: Philosophy paragraph + therapy/holistic summary
+- Redirect /programs/our-approach → /programs/residential-program#approach
+- Pros: Consolidates all program info, maintains SEO value
+- Cons: Makes Residential Program longer (but more comprehensive)
+
+OPTION C: DIFFERENTIATE WITH UNIQUE CLINICAL ANGLE
+- Completely rewrite "Our Approach" to focus on:
+  * Trauma-Informed Care methodology
+  * Dual Diagnosis treatment approach
+  * Evidence base / research / outcomes data
+  * Clinical protocols and medical safety
+  * How CRR approach differs from typical rehabs
+- Remove therapy/holistic lists (keep those on Residential only)
+- Make it a deep-dive on clinical philosophy for research-oriented visitors
+- Pros: Creates unique value, serves specific user intent
+- Cons: Requires significant content rewrite
+
+OPTION D: REPURPOSE AS "TREATMENT METHODS" OR "THERAPIES" PAGE
+- Focus ONLY on explaining each therapy in depth
+- Make it educational/SEO content
+- Serve visitors searching "what is CBT for addiction", "how does DBT work"
+- Pros: Clear SEO purpose, educational value
+- Cons: Not a "Programs" page anymore, might fit better in "About" or as standalone
+
+MY RECOMMENDATION: Option C (Differentiate)
+
+WHY:
+- You've built a Programs dropdown with 3 intended pages
+- "Our Approach" has value if it tells a DIFFERENT story than Residential
+- Residential Program = "What is the program?" (logistics, structure, schedule)
+- Our Approach = "Why does this work?" (clinical philosophy, trauma-informed care, research)
+- Preparing For Your Stay = "How do I get ready?" (practical logistics)
+
+This creates three complementary pages:
+- Residential = WHAT (the program structure)
+- Our Approach = WHY (the clinical methodology)
+- Preparing = HOW (the practical steps)
+
+NEXT STEPS IF OPTION C:
+1. Review current "Our Approach" copy from approach-page-copy.txt
+2. Identify what's unique vs. redundant
+3. Rewrite focusing on clinical differentiation:
+   - Lead with trauma-informed care
+   - Explain participant-centered model (what does this mean in practice?)
+   - Discuss integration of evidence-based + holistic (the WHY, not just the WHAT)
+   - Add section on outcomes / success metrics
+   - Keep family support (it's about the comprehensive approach)
+4. Remove therapy/holistic lists (just reference them, don't duplicate)
+5. Make it more philosophical and research-backed, less tactical
+
+================================================================================
+END OF AUDIT
+================================================================================
+
+SUMMARY:
+- Total pages audited: 12+
+- Critical redundancy identified: Our Approach vs. Residential Program
+- Primary recommendation: Rewrite Our Approach to differentiate (Option C)
+- Secondary recommendations: Reduce cross-site redundancy, add mid-page CTAs, fix SEO cannibalization
+
+This audit should inform content strategy going forward.
+

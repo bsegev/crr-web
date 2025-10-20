@@ -72,19 +72,22 @@ export default function MissionVisionPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+              <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+                Why We Exist
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
                 Our <span className="italic font-serif text-orange">Mission</span>
               </h2>
               
-              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
                 At Costa Rica Recovery (CRR), our mission is to empower individuals to achieve lasting recovery through compassionate, personalized care.
               </p>
               
-              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
                 We are dedicated to providing high-quality, evidence-based treatment combined with holistic practices in a supportive and nurturing environment.
               </p>
 
-              <p className="text-base text-gray-700 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 leading-relaxed">
                 We believe in treating the whole person—mind, body, and spirit—to foster transformative healing and personal growth.
               </p>
             </motion.div>
@@ -103,19 +106,22 @@ export default function MissionVisionPage() {
               transition={{ duration: 0.6 }}
               className="order-2 md:order-1"
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+              <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+                Where We're Going
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
                 Our <span className="italic font-serif text-orange">Vision</span>
               </h2>
               
-              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
                 Our vision is to be a beacon of hope for those affected by addiction, creating a community where every participant is supported on their journey to recovery.
               </p>
               
-              <p className="text-base text-gray-700 mb-4 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
                 We strive to set a standard of excellence in addiction treatment by continuously evolving our programs to meet the diverse needs of our participants.
               </p>
 
-              <p className="text-base text-gray-700 leading-relaxed">
+              <p className="text-lg font-secondary font-light text-gray-700 leading-relaxed">
                 By leveraging the rich cultural and natural landscapes of Costa Rica, we aim to inspire change and promote wellness.
               </p>
             </motion.div>
@@ -152,7 +158,10 @@ export default function MissionVisionPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              What Guides Us
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Our Core <span className="italic font-serif text-orange">Values</span>
             </h2>
           </motion.div>
@@ -333,6 +342,9 @@ function MissionVisionFAQ() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-16"
         >
+          <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+            Got Questions?
+          </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em]">
             Your Questions,{" "}
             <span className="italic font-serif text-orange">Answered</span>

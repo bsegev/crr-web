@@ -17,37 +17,37 @@ export default function OurFacilityPage() {
     {
       title: "Private Rooms",
       button: "View Details",
-      src: "/facility/private-room-deco.png",
+      src: "/facility/spaces/private-room-deco.png",
     },
     {
       title: "Shared Rooms",
       button: "View Details",
-      src: "/facility/shared-room-deco.png",
+      src: "/facility/spaces/shared-room-deco.png",
     },
     {
       title: "Welcoming Lobby",
       button: "View Details",
-      src: "/facility/lobby-room.jpg",
+      src: "/facility/spaces/lobby-room.jpg",
     },
     {
       title: "Reading Lounge",
       button: "View Details",
-      src: "/facility/reading-common.jpg",
+      src: "/facility/spaces/reading-common.jpg",
     },
     {
       title: "Common Lounge",
       button: "View Details",
-      src: "/facility/common-lounge-deco.png",
+      src: "/facility/spaces/common-lounge-deco.png",
     },
     {
       title: "Communal Spaces",
       button: "View Details",
-      src: "/facility/chess.jpg",
+      src: "/facility/spaces/chess.jpg",
     },
     {
       title: "Therapy Spaces",
       button: "View Details",
-      src: "/facility/group-session.jpg",
+      src: "/facility/spaces/group-session.jpg",
     },
   ]
 
@@ -55,22 +55,32 @@ export default function OurFacilityPage() {
     {
       title: "Art Therapy",
       button: "View Details",
-      src: "/facility/art-therapy.png",
+      src: "/facility/wellness/art-therapy.png",
     },
     {
       title: "Yoga Practice",
       button: "View Details",
-      src: "/facility/yoga-stretch.jpg",
+      src: "/facility/wellness/yoga-stretch.jpg",
     },
     {
       title: "Wellness Sessions",
       button: "View Details",
-      src: "/facility/shala-new-teacher.png",
+      src: "/facility/wellness/shala-new-teacher.png",
     },
     {
       title: "Fitness Center",
       button: "View Details",
-      src: "/facility/gym-workout.jpeg",
+      src: "/facility/wellness/gym-workout.jpeg",
+    },
+    {
+      title: "Drumming Sessions",
+      button: "View Details",
+      src: "/facility/wellness/shala-drums.jpg",
+    },
+    {
+      title: "Trust Building",
+      button: "View Details",
+      src: "/facility/wellness/shala-trust.jpg",
     },
   ]
 
@@ -78,35 +88,75 @@ export default function OurFacilityPage() {
     {
       title: "Dining Area",
       button: "View Details",
-      src: "/facility/dining-room-full.png",
+      src: "/facility/nutrition/dining-room-full.png",
     },
     {
       title: "Fresh Cuisine",
       button: "View Details",
-      src: "/facility/chef-avocado-toast.webp",
+      src: "/facility/nutrition/chef-avocado-toast.webp",
     },
     {
       title: "Our Kitchen",
       button: "View Details",
-      src: "/facility/chef-kitchen.jpeg",
+      src: "/facility/nutrition/chef-kitchen.jpeg",
+    },
+    {
+      title: "Chef at Work",
+      button: "View Details",
+      src: "/facility/nutrition/chef-ingredients.png",
+    },
+    {
+      title: "Dining Experience",
+      button: "View Details",
+      src: "/facility/nutrition/dining-room.jpg",
     },
   ]
 
   const natureSlides = [
     {
-      title: "Nature Views",
+      title: "Beach Views",
       button: "View Details",
-      src: "/placeholder.jpg",
+      src: "/facility/nature/beach-san-jose.jpg",
     },
     {
-      title: "Outdoor Spaces",
+      title: "El Tirol Getaway",
       button: "View Details",
-      src: "/placeholder.jpg",
+      src: "/facility/nature/el-tirol-getaway.jpg",
     },
     {
-      title: "Gardens",
+      title: "Hiking Trails",
       button: "View Details",
-      src: "/placeholder.jpg",
+      src: "/facility/nature/hike-antonio-park.avif",
+    },
+    {
+      title: "Volcano Views",
+      button: "View Details",
+      src: "/facility/nature/volcano-wide.jpg",
+    },
+    {
+      title: "Waterfall Experience",
+      button: "View Details",
+      src: "/facility/nature/waterfall-wide.jpg",
+    },
+    {
+      title: "Wildlife Tours",
+      button: "View Details",
+      src: "/facility/nature/wildlife-tour.jpg",
+    },
+    {
+      title: "Strawberry Farm",
+      button: "View Details",
+      src: "/facility/nature/strawberry-farm.png",
+    },
+    {
+      title: "Local Coffee Farm",
+      button: "View Details",
+      src: "/facility/nature/farm-starbucks.jpg",
+    },
+    {
+      title: "Volcano Crater",
+      button: "View Details",
+      src: "/facility/nature/volcano-crater.jpg",
     },
   ]
 
@@ -116,7 +166,7 @@ export default function OurFacilityPage() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/facility/lobby-room.jpg"
+            src="/facility/spaces/lobby-room.jpg"
             alt="Our Facility"
             fill
             className="object-cover"
@@ -164,12 +214,15 @@ export default function OurFacilityPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Your Home Away From Home
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Accommodations for
               <br />
               <span className="italic font-serif text-orange">Comfort and Connection</span>
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Our facility offers a balance of private comfort and communal spaces to foster healing and community during your stay. From restful, well-appointed rooms to inviting lounges, every part of our facility is designed with your comfort in mind.
             </p>
           </motion.div>
@@ -234,12 +287,15 @@ export default function OurFacilityPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Mind, Body & Spirit
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Spaces for
               <br />
               <span className="italic font-serif text-orange">Holistic Wellness</span>
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               We believe in the importance of treating the mind, body, and spirit. Our wellness areas are designed to promote mindfulness, creative expression, and physical well-being.
             </p>
           </motion.div>
@@ -304,12 +360,15 @@ export default function OurFacilityPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Healing Through Nourishment
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Nutritious Meals to Nourish
               <br />
               <span className="italic font-serif text-orange">Body and Soul</span>
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Our culinary team is dedicated to preparing balanced, delicious meals that cater to the unique dietary needs of each participant, offering a dining experience that encourages connection and community.
             </p>
           </motion.div>
@@ -383,12 +442,15 @@ export default function OurFacilityPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Surrounded by Beauty
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               Connecting with
               <br />
               <span className="italic font-serif text-orange">Nature</span>
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               While our facility is located in the vibrant city of San José, we offer access to peaceful, beautifully landscaped gardens and outdoor seating areas. In addition, participants can take part in organized day trips to Costa Rica's stunning beaches, rainforests, and parks for restorative nature experiences.
             </p>
           </motion.div>
@@ -450,12 +512,15 @@ export default function OurFacilityPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6">
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Safety & Accessibility
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
               A Secure,
               <br />
               <span className="italic font-serif text-orange">Convenient Location</span>
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Your safety and convenience are our top priorities. Our facility provides 24/7 licensed nursing staff, security, caretakers available around the clock, and easy access to nearby medical facilities, airports, and local attractions.
             </p>
           </motion.div>
@@ -566,6 +631,9 @@ function FacilityFAQ() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-16"
         >
+          <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+            Got Questions?
+          </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em]">
             Your Questions,{" "}
             <span className="italic font-serif text-orange">Answered</span>
