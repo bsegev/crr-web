@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
-  expandedContent?: JSX.Element | React.ReactNode | string;
+  content: React.ReactElement | React.ReactNode | string;
+  expandedContent?: React.ReactElement | React.ReactNode | string;
   className: string;
   thumbnail: string;
   imagePosition?: string;
