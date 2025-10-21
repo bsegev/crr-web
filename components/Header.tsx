@@ -248,10 +248,10 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 right-0 bottom-0 w-[300px] bg-white shadow-2xl z-50 md:hidden"
+              className="fixed top-0 right-0 bottom-0 w-[300px] bg-white shadow-2xl z-50 md:hidden flex flex-col"
         >
               {/* Drawer Header */}
-              <div className="flex items-center justify-between p-6 border-b border-gray-100">
+              <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
                 <div className="flex items-center space-x-3">
                   <span className="text-xl font-primary font-light tracking-wide">
                     <span className="text-orange">Costa Rica</span>
@@ -268,7 +268,7 @@ const Header = () => {
               </div>
 
               {/* Drawer Content */}
-              <div className="p-6 space-y-8">
+              <div className="p-6 space-y-8 overflow-y-auto flex-1">
                 {/* Navigation Links */}
                 <nav className="space-y-6">
                   {menuItems.map((item) => (

@@ -138,7 +138,7 @@ export function TreatmentTypesExpandable() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="text-gray-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [&>p]:!text-xs md:[&>p]:!text-sm lg:[&>p]:!text-base"
+                        className="text-gray-600 text-sm md:text-sm lg:text-base max-h-[55vh] md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white_0%,white_85%,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [&>p]:!text-sm md:[&>p]:!text-sm lg:[&>p]:!text-base [&>p]:!leading-relaxed"
                       >
                         {typeof active.content === "function"
                           ? active.content()
@@ -150,34 +150,34 @@ export function TreatmentTypesExpandable() {
               </div>
             ) : null}
           </AnimatePresence>
-          <ul className="max-w-2xl mx-auto w-full gap-4">
+          <ul className="max-w-2xl mx-auto w-full space-y-4">
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
                 onClick={() => setActive(card)}
-                className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+                className="p-4 flex flex-row md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
               >
-                <div className="flex gap-4 flex-col md:flex-row ">
-                  <motion.div layoutId={`image-${card.title}-${id}`}>
+                <div className="flex gap-4 flex-row items-center flex-1 min-w-0">
+                  <motion.div layoutId={`image-${card.title}-${id}`} className="flex-shrink-0">
                     <img
                       width={100}
                       height={100}
                       src={card.src}
                       alt={card.title}
-                      className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                      className="h-14 w-14 rounded-lg object-cover object-top"
                     />
                   </motion.div>
-                  <div className="">
+                  <div className="flex-1 min-w-0">
                     <motion.h3
                       layoutId={`title-${card.title}-${id}`}
-                      className="!font-medium text-navy-extra-dark text-center md:text-left !text-sm !leading-normal"
+                      className="!font-medium text-navy-extra-dark text-left !text-sm !leading-normal"
                     >
                       {card.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${card.description}-${id}`}
-                      className="text-gray-600 text-center md:text-left !text-sm"
+                      className="text-gray-600 text-left !text-sm"
                     >
                       {card.description}
                     </motion.p>
@@ -185,7 +185,7 @@ export function TreatmentTypesExpandable() {
                 </div>
                 <motion.button
                   layoutId={`button-${card.title}-${id}`}
-                  className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-orange hover:text-white text-black mt-4 md:mt-0"
+                  className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-orange hover:text-white text-black ml-4 flex-shrink-0"
                 >
                   {card.ctaText}
                 </motion.button>

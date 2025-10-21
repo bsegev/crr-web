@@ -17,12 +17,12 @@ import { cn } from "@/lib/utils"
 export default function PreparingForYourStayPage() {
   const tabs = [
     {
-      title: "International Participant Essentials",
+      title: "International Participants",
       value: "international",
       content: <InternationalContent />
     },
     {
-      title: "Local Participant Essentials", 
+      title: "Local Participants", 
       value: "local",
       content: <LocalContent />
     }
@@ -122,7 +122,7 @@ export default function PreparingForYourStayPage() {
             tabs={tabs}
             containerClassName="mb-16"
             activeTabClassName="bg-orange text-white shadow-xl border border-orange"
-            tabClassName="px-8 py-4 font-secondary font-semibold text-sm uppercase tracking-wider text-navy-extra-dark bg-white hover:bg-gray-50 transition-all duration-300 whitespace-nowrap border border-gray-200 shadow-sm hover:shadow-md"
+            tabClassName="px-4 sm:px-8 py-3 sm:py-4 font-secondary font-semibold text-xs sm:text-sm uppercase tracking-wider text-navy-extra-dark bg-white hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-md text-center"
             contentClassName="mt-8"
           />
         </div>

@@ -67,8 +67,8 @@ const data = [
     title: "Safe & Supervised Detox",
     src: "/services-cards/medical-detox.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4">
-        <p className="text-neutral-600 text-base md:text-xl font-sans max-w-3xl mx-auto leading-relaxed">
+      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+        <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Medical detoxification is the first critical step in recovery.
           </span>{" "}
@@ -78,12 +78,27 @@ const data = [
         </p>
         <div className="mt-8 space-y-4 text-neutral-600 text-base">
           <h3 className="font-bold text-neutral-700 text-lg">What to Expect:</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>24/7 medical supervision and monitoring</li>
-            <li>Medication-assisted treatment when appropriate</li>
-            <li>Comfortable, private accommodations</li>
-            <li>Nutritional support and hydration therapy</li>
-            <li>Holistic comfort measures (massage, meditation)</li>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>24/7 medical supervision and monitoring</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Medication-assisted treatment when appropriate</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Comfortable, private accommodations</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Nutritional support and hydration therapy</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Holistic comfort measures (massage, meditation)</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -94,8 +109,8 @@ const data = [
     title: "30, 60 & 90-Day Programs",
     src: "/services-cards/program-months.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4">
-        <p className="text-neutral-600 text-base md:text-xl font-sans max-w-3xl mx-auto leading-relaxed">
+      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+        <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Personalized residential treatment programs tailored to your needs.
           </span>{" "}
@@ -105,14 +120,35 @@ const data = [
         </p>
         <div className="mt-8 space-y-4 text-neutral-600 text-base">
           <h3 className="font-bold text-neutral-700 text-lg">Program Includes:</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Individual therapy sessions (3-5x per week)</li>
-            <li>Group therapy and peer support</li>
-            <li>Family therapy and communication workshops</li>
-            <li>Cognitive Behavioral Therapy (CBT)</li>
-            <li>12-Step facilitation or alternative approaches</li>
-            <li>Yoga, meditation, and mindfulness practices</li>
-            <li>Cultural immersion and nature excursions</li>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Individual therapy sessions (3-5x per week)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Group therapy and peer support</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Family therapy and communication workshops</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Cognitive Behavioral Therapy (CBT)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>12-Step facilitation or alternative approaches</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Yoga, meditation, and mindfulness practices</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Cultural immersion and nature excursions</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -123,8 +159,8 @@ const data = [
     title: "Mind, Body & Spirit Healing",
     src: "/services-cards/yoga-shala.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4">
-        <p className="text-neutral-600 text-base md:text-xl font-sans max-w-3xl mx-auto leading-relaxed">
+      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+        <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Recovery is about healing the whole person.
           </span>{" "}
@@ -134,14 +170,35 @@ const data = [
         </p>
         <div className="mt-8 space-y-4 text-neutral-600 text-base">
           <h3 className="font-bold text-neutral-700 text-lg">Holistic Modalities:</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Daily yoga and meditation sessions</li>
-            <li>Tai Chi and Qigong practices</li>
-            <li>Art and music therapy</li>
-            <li>Nutritional therapy and cooking classes</li>
-            <li>Adventure therapy (surfing, hiking, zip-lining)</li>
-            <li>Massage and acupuncture</li>
-            <li>Beach walks and nature immersion</li>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Daily yoga and meditation sessions</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Tai Chi and Qigong practices</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Art and music therapy</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Nutritional therapy and cooking classes</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Adventure therapy (surfing, hiking, zip-lining)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Massage and acupuncture</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Beach walks and nature immersion</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -152,8 +209,8 @@ const data = [
     title: "Healing Together",
     src: "/services-cards/family-support.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4">
-        <p className="text-neutral-600 text-base md:text-xl font-sans max-w-3xl mx-auto leading-relaxed">
+      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+        <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Addiction affects the whole family.
           </span>{" "}
@@ -163,13 +220,31 @@ const data = [
         </p>
         <div className="mt-8 space-y-4 text-neutral-600 text-base">
           <h3 className="font-bold text-neutral-700 text-lg">Family Services Include:</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Weekly family therapy sessions (virtual or in-person)</li>
-            <li>Educational workshops on addiction and recovery</li>
-            <li>Communication skills training</li>
-            <li>Codependency and boundary-setting workshops</li>
-            <li>Family weekend visits in Costa Rica (optional)</li>
-            <li>Aftercare family support groups</li>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Weekly family therapy sessions (virtual or in-person)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Educational workshops on addiction and recovery</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Communication skills training</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Codependency and boundary-setting workshops</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Family weekend visits in Costa Rica (optional)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Aftercare family support groups</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -180,8 +255,8 @@ const data = [
     title: "Long-Term Success",
     src: "/services-cards/aftercare.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4">
-        <p className="text-neutral-600 text-base md:text-xl font-sans max-w-3xl mx-auto leading-relaxed">
+      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+        <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Recovery doesn't end when treatment does.
           </span>{" "}
@@ -191,14 +266,35 @@ const data = [
         </p>
         <div className="mt-8 space-y-4 text-neutral-600 text-base">
           <h3 className="font-bold text-neutral-700 text-lg">Aftercare Includes:</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Personalized relapse prevention plan</li>
-            <li>Referrals to local therapists and support groups</li>
-            <li>Sober living placement assistance</li>
-            <li>Alumni support network and check-ins</li>
-            <li>Monthly virtual alumni meetings</li>
-            <li>Crisis support hotline (24/7)</li>
-            <li>Return to Costa Rica wellness retreats</li>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Personalized relapse prevention plan</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Referrals to local therapists and support groups</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Sober living placement assistance</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Alumni support network and check-ins</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Monthly virtual alumni meetings</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Crisis support hotline (24/7)</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="text-orange">→</span>
+              <span>Return to Costa Rica wellness retreats</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -206,6 +302,4 @@ const data = [
   },
 ];
 
-// Fix: Import Image component
 import Image from "next/image";
-

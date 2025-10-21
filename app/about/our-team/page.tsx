@@ -531,22 +531,22 @@ export default function OurTeamPage() {
                   </button>
                 </div>
 
-                {/* Navigation Arrows - Fixed Position */}
+                {/* Navigation Arrows - Positioned differently on mobile */}
                 {selectedMember > 1 && (
                   <button
                     onClick={handlePrevious}
-                    className="fixed left-4 md:left-[calc((100vw-72rem)/2-3rem)] top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white hover:bg-gray-50 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 border border-gray-200"
+                    className="fixed left-2 md:left-4 lg:left-[calc((100vw-72rem)/2-3rem)] top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white hover:bg-gray-50 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 border border-gray-200"
                   >
-                    <ChevronLeft className="w-6 h-6 text-navy-extra-dark" />
+                    <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-navy-extra-dark" />
                   </button>
                 )}
 
                 {selectedMember < teamMembers.length && (
                   <button
                     onClick={handleNext}
-                    className="fixed right-4 md:right-[calc((100vw-72rem)/2-3rem)] top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white hover:bg-gray-50 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 border border-gray-200"
+                    className="fixed right-2 md:right-4 lg:right-[calc((100vw-72rem)/2-3rem)] top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white hover:bg-gray-50 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 border border-gray-200"
                   >
-                    <ChevronRight className="w-6 h-6 text-navy-extra-dark" />
+                    <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-navy-extra-dark" />
                   </button>
                 )}
 

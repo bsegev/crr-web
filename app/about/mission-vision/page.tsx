@@ -339,36 +339,39 @@ export default function MissionVisionPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="grid md:grid-cols-3 gap-8 md:gap-12 py-8 border-b border-gray-200 last:border-b-0"
+                  className="py-8 border-b border-gray-200 last:border-b-0"
                 >
-                  {/* Category */}
-                  <div className="md:col-span-1">
-                    <h3 className="text-lg md:text-xl font-light text-gray-500 tracking-wide">
+                  {/* Category - Full width on mobile */}
+                  <div className="mb-6 md:mb-8">
+                    <h3 className="text-xl md:text-2xl font-light text-gray-500 tracking-wide">
                       {comparison.category}
                     </h3>
                   </div>
                   
-                  {/* CRR */}
-                  <div className="md:col-span-1">
-                    <div className="space-y-2">
-                      <div className="text-sm font-medium text-orange tracking-widest uppercase">
-                        Costa Rica Recovery
+                  {/* Two-column layout on mobile and desktop */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+                    {/* CRR */}
+                    <div>
+                      <div className="space-y-2">
+                        <div className="text-sm font-medium text-orange tracking-widest uppercase">
+                          Costa Rica Recovery
+                        </div>
+                        <p className="text-base md:text-lg lg:text-xl font-light text-navy-extra-dark leading-relaxed">
+                          {comparison.crr}
+                        </p>
                       </div>
-                      <p className="text-lg md:text-xl font-light text-navy-extra-dark leading-relaxed">
-                        {comparison.crr}
-                      </p>
                     </div>
-                  </div>
-                  
-                  {/* Traditional */}
-                  <div className="md:col-span-1">
-                    <div className="space-y-2">
-                      <div className="text-sm font-medium text-gray-400 tracking-widest uppercase">
-                        Traditional US Centers
+                    
+                    {/* Traditional */}
+                    <div>
+                      <div className="space-y-2">
+                        <div className="text-sm font-medium text-gray-400 tracking-widest uppercase">
+                          Traditional US Centers
+                        </div>
+                        <p className="text-base md:text-lg lg:text-xl font-light text-gray-600 leading-relaxed">
+                          {comparison.traditional}
+                        </p>
                       </div>
-                      <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed">
-                        {comparison.traditional}
-                      </p>
                     </div>
                   </div>
                 </motion.div>

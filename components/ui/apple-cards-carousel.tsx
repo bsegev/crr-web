@@ -27,9 +27,11 @@ type Card = {
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
+  onCardOpen: () => void;
 }>({
   onCardClose: () => {},
   currentIndex: 0,
+  onCardOpen: () => {},
 });
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
@@ -37,6 +39,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const [canScrollLeft, setCanScrollLeft] = React.useState(false);
   const [canScrollRight, setCanScrollRight] = React.useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const savedScrollPosition = React.useRef<number>(0);
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -65,13 +68,18 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
+  const handleCardOpen = () => {
+    if (carouselRef.current) {
+      // Save the current scroll position before opening the card
+      savedScrollPosition.current = carouselRef.current.scrollLeft;
+    }
+  };
+
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
-      const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
-      const gap = isMobile() ? 4 : 8;
-      const scrollPosition = (cardWidth + gap) * (index + 1);
+      // Restore the saved scroll position instead of jumping forward
       carouselRef.current.scrollTo({
-        left: scrollPosition,
+        left: savedScrollPosition.current,
         behavior: "smooth",
       });
       setCurrentIndex(index);
@@ -84,7 +92,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
   return (
     <CarouselContext.Provider
-      value={{ onCardClose: handleCardClose, currentIndex }}
+      value={{ onCardClose: handleCardClose, currentIndex, onCardOpen: handleCardOpen }}
     >
       <div className="relative w-full">
         <div
@@ -159,7 +167,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose, currentIndex, onCardOpen } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -181,6 +189,7 @@ export const Card = ({
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
+    onCardOpen();
     setOpen(true);
   };
 
@@ -193,7 +202,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-50 overflow-auto">
+          <div className="fixed inset-0 h-screen z-50 flex items-center justify-center p-4 overflow-y-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -206,7 +215,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl w-full bg-white dark:bg-neutral-900 z-[60] p-4 md:p-10 rounded-3xl font-sans relative my-auto"
             >
               <button
                 className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
@@ -234,7 +243,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-96 w-72 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">

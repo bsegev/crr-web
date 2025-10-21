@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { Shield, MessageCircle, Users, Scale, Zap, Globe } from "lucide-react";
 
@@ -487,48 +487,56 @@ function ApproachFAQ() {
       {faqs.map((faq, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: index * 0.1 }}
-          className="border border-gray-200 rounded-lg overflow-hidden"
+          transition={{ duration: 0.5, delay: index * 0.05 }}
+          className="border border-gray-200 rounded-lg overflow-hidden hover:border-orange/30 transition-colors duration-300"
         >
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors flex justify-between items-center"
+            className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-gray-50 transition-colors duration-200"
           >
-            <span className="font-primary text-lg md:text-xl font-semibold text-navy-extra-dark pr-8">
+            <span className="text-base sm:text-lg font-secondary font-medium text-navy-extra-dark pr-4">
               {faq.question}
             </span>
-            <svg
-              className={`w-6 h-6 text-orange transition-transform flex-shrink-0 ${
-                openIndex === index ? "rotate-180" : ""
-              }`}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          {openIndex === index && (
             <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
+              animate={{ rotate: openIndex === index ? 180 : 0 }}
               transition={{ duration: 0.3 }}
-              className="px-6 py-5 bg-gray-50"
+              className="flex-shrink-0"
             >
-              <p className="font-secondary text-lg font-light text-gray-700">
-                {faq.answer}
-              </p>
+              <svg
+                className="w-5 h-5 text-orange"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </motion.div>
-          )}
+          </button>
+          <AnimatePresence>
+            {openIndex === index && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="overflow-hidden"
+              >
+                <div className="px-6 pb-6 pt-2">
+                  <p className="text-sm sm:text-base font-secondary text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
       ))}
     </div>
