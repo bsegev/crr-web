@@ -641,9 +641,9 @@ function PackingAccordion({ items, expandedIndex, setExpandedIndex }: {
                     {section.items.map((item, idx) => (
                       <li 
                         key={idx}
-                        className="flex items-center gap-3 pl-2"
+                        className="flex items-start gap-3 pl-2"
                       >
-                        <Check className="text-orange w-4 h-4 flex-shrink-0" />
+                        <Check className="text-orange w-4 h-4 flex-shrink-0 mt-0.5" />
                         <span dangerouslySetInnerHTML={{ __html: item }} className="leading-relaxed" />
                       </li>
                     ))}
