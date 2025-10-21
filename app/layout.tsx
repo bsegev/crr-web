@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import ScrollToTop from "@/components/ScrollToTop"
 
 // El Tirol Brand Font Alternatives
 const inter = Inter({
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} ${messinaSans.variable}`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ScrollToTop />
           <Header />
           <main>
             {children}

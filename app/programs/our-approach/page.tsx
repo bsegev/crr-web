@@ -49,9 +49,8 @@ export default function OurApproachPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
             <div className="text-center mb-12">

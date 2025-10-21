@@ -50,9 +50,8 @@ export default function MissionVisionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-gray-50 p-8 rounded-lg flex items-center justify-center overflow-hidden">
                 <div className="relative w-full aspect-square max-w-md">
@@ -68,9 +67,8 @@ export default function MissionVisionPage() {
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
             >
               <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
                 Why We Exist
@@ -101,9 +99,8 @@ export default function MissionVisionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="order-2 md:order-1"
             >
               <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
@@ -128,9 +125,8 @@ export default function MissionVisionPage() {
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="order-1 md:order-2"
             >
               <div className="bg-white p-8 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
@@ -269,6 +265,116 @@ export default function MissionVisionPage() {
               </p>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* How We're Different - Comparison Table */}
+      <section className="py-24 md:py-32 px-8 md:px-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <motion.div 
+            className="mb-20 md:mb-24"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              What Sets Us Apart
+            </p>
+            <h2 className="text-4xl md:text-6xl font-primary font-light text-navy-extra-dark mb-6 tracking-[-0.02em] leading-[1.1]">
+              Bringing quality
+              <br />
+              <span className="italic font-serif text-orange">forward</span>
+            </h2>
+            <div className="w-16 h-px bg-orange/20 mb-8"></div>
+            <p className="text-xl md:text-2xl font-light text-gray-700 max-w-3xl leading-relaxed">
+              Costa Rica Recovery combines clinical excellence with the healing power of nature, offering a transformative alternative to traditional treatment centers.
+            </p>
+          </motion.div>
+
+          {/* Comparison table */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="space-y-12">
+              {[
+                {
+                  category: "Location & Environment",
+                  crr: "Costa Rica's natural healing environment integrated into treatment",
+                  traditional: "Clinical indoor settings with limited outdoor access"
+                },
+                {
+                  category: "Treatment Philosophy",
+                  crr: "Holistic approach combining evidence-based therapies with nature-based healing",
+                  traditional: "Primarily clinical focus with limited holistic integration"
+                },
+                {
+                  category: "Cost & Accessibility",
+                  crr: "Private pay model ensures complete anonymity—no insurance records, transparent pricing",
+                  traditional: "Insurance-based billing creates permanent medical records and complex costs"
+                },
+                {
+                  category: "Setting & Scale",
+                  crr: "Intimate boutique facility with personalized attention",
+                  traditional: "Large institutional centers with high client-to-staff ratios"
+                },
+                {
+                  category: "Care Approach",
+                  crr: "Trauma-informed, participant-centered model honoring individual autonomy",
+                  traditional: "Traditional clinical hierarchy with prescriptive treatment"
+                },
+                {
+                  category: "Therapeutic Activities",
+                  crr: "Adventure therapy, nature excursions, and Costa Rican cultural immersion",
+                  traditional: "Indoor group sessions and limited recreational options"
+                }
+              ].map((comparison, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="grid md:grid-cols-3 gap-8 md:gap-12 py-8 border-b border-gray-200 last:border-b-0"
+                >
+                  {/* Category */}
+                  <div className="md:col-span-1">
+                    <h3 className="text-lg md:text-xl font-light text-gray-500 tracking-wide">
+                      {comparison.category}
+                    </h3>
+                  </div>
+                  
+                  {/* CRR */}
+                  <div className="md:col-span-1">
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium text-orange tracking-widest uppercase">
+                        Costa Rica Recovery
+                      </div>
+                      <p className="text-lg md:text-xl font-light text-navy-extra-dark leading-relaxed">
+                        {comparison.crr}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Traditional */}
+                  <div className="md:col-span-1">
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium text-gray-400 tracking-widest uppercase">
+                        Traditional US Centers
+                      </div>
+                      <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed">
+                        {comparison.traditional}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 

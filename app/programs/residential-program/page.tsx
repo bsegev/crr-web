@@ -139,7 +139,7 @@ export default function ResidentialProgramPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/facility/spaces/group-session.jpg"
+            src="/global-healing-hero.jpg"
             alt="Residential Program"
             fill
             className="object-cover"

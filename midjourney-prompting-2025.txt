@@ -1,0 +1,173 @@
+MIDJOURNEY PROMPTING BEST PRACTICES 2025
+=========================================
+
+OVERVIEW
+--------
+Midjourney v6+ now interprets natural language more effectively than numerical weights.
+Focus on descriptive, structured prompts with natural emphasis rather than :: weights.
+
+
+PROMPT STRUCTURE
+----------------
+Follow this order for best results:
+
+1. SUBJECT
+   - Clearly define the main focus
+   - Be specific and detailed
+   
+2. DETAILED DESCRIPTION
+   - Appearance, environment, mood
+   - Use rich, descriptive language
+   - Include spatial relationships (LEFT SIDE, RIGHT SIDE, foreground, background)
+   
+3. STYLE REFERENCE
+   - Artistic style or medium
+   - Reference specific artists or movements if desired
+   - Photography style (documentary, cinematic, editorial, etc.)
+   
+4. LIGHTING
+   - Type of light (golden hour, soft diffused, dramatic, natural)
+   - Quality and direction of light
+   - Mood created by lighting
+   
+5. CAMERA/TECHNICAL SPECS
+   - Perspective and framing
+   - Specific camera and lens (pushes toward photorealism)
+   - Aperture for depth of field
+   
+6. PARAMETERS (at the end)
+   - --ar [ratio] (aspect ratio: 16:9 for landscape, 4:5 for portrait, 1:1 for square)
+   - --stylize [0-1000] or --s [0-1000] (lower = more literal, higher = more artistic)
+   - --quality [.25, .5, 1, 2] or --q [value] (higher = more detail, longer generation)
+
+
+NATURAL LANGUAGE EMPHASIS (replaces numerical weights)
+------------------------------------------------------
+Instead of using ::5 or ::4 weights, use descriptive emphasis:
+
+STRONG EMPHASIS:
+- "STRONGLY EMPHASIZING"
+- "prominently showing"
+- "clearly visible"
+- "notably"
+- "powerfully"
+- "heavily featured"
+- "primarily focused on"
+
+MEDIUM EMPHASIS:
+- "featuring"
+- "with attention to"
+- "highlighting"
+- "showcasing"
+
+SUBTLE EMPHASIS:
+- "including"
+- "with elements of"
+- "hints of"
+- "subtle touches of"
+
+
+COMMON PARAMETERS
+-----------------
+Aspect Ratios:
+  --ar 16:9    Desktop hero/banner (landscape)
+  --ar 4:5     Mobile-first portrait
+  --ar 1:1     Square (social media)
+  --ar 2:3     Tall portrait
+  --ar 3:2     Traditional photo
+
+Stylization:
+  --s 0-100    More photorealistic, literal
+  --s 100-300  Balanced (good default range)
+  --s 300-500  More artistic interpretation
+  --s 500-1000 Highly stylized/artistic
+
+Quality:
+  --q .25      Draft/testing (faster)
+  --q 1        Standard (default)
+  --q 2        High detail (recommended for final)
+
+
+PHOTOGRAPHY-SPECIFIC TIPS
+--------------------------
+For photorealistic results, include:
+- Specific camera model (Canon EOS R5, Sony A7IV, Nikon Z9)
+- Lens specs (35mm, 50mm, 85mm, 24-70mm)
+- Aperture (f/1.4, f/1.8, f/2.8, etc.)
+- Photography style (documentary, editorial, cinematic, portrait)
+- Lighting type (natural light, golden hour, studio lighting)
+
+Example: "shot on Canon EOS R5, 50mm prime lens, f/1.8, natural lighting"
+
+
+WHAT TO AVOID
+-------------
+❌ Numerical weights (::5, ::4, ::2) - outdated syntax
+❌ Overly complex nested parameters
+❌ Vague descriptions ("beautiful," "nice," "good")
+❌ Too many conflicting style references
+❌ Extremely long prompts (diminishing returns after ~300 words)
+
+
+EXAMPLE PROMPT TEMPLATE
+------------------------
+[SUBJECT]: A [specific subject description]
+[DETAILS]: [detailed appearance], [environment/setting], [mood/emotion], [spatial relationships]
+[STYLE]: in the style of [artistic reference], [medium/technique]
+[LIGHTING]: [lighting type and quality], [direction and mood]
+[CAMERA]: shot on [camera model], [lens], [aperture]
+--ar [ratio] --s [stylization] --q [quality]
+
+
+REAL EXAMPLE
+------------
+Two versions of the same person standing face to face in a sunlit Costa Rican hotel room, 
+STRONGLY EMPHASIZING the transformation between them, LEFT SIDE prominently showing: the person 
+wearing casual wrinkled clothes with tired exhausted expression, slouched defeated posture, 
+heavy dark circles under eyes, disheveled appearance, looking down with worried face, notably 
+muted desaturated colors, RIGHT SIDE prominently showing: the exact same person wearing fresh 
+clean casual clothes, bright peaceful expression with gentle smile, confident upright posture, 
+healthy glowing skin, hopeful eyes looking forward, notably warm vibrant colors, natural golden 
+hour lighting streaming powerfully between them creating dramatic separation, tropical greenery 
+and large windows with Costa Rican landscape clearly visible in background, cinematic split 
+composition with clear visual divide, authentic documentary photography style, rich depth and 
+dimension, professional portraiture with emotional weight, genuine human transformation, shot on 
+Canon EOS R5, 50mm prime lens, f/1.8, photorealistic quality --ar 16:9 --s 350 --q 2
+
+
+ITERATION TIPS
+--------------
+1. Start with a clear, simple prompt
+2. Generate and review results
+3. Add specific details to refine
+4. Adjust stylization if too artistic or too literal
+5. Use remix mode to make variations
+6. Save successful prompt patterns for reuse
+
+
+COMMON USE CASES
+----------------
+Hero Images (website headers):
+  - --ar 16:9, --s 200-400, --q 2
+  - Emphasize mood and environment
+  - Include "cinematic," "professional photography"
+
+Product Photography:
+  - --ar 4:5 or 1:1, --s 50-150, --q 2
+  - Clean backgrounds, good lighting
+  - Specific camera specs for realism
+
+Portraits:
+  - --ar 4:5 or 2:3, --s 150-300, --q 2
+  - Focus on emotion and lighting
+  - Shallow depth of field (f/1.4-2.8)
+
+Lifestyle/Editorial:
+  - --ar 16:9 or 4:5, --s 250-400, --q 2
+  - Natural settings, authentic moments
+  - Documentary style language
+
+
+LAST UPDATED: January 2025
+Based on Midjourney v6+ capabilities
+

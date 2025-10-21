@@ -32,7 +32,7 @@ const comparisons = [
 
 const WhyChooseIWC = () => {
   return (
-    <section className="py-24 md:py-32 px-8 md:px-12 bg-[#FAFAFA]">
+    <section className="py-24 md:py-32 px-8 md:px-12 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Editorial header */}
         <motion.div 
@@ -42,13 +42,16 @@ const WhyChooseIWC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl font-light text-black mb-6 tracking-[-0.02em] leading-[1.1]">
+          <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+            What Sets Us Apart
+          </p>
+          <h2 className="text-4xl md:text-6xl font-primary font-light text-navy-extra-dark mb-6 tracking-[-0.02em] leading-[1.1]">
             Bringing quality
             <br />
-            <span className="italic font-serif text-[#06402B]">forward</span>
+            <span className="italic font-serif text-orange">forward</span>
           </h2>
-          <div className="w-16 h-px bg-black/20 mb-8"></div>
-          <p className="text-xl md:text-2xl font-light text-black/70 max-w-3xl leading-relaxed">
+          <div className="w-16 h-px bg-orange/20 mb-8"></div>
+          <p className="text-xl md:text-2xl font-light text-gray-700 max-w-3xl leading-relaxed">
             We own four specialized treatment centers across the US and Costa Rica—advancing the standard of care and making quality accessible to more families.
           </p>
         </motion.div>
@@ -68,11 +71,11 @@ const WhyChooseIWC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="grid md:grid-cols-3 gap-8 md:gap-12 py-8 border-b border-black/10 last:border-b-0"
+                className="grid md:grid-cols-3 gap-8 md:gap-12 py-8 border-b border-gray-200 last:border-b-0"
               >
                 {/* Category */}
                 <div className="md:col-span-1">
-                  <h3 className="text-lg md:text-xl font-light text-black/50 tracking-wide">
+                  <h3 className="text-lg md:text-xl font-light text-gray-500 tracking-wide">
                     {comparison.category}
                   </h3>
                 </div>
@@ -80,10 +83,10 @@ const WhyChooseIWC = () => {
                 {/* IWC */}
                 <div className="md:col-span-1">
                   <div className="space-y-2">
-                    <div className="text-sm font-medium text-[#06402B] tracking-widest uppercase">
+                    <div className="text-sm font-medium text-orange tracking-widest uppercase">
                       Our Modern Approach
                     </div>
-                    <p className="text-lg md:text-xl font-light text-black leading-relaxed">
+                    <p className="text-lg md:text-xl font-light text-navy-extra-dark leading-relaxed">
                       {comparison.iwc}
                     </p>
                   </div>
@@ -92,10 +95,10 @@ const WhyChooseIWC = () => {
                 {/* Traditional */}
                 <div className="md:col-span-1">
                   <div className="space-y-2">
-                    <div className="text-sm font-medium text-black/40 tracking-widest uppercase">
+                    <div className="text-sm font-medium text-gray-400 tracking-widest uppercase">
                       Traditional Options
                     </div>
-                    <p className="text-lg md:text-xl font-light text-black/60 leading-relaxed">
+                    <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed">
                       {comparison.traditional}
                     </p>
                   </div>

@@ -337,3 +337,14 @@ select:focus-visible {
     padding-right: max(1rem, env(safe-area-inset-right));
   }
 }
+
+/* Hide scrollbar for Aceternity Tabs */
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}

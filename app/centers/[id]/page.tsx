@@ -396,9 +396,8 @@ export default function CenterPage({ params }: { params: Promise<{ id: string }>
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
                 className="text-center"
               >
                 <div className="text-3xl sm:text-4xl font-light text-[#06402B] mb-2">{stat.value}</div>

@@ -41,7 +41,7 @@ const FoundingStory = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-4xl md:text-5xl font-primary text-navy-extra-dark leading-[1.1] tracking-[-0.02em]"
+                    className="text-4xl md:text-5xl font-primary font-light text-navy-extra-dark leading-[1.1] tracking-[-0.02em]"
                   >
                     Recovery in{" "}
                     <span className="italic font-serif text-orange">Paradise</span>
