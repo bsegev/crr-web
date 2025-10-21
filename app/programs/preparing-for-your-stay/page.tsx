@@ -123,7 +123,7 @@ export default function PreparingForYourStayPage() {
             containerClassName="mb-16"
             activeTabClassName="bg-orange text-white shadow-xl border border-orange"
             tabClassName="px-4 sm:px-8 py-3 sm:py-4 font-secondary font-semibold text-xs sm:text-sm uppercase tracking-wider text-navy-extra-dark bg-white hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm hover:shadow-md text-center"
-            contentClassName="mt-8"
+            contentClassName="border-t-2 border-orange/20 pt-8"
           />
         </div>
       </section>

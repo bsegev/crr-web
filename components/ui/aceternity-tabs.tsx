@@ -35,11 +35,11 @@ export const Tabs = ({
   }
 
   return (
-    <>
+    <div className={cn("w-full", containerClassName)}>
+      {/* Tabs */}
       <div
         className={cn(
-          "flex flex-col sm:flex-row items-stretch sm:items-center justify-center [perspective:1000px] relative overflow-visible max-w-full w-full gap-3 sm:gap-4",
-          containerClassName
+          "flex flex-col sm:flex-row items-stretch sm:items-center justify-center [perspective:1000px] relative overflow-visible max-w-full w-full gap-3 sm:gap-4"
         )}
       >
         {propTabs.map((tab, idx) => (
@@ -67,13 +67,15 @@ export const Tabs = ({
           </button>
         ))}
       </div>
+      
+      {/* Content - attached to tabs */}
       <FadeInDiv
         tabs={tabs}
         active={active}
         key={active.value}
-        className={cn("mt-12", contentClassName)}
+        className={cn("mt-6", contentClassName)}
       />
-    </>
+    </div>
   )
 }
 
