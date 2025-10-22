@@ -53,7 +53,7 @@ export default function Footer() {
                     About Us
                   </Link>
                   <Link 
-                    href="/our-centers" 
+                    href="/programs/our-approach" 
                     className="block text-white/80 hover:text-orange transition-colors duration-200 font-light"
                   >
                     Treatment Programs

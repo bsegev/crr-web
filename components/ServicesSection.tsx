@@ -113,7 +113,7 @@ const ServicesSection = () => {
           className="text-center mt-12 sm:mt-16"
         >
           <a 
-            href="/our-centers" 
+            href="/programs/our-approach" 
             className="text-orange hover:text-orange-dark transition-colors text-sm uppercase tracking-wider font-medium"
           >
             Explore Our Treatment Approach →

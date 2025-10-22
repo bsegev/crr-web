@@ -25,7 +25,6 @@ const Header = () => {
   }, [])
 
   const menuItems = [
-    { href: "/our-centers", label: "Our Centers" },
     { href: "/contact", label: "Contact" }
   ]
 
