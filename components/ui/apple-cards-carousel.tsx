@@ -215,27 +215,37 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl w-full bg-white dark:bg-neutral-900 z-[60] p-4 md:p-10 rounded-3xl font-sans relative my-auto"
+              className="max-w-5xl w-full bg-white dark:bg-neutral-900 z-[60] p-4 md:p-10 rounded-3xl font-sans relative my-auto overflow-hidden"
             >
+              {/* Background Logo */}
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full pointer-events-none opacity-20 hidden md:block">
+                <Image
+                  src="/logos/CRR_Logo_Icon.svg"
+                  alt=""
+                  fill
+                  className="object-contain object-right"
+                />
+              </div>
+              
               <button
-                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
+                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center z-50 mb-4"
                 onClick={handleClose}
               >
                 <X className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
+                className="text-base font-medium text-black dark:text-white relative z-[5]"
               >
                 {card.category}
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
+                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white relative z-[5]"
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              <div className="py-10 relative z-[5]">{card.content}</div>
             </motion.div>
           </div>
         )}

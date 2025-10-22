@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X, ChevronRight, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -23,10 +24,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
-  const menuItems = [
-    { href: "/contact", label: "Contact" }
-  ]
 
   const aboutMenuItems = [
     { href: "/about/articles", label: "Articles" },
@@ -58,6 +55,13 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="group">
             <div className="flex items-center space-x-3">
+              <Image 
+                src="/logos/CRR_Logo_Icon.svg" 
+                alt="CRR Logo" 
+                width={24} 
+                height={48}
+                className="transition-opacity group-hover:opacity-80"
+              />
               <div className={`text-2xl font-primary font-light tracking-wide transition-colors ${
                 isScrolled ? 'text-navy-extra-dark' : 'text-white'
               } group-hover:text-orange`}>
@@ -69,18 +73,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
-            {menuItems.map((item) => (
-              <Link 
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-orange ${
-                  isScrolled ? 'text-navy-dark/80' : 'text-white/90'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-            
             {/* About Dropdown */}
             <div 
               className="relative"
@@ -192,6 +184,16 @@ const Header = () => {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Contact Link */}
+            <Link 
+              href="/contact"
+              className={`text-sm font-secondary font-light tracking-wide uppercase transition-colors hover:text-orange ${
+                isScrolled ? 'text-navy-dark/80' : 'text-white/90'
+              }`}
+            >
+              Contact
+            </Link>
             
             {/* CTA Button */}
             <Link href="/contact">
@@ -252,6 +254,12 @@ const Header = () => {
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
                 <div className="flex items-center space-x-3">
+                  <Image 
+                    src="/logos/CRR_Logo_Icon.svg" 
+                    alt="CRR Logo" 
+                    width={20} 
+                    height={40}
+                  />
                   <span className="text-xl font-primary font-light tracking-wide">
                     <span className="text-orange">Costa Rica</span>
                     <span className="text-navy-extra-dark"> Recovery</span>
@@ -270,20 +278,6 @@ const Header = () => {
               <div className="p-6 space-y-8 overflow-y-auto flex-1">
                 {/* Navigation Links */}
                 <nav className="space-y-6">
-                  {menuItems.map((item) => (
-              <Link 
-                key={item.href}
-                href={item.href}
-                      className="flex items-center justify-between group py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                      <span className="text-base font-secondary text-gray-600 group-hover:text-orange transition-colors">
-                {item.label}
-                      </span>
-                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-orange transition-colors" />
-              </Link>
-            ))}
-                  
                   {/* About Dropdown for Mobile */}
                   <div>
                     <button
@@ -398,6 +392,18 @@ const Header = () => {
                       )}
                     </AnimatePresence>
                   </div>
+
+                  {/* Contact Link */}
+                  <Link 
+                    href="/contact"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between group py-2"
+                  >
+                    <span className="text-base font-secondary text-gray-600 group-hover:text-orange transition-colors">
+                      Contact
+                    </span>
+                    <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-orange transition-colors" />
+                  </Link>
                 </nav>
 
                 {/* Divider */}

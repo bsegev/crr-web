@@ -15,9 +15,18 @@ export default function Footer() {
             <div className="space-y-8">
               <div>
                 <Link href="/" className="inline-block group">
-                  <div className="text-2xl font-primary font-light tracking-wide transition-colors group-hover:opacity-80">
-                    <span className="text-orange">Costa Rica</span>
-                    <span className="font-light"> Recovery</span>
+                  <div className="flex items-center space-x-3">
+                    <Image 
+                      src="/logos/CRR_Logo_Icon.svg" 
+                      alt="CRR Logo" 
+                      width={24} 
+                      height={48}
+                      className="transition-opacity group-hover:opacity-80"
+                    />
+                    <div className="text-2xl font-primary font-light tracking-wide transition-colors group-hover:opacity-80">
+                      <span className="text-orange">Costa Rica</span>
+                      <span className="font-light"> Recovery</span>
+                    </div>
                   </div>
                 </Link>
               </div>

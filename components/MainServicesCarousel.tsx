@@ -67,7 +67,7 @@ const data = [
     title: "Safe & Supervised Detox",
     src: "/services-cards/medical-detox.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+      <div className="bg-white/60 backdrop-blur-md p-8 md:p-14 rounded-3xl mb-4 relative border border-white/20">
         <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Medical detoxification is the first critical step in recovery.
@@ -109,7 +109,7 @@ const data = [
     title: "30, 60 & 90-Day Programs",
     src: "/services-cards/program-months.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+      <div className="bg-white/60 backdrop-blur-md p-8 md:p-14 rounded-3xl mb-4 relative border border-white/20">
         <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Personalized residential treatment programs tailored to your needs.
@@ -159,7 +159,7 @@ const data = [
     title: "Mind, Body & Spirit Healing",
     src: "/services-cards/yoga-shala.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+      <div className="bg-white/60 backdrop-blur-md p-8 md:p-14 rounded-3xl mb-4 relative border border-white/20">
         <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Recovery is about healing the whole person.
@@ -209,7 +209,7 @@ const data = [
     title: "Healing Together",
     src: "/services-cards/family-support.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+      <div className="bg-white/60 backdrop-blur-md p-8 md:p-14 rounded-3xl mb-4 relative border border-white/20">
         <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Addiction affects the whole family.
@@ -255,7 +255,7 @@ const data = [
     title: "Long-Term Success",
     src: "/services-cards/aftercare.png",
     content: (
-      <div className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4 relative">
+      <div className="bg-white/60 backdrop-blur-md p-8 md:p-14 rounded-3xl mb-4 relative border border-white/20">
         <p className="text-neutral-600 text-base md:text-xl font-sans leading-relaxed">
           <span className="font-bold text-neutral-700">
             Recovery doesn't end when treatment does.
