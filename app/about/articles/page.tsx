@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function ArticlesPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <>
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-navy-extra-dark to-navy-dark">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <motion.div
@@ -38,7 +38,7 @@ export default function ArticlesPage() {
           </Link>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ import { Shield, MessageCircle, Users, Scale, Zap, Globe, Brain, Heart, Sparkles
 
 export default function OurApproachPage() {
   return (
-    <main className="min-h-screen">
+    <>
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image & Overlays */}
@@ -485,7 +485,7 @@ export default function OurApproachPage() {
           </motion.div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
 

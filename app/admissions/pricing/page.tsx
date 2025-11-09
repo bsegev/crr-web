@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils"
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <>
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
@@ -504,7 +504,7 @@ export default function PricingPage() {
           </motion.div>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 

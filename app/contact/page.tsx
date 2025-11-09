@@ -7,7 +7,7 @@ import ContactForm from "@/components/ContactForm"
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <>
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
@@ -279,6 +279,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   )
 }

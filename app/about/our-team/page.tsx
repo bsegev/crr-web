@@ -262,7 +262,7 @@ export default function OurTeamPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -612,6 +612,6 @@ export default function OurTeamPage() {
           )
         })()}
       </AnimatePresence>
-    </main>
+    </>
   )
 }

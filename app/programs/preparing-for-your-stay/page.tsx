@@ -29,7 +29,7 @@ export default function PreparingForYourStayPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
@@ -358,7 +358,7 @@ export default function PreparingForYourStayPage() {
           </motion.div>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 
