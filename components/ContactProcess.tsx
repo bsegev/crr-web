@@ -21,8 +21,8 @@ const processSteps = [
   },
   {
     step: 3,
-    title: "Insurance & Planning",
-    description: "We'll verify your insurance benefits and help plan the logistics of treatment admission.",
+    title: "Payment & Planning",
+    description: "We'll discuss transparent pricing and flexible payment options, then help coordinate your admission logistics.",
     duration: "1-2 hours",
   },
   {
@@ -96,7 +96,7 @@ export default function ContactProcess() {
                     {[
                       "No pressure or high-pressure sales tactics",
                       "Honest, educational information only",
-                      "Free insurance verification and benefits check",
+                      "Transparent private-pay pricing and flexible payment options",
                       "Ongoing family support throughout treatment"
                     ].map((text, index) => (
                       <div key={index} className="flex items-start space-x-3">

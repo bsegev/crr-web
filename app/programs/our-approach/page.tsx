@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
-import { Shield, MessageCircle, Users, Scale, Zap, Globe } from "lucide-react";
+import { Shield, MessageCircle, Users, Scale, Zap, Globe, Brain, Heart, Sparkles, Leaf } from "lucide-react";
 
 export default function OurApproachPage() {
   return (
@@ -73,6 +73,31 @@ export default function OurApproachPage() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Interactive Four Pillars of Recovery Section */}
+      <section className="bg-gray-50 py-16 sm:py-20 md:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <p className="text-sm font-light text-orange tracking-widest uppercase mb-4">
+              Holistic Model
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-primary font-light text-navy-extra-dark mb-6 leading-[1.1] tracking-[-0.02em]">
+              Four Pillars of <span className="italic font-serif text-orange">Recovery</span>
+            </h2>
+            <p className="text-lg font-secondary font-light text-gray-700 max-w-3xl mx-auto">
+              True recovery addresses the whole person through four integrated dimensions. Each pillar supports and strengthens the others, creating a comprehensive foundation for lasting healing.
+            </p>
+          </motion.div>
+
+          <InteractiveFourPillars />
         </div>
       </section>
 
@@ -539,6 +564,208 @@ function ApproachFAQ() {
           </AnimatePresence>
         </motion.div>
       ))}
+    </div>
+  );
+}
+
+// Interactive Four Pillars Component
+function InteractiveFourPillars() {
+  const [hoveredPillar, setHoveredPillar] = useState<string | null>(null);
+  const [activePillar, setActivePillar] = useState<string | null>(null);
+
+  const pillars = [
+    {
+      id: "mind",
+      title: "Mind",
+      icon: Brain,
+      color: "from-blue-500 to-blue-600",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      description: "Cognitive therapies and emotional healing",
+      details: "Evidence-based therapies like CBT, DBT, and REBT help rewire thought patterns and build emotional resilience.",
+      connections: ["body", "spirit", "environment"],
+      position: "top-left"
+    },
+    {
+      id: "body",
+      title: "Body", 
+      icon: Heart,
+      color: "from-green-500 to-green-600",
+      bgColor: "bg-green-50",
+      borderColor: "border-green-200",
+      description: "Physical wellness and healing",
+      details: "Yoga, nutrition, fitness, and sound healing restore physical health and create mind-body connection.",
+      connections: ["mind", "spirit", "environment"],
+      position: "top-right"
+    },
+    {
+      id: "spirit",
+      title: "Spirit",
+      icon: Sparkles,
+      color: "from-purple-500 to-purple-600",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200",
+      description: "Finding meaning and purpose",
+      details: "Mindfulness, meditation, and adventure therapy help reconnect with inner purpose and life meaning.",
+      connections: ["mind", "body", "environment"],
+      position: "bottom-left"
+    },
+    {
+      id: "environment",
+      title: "Environment",
+      icon: Leaf,
+      color: "from-orange-500 to-orange-600",
+      bgColor: "bg-orange-50",
+      borderColor: "border-orange-200",
+      description: "Supportive healing spaces",
+      details: "Costa Rica's natural beauty, therapeutic spaces, and community support create optimal healing conditions.",
+      connections: ["mind", "body", "spirit"],
+      position: "bottom-right"
+    }
+  ];
+
+  const getConnectionPath = (from: string, to: string) => {
+    const positions = {
+      "top-left": { x: 25, y: 25 },
+      "top-right": { x: 75, y: 25 },
+      "bottom-left": { x: 25, y: 75 },
+      "bottom-right": { x: 75, y: 75 }
+    };
+    
+    const fromPos = positions[from as keyof typeof positions];
+    const toPos = positions[to as keyof typeof positions];
+    
+    return `M ${fromPos.x} ${fromPos.y} Q 50 50 ${toPos.x} ${toPos.y}`;
+  };
+
+  return (
+    <div className="relative max-w-4xl mx-auto">
+      {/* Connection Lines SVG */}
+      <div className="absolute inset-0 pointer-events-none">
+        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          {pillars.map(pillar => 
+            pillar.connections.map(connectionId => {
+              const connectedPillar = pillars.find(p => p.id === connectionId);
+              if (!connectedPillar) return null;
+              
+              const isActive = hoveredPillar === pillar.id || hoveredPillar === connectionId;
+              const isBothActive = hoveredPillar === pillar.id && activePillar === connectionId;
+              
+              return (
+                <motion.path
+                  key={`${pillar.id}-${connectionId}`}
+                  d={getConnectionPath(pillar.position, connectedPillar.position)}
+                  stroke="currentColor"
+                  strokeWidth="0.5"
+                  fill="none"
+                  className={`transition-all duration-300 ${
+                    isBothActive 
+                      ? 'text-orange-400' 
+                      : isActive 
+                        ? 'text-gray-300' 
+                        : 'text-gray-200'
+                  }`}
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  animate={{ 
+                    pathLength: isActive ? 1 : 0.3, 
+                    opacity: isActive ? 1 : 0.4 
+                  }}
+                  transition={{ duration: 0.5 }}
+                />
+              );
+            })
+          )}
+        </svg>
+      </div>
+
+      {/* Pillars Grid */}
+      <div className="relative grid grid-cols-2 gap-8 aspect-square max-w-2xl mx-auto">
+        {pillars.map((pillar, index) => {
+          const Icon = pillar.icon;
+          const isHovered = hoveredPillar === pillar.id;
+          const isActive = activePillar === pillar.id;
+          
+          return (
+            <motion.div
+              key={pillar.id}
+              className={`relative ${pillar.bgColor} ${pillar.borderColor} border-2 rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
+                isHovered ? 'scale-105 shadow-xl' : 'hover:scale-102'
+              }`}
+              onMouseEnter={() => setHoveredPillar(pillar.id)}
+              onMouseLeave={() => setHoveredPillar(null)}
+              onClick={() => setActivePillar(activePillar === pillar.id ? null : pillar.id)}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              {/* Icon with gradient background */}
+              <div className={`inline-flex p-3 rounded-full bg-gradient-to-r ${pillar.color} text-white mb-4`}>
+                <Icon className="w-6 h-6" />
+              </div>
+              
+              <h3 className="text-xl font-semibold text-navy-extra-dark mb-2">
+                {pillar.title}
+              </h3>
+              
+              <p className="text-gray-600 font-light text-sm leading-relaxed">
+                {pillar.description}
+              </p>
+
+              {/* Expanded details */}
+              <AnimatePresence>
+                {isActive && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="mt-4 pt-4 border-t border-gray-200"
+                  >
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {pillar.details}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Connection indicators */}
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-400 rounded-full opacity-0 transition-opacity duration-300"
+                   style={{ opacity: isHovered ? 1 : 0 }} />
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Center synergy indicator */}
+      <motion.div 
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="text-white text-2xl"
+        >
+          ⚡
+        </motion.div>
+      </motion.div>
+
+      {/* Instructions */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        className="text-center mt-8"
+      >
+        <p className="text-sm text-gray-500">
+          Hover to see connections • Click to learn more
+        </p>
+      </motion.div>
     </div>
   );
 }

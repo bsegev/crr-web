@@ -108,7 +108,7 @@ export default function OurFacilityPage() {
     {
       title: "Dining Experience",
       button: "View Details",
-      src: "/facility/nutrition/dining-room.jpg",
+      src: "/facility/nutrition/dining-room-top.png",
     },
   ]
 

@@ -305,9 +305,9 @@ export default function ResidentialProgramPage() {
               "Mindfulness & Meditation",
               "Yoga & Movement Therapy",
               "Art & Music Therapy",
+              "Sound Healing",
               "Adventure Therapy",
               "Nutritional Counseling",
-              "Family Therapy",
               "12-Step Integration"
             ].map((modality, index) => (
               <motion.div

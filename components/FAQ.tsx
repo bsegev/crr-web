@@ -11,11 +11,11 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     question: "How much does treatment at Costa Rica Recovery cost?",
-    answer: "Our programs are designed to be accessible and affordable. Treatment costs vary based on program length (30, 60, or 90 days) and services included. We offer significantly lower rates than comparable private treatment centers in the U.S. and Canada, without compromising on quality of care. Contact our admissions team at (866) 804-1793 for detailed pricing and to discuss payment options, including insurance verification."
+    answer: "Our programs are designed to be accessible and affordable. Treatment costs vary based on program length (30, 60, or 90 days) and services included. We offer significantly lower rates than comparable private treatment centers in the U.S. and Canada, without compromising on quality of care. As a private-pay facility, we accept credit cards, wire transfers, and direct bank payments. Contact our admissions team at (866) 804-1793 for detailed pricing and flexible payment arrangements."
   },
   {
     question: "Do you accept insurance?",
-    answer: "We work with most major insurance providers and can help verify your benefits. Many of our clients use their insurance to cover part or all of their treatment costs. Our admissions team will work directly with your insurance company to determine coverage and out-of-pocket expenses before you arrive. We also offer private pay options and flexible payment plans."
+    answer: "We operate exclusively as a private-pay facility and do not work with insurance companies. This model allows us to provide truly personalized care without insurance limitations or third-party involvement in your treatment decisions. Your recovery stays completely confidential with no insurance claims or records. We accept credit cards, wire transfers, and bank payments, and our admissions team can discuss flexible payment arrangements to make treatment accessible."
   },
   {
     question: "What is the daily schedule like?",

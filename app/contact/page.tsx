@@ -58,7 +58,7 @@ export default function ContactPage() {
               className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-lg"
             >
               <Image
-                src="/contact-hero.jpg"
+                src="/contact-support.jpg"
                 alt="We are here to help you"
                 fill
                 className="object-cover"

@@ -77,16 +77,8 @@ export default function MissionVisionPage() {
                 Our <span className="italic font-serif text-orange">Mission</span>
               </h2>
               
-              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
-                At Costa Rica Recovery (CRR), our mission is to empower individuals to achieve lasting recovery through compassionate, personalized care.
-              </p>
-              
-              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
-                We are dedicated to providing high-quality, evidence-based treatment combined with holistic practices in a supportive and nurturing environment.
-              </p>
-
               <p className="text-lg font-secondary font-light text-gray-700 leading-relaxed">
-                We believe in treating the whole person—mind, body, and spirit—to foster transformative healing and personal growth.
+                To initiate and sustain recovery through holistic practices, innovation, and evidence-based care. We don't just follow the research – we bring it to life in real people's lives.
               </p>
             </motion.div>
           </div>
@@ -110,16 +102,8 @@ export default function MissionVisionPage() {
                 Our <span className="italic font-serif text-orange">Vision</span>
               </h2>
               
-              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
-                Our vision is to be a beacon of hope for those affected by addiction, creating a community where every participant is supported on their journey to recovery.
-              </p>
-              
-              <p className="text-lg font-secondary font-light text-gray-700 mb-4 leading-relaxed">
-                We strive to set a standard of excellence in addiction treatment by continuously evolving our programs to meet the diverse needs of our participants.
-              </p>
-
               <p className="text-lg font-secondary font-light text-gray-700 leading-relaxed">
-                By leveraging the rich cultural and natural landscapes of Costa Rica, we aim to inspire change and promote wellness.
+                To be Central America's benchmark for personalized recovery – known for outcomes, integrity, and transformative care.
               </p>
             </motion.div>
 

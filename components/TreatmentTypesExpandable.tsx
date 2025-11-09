@@ -7,6 +7,8 @@ export function TreatmentTypesExpandable() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
+  const [visibleCount, setVisibleCount] = useState(5);
+  const [previousVisibleCount, setPreviousVisibleCount] = useState(5);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
@@ -102,7 +104,7 @@ export function TreatmentTypesExpandable() {
                       height={200}
                       src={active.src}
                       alt={active.title}
-                      className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                      className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
                     />
                   </motion.div>
 
@@ -151,12 +153,21 @@ export function TreatmentTypesExpandable() {
             ) : null}
           </AnimatePresence>
           <ul className="max-w-2xl mx-auto w-full space-y-4">
-            {cards.map((card, index) => (
+            {cards.slice(0, visibleCount).map((card, index) => {
+              const isNewlyVisible = index >= previousVisibleCount;
+              return (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
+                  initial={isNewlyVisible ? { opacity: 0, y: 20 } : false}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={isNewlyVisible ? { 
+                    duration: 0.5, 
+                    delay: (index - previousVisibleCount) * 0.1,
+                    ease: "easeOut"
+                  } : { duration: 0 }}
                 onClick={() => setActive(card)}
-                className="p-4 flex flex-row md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+                  className="p-4 flex flex-row md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
               >
                 <div className="flex gap-4 flex-row items-center flex-1 min-w-0">
                   <motion.div layoutId={`image-${card.title}-${id}`} className="flex-shrink-0">
@@ -190,8 +201,51 @@ export function TreatmentTypesExpandable() {
                   {card.ctaText}
                 </motion.button>
             </motion.div>
-          ))}
+              );
+            })}
         </ul>
+        
+        {/* Show More Button */}
+        {visibleCount < cards.length && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mt-8"
+          >
+            <button
+              onClick={() => {
+                setPreviousVisibleCount(visibleCount);
+                setVisibleCount(prev => Math.min(prev + 5, cards.length));
+              }}
+              className="px-8 py-3 bg-orange text-white font-semibold rounded-lg hover:bg-orange/90 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-transform"
+            >
+              Show {Math.min(5, cards.length - visibleCount)} More Therapies
+            </button>
+          </motion.div>
+        )}
+        
+        {/* Show Less Button (when all are visible) */}
+        {visibleCount >= cards.length && visibleCount > 5 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mt-8"
+          >
+            <button
+              onClick={() => {
+                setPreviousVisibleCount(visibleCount);
+                setVisibleCount(5);
+              }}
+              className="px-8 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-300"
+            >
+              Show Less
+            </button>
+          </motion.div>
+        )}
         </div>
       </section>
     </>
@@ -235,7 +289,7 @@ const cards = [
   {
     description: "Evidence-based therapy",
     title: "Cognitive Behavioral Therapy (CBT)",
-    src: "/hero-bg/pexels-enrique-hidalgo-1230661389-34293263.jpg",
+    src: "/facility/modalities/CBT_image.png",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
@@ -249,9 +303,57 @@ const cards = [
     },
   },
   {
+    description: "Emotional regulation therapy",
+    title: "Dialectical Behavior Therapy (DBT)",
+    src: "/facility/modalities/DBT_image.png",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          DBT is an evidence-based therapy that combines cognitive-behavioral techniques with mindfulness practices. It's particularly effective for individuals with emotional regulation challenges and co-occurring disorders. <br /> <br />
+          DBT focuses on four key areas: mindfulness skills, distress tolerance, emotional regulation, and interpersonal effectiveness. You'll learn practical tools to manage intense emotions, handle crisis situations, and build healthier relationships. <br /> <br />
+          Research shows DBT significantly reduces substance use frequency and improves treatment retention, especially for those with borderline personality disorder and substance use disorders.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Rational thinking therapy",
+    title: "Rational Emotive Behavioral Therapy (REBT)",
+    src: "/facility/modalities/REBT_image.png",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          REBT helps you identify and change irrational beliefs that contribute to emotional distress and substance use. This evidence-based approach focuses on the connection between thoughts, emotions, and behaviors. <br /> <br />
+          Through REBT, you'll learn to challenge self-defeating thoughts, develop rational thinking patterns, improve emotional regulation, and build healthier coping strategies. <br /> <br />
+          Clinical studies show REBT significantly reduces irrational beliefs, anxiety, and stress in patients with substance use disorders, leading to improved self-control and lower relapse risk.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Trauma-sensitive care",
+    title: "Trauma-Informed Care",
+    src: "/facility/modalities/Trauma-informed-image.png",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          Trauma-informed care recognizes that most people with addiction have experienced trauma. Our approach integrates this understanding into every aspect of treatment, creating a safe, supportive environment for healing. <br /> <br />
+          Our trauma-informed approach includes safety and trust-building, choice and collaboration in treatment planning, peer support integration, cultural sensitivity, and empowerment-focused interventions. <br /> <br />
+          This approach helps address the root causes of addiction while building resilience and creating lasting recovery outcomes.
+        </p>
+      );
+    },
+  },
+  {
     description: "Individual sessions",
     title: "One-on-One Therapy",
-    src: "/hero-bg/jake-johnson-_pbFvzlIPr0-unsplash.jpg",
+    src: "/facility/modalities/one-on-one-therapy-image.png",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
@@ -267,7 +369,7 @@ const cards = [
   {
     description: "Peer support",
     title: "Group Therapy",
-    src: "/hero-bg/paige-laine-elmer-R8Qvisl-Dzw-unsplash.jpg",
+    src: "/facility/spaces/group-session.jpg",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
@@ -281,33 +383,97 @@ const cards = [
     },
   },
   {
-    description: "Healing relationships",
-    title: "Family Therapy",
-    src: "/hero-bg/cesar-badilla-miranda-IvyIreqmA8s-unsplash.jpg",
+    description: "Present-moment awareness",
+    title: "Mindfulness & Meditation",
+    src: "/facility/modalities/meditation.png",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
       return (
         <p>
-          Addiction affects the entire family system. Our family therapy program helps repair relationships, improve communication, and rebuild trust. Sessions are available virtually or in-person in Costa Rica. <br /> <br />
-          The family program includes weekly family therapy sessions, education about addiction and recovery, communication skills training, boundary-setting workshops, and codependency awareness and healing. <br /> <br />
-          Families who participate in treatment see significantly higher long-term recovery rates and stronger ongoing support systems.
+          Mindfulness and meditation practices help you develop present-moment awareness and emotional regulation skills essential for recovery. These evidence-based practices reduce stress, anxiety, and cravings. <br /> <br />
+          Our mindfulness program includes guided meditation sessions, breathing exercises, body scan practices, mindful movement, and integration of mindfulness into daily activities. <br /> <br />
+          Research shows mindfulness interventions significantly reduce substance use, anxiety, and depression in addiction treatment populations, supporting long-term recovery outcomes.
         </p>
       );
     },
   },
   {
-    description: "Mind-body connection",
-    title: "Holistic Therapies",
-    src: "/hero-bg/polina-kocheva-Xf802oUIHLc-unsplash.jpg",
+    description: "Mind-body wellness",
+    title: "Yoga & Movement Therapy",
+    src: "/facility/wellness/yoga-stretch.jpg",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
       return (
         <p>
-          Our holistic therapies address the physical, emotional, and spiritual aspects of recovery. Experience yoga, meditation, art therapy, adventure therapy, and more in Costa Rica's healing environment. <br /> <br />
-          Holistic offerings include daily yoga and meditation, art and music therapy, Tai Chi and Qigong, adventure therapy like surfing and hiking, nutritional therapy and cooking classes, plus massage and acupuncture. <br /> <br />
-          Holistic therapies complement evidence-based treatment for whole-person healing, addressing mind, body, and spirit in your recovery journey.
+          Yoga and movement therapy combine physical exercise with mindfulness to promote healing of mind, body, and spirit. These practices help reduce stress, improve mood, and build physical strength. <br /> <br />
+          Our yoga program includes gentle and restorative yoga, breathwork (pranayama), meditation, and movement therapy sessions tailored to all fitness levels. <br /> <br />
+          Studies show that 80% of yoga participants with alcohol use disorder achieved recovery or significant improvement, compared to 48% in control groups, demonstrating the powerful healing benefits of this practice.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Creative expression",
+    title: "Art & Music Therapy",
+    src: "/facility/wellness/art-therapy.png",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          Art and music therapy provide alternative ways to express emotions, process trauma, and explore your inner world when words may not be enough. These creative modalities support emotional healing and self-discovery. <br /> <br />
+          Our creative therapy program includes visual arts, music therapy, creative writing, drama therapy, and expressive arts workshops. No artistic experience is necessary. <br /> <br />
+          Creative therapies help reduce anxiety and depression, improve emotional regulation, and provide healthy outlets for stress and difficult emotions during recovery.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Vibrational healing",
+    title: "Sound Healing",
+    src: "/facility/modalities/sound-healing-image.webp",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          Sound healing uses vibrational frequencies to promote relaxation, reduce stress, and support emotional healing. This ancient practice is now backed by modern research showing significant therapeutic benefits. <br /> <br />
+          Our sound healing sessions include Tibetan singing bowls, crystal bowls, gong therapy, and guided sound meditation. These sessions help calm the nervous system and promote deep relaxation. <br /> <br />
+          Research shows that Tibetan singing bowl meditation reduces tension, anger, fatigue, and depressed mood by 19-27% after a single session, with the strongest effects in adults aged 31-60.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Nature-based therapy",
+    title: "Adventure Therapy",
+    src: "/facility/nature/volcano-wide.jpg",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          Adventure therapy combines outdoor activities with therapeutic intervention to build confidence, teamwork, and problem-solving skills. Costa Rica's natural environment provides the perfect setting for this transformative approach. <br /> <br />
+          Our adventure therapy program includes hiking, surfing, zip-lining, rock climbing, and team-building activities in Costa Rica's beautiful natural settings. <br /> <br />
+          Adventure therapy helps build self-confidence, develop healthy coping skills, and create positive associations with physical activity and nature, all essential for long-term recovery.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Nutritional wellness",
+    title: "Nutritional Counseling",
+    src: "/facility/nutrition/chef-avocado-toast.webp",
+    ctaText: "Learn More",
+    ctaLink: "/contact",
+    content: () => {
+      return (
+        <p>
+          Proper nutrition is essential for physical and mental health during recovery. Our nutritional counseling helps restore your body's natural balance and supports brain healing from substance use. <br /> <br />
+          Our nutrition program includes individual counseling, meal planning, cooking classes, education about nutrition and recovery, and support for developing healthy eating habits. <br /> <br />
+          Research shows that nutrition and physical activity counseling in addiction treatment leads to 22% less sugary drink intake and up to 47% higher activity levels post-intervention.
         </p>
       );
     },
@@ -315,7 +481,7 @@ const cards = [
   {
     description: "Peer recovery support",
     title: "12-Step Facilitation",
-    src: "/hero-bg/vlad-d-DOKH2miZEL0-unsplash.jpg",
+    src: "/facility/modalities/12-steps-image.png",
     ctaText: "Learn More",
     ctaLink: "/contact",
     content: () => {
